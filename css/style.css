@@ -1,17 +1,17 @@
 :root {
-  --bg: #faf7f8;
+  --bg: #f7faf8;
   --surface: #ffffff;
   --text: #2d2428;
   --text-muted: #8a7a82;
-  --accent: #c97b8b;
-  --accent-dark: #a85d6d;
-  --accent-soft: #f8e8ec;
+  --accent: #2d6a4f;
+  --accent-dark: #1b4332;
+  --accent-soft: #e8f5ee;
   --free: #e8f5ee;
   --free-border: #b8dfc9;
   --free-text: #2d6b47;
-  --busy: #fff0f3;
-  --busy-border: #f0c4cc;
-  --busy-text: #8b3d4f;
+  --busy: #eef7f0;
+  --busy-border: #b8dfc9;
+  --busy-text: #2d6b47;
   --danger: #d64545;
   --shadow: 0 2px 12px rgba(45, 36, 40, 0.08);
   --radius: 14px;
@@ -324,7 +324,7 @@ body {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1;
-  box-shadow: 0 4px 20px rgba(201, 123, 139, 0.45);
+  box-shadow: 0 4px 20px rgba(45, 106, 79, 0.4);
   cursor: pointer;
   z-index: 20;
   display: flex;
@@ -389,7 +389,7 @@ body {
   width: 100%;
   margin-top: 6px;
   padding: 12px 14px;
-  border: 2px solid #ece6e8;
+  border: 2px solid #dce8e0;
   border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
@@ -539,7 +539,7 @@ body {
 .backup-bar button {
   margin-top: 8px;
   padding: 8px 14px;
-  border: 1px solid #ece6e8;
+  border: 1px solid #dce8e0;
   border-radius: 8px;
   background: var(--bg);
   font-size: 0.8rem;
