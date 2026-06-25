@@ -19,17 +19,7 @@
       "timeEnd": "23:11",
       "description": "11",
       "updatedAt": 1782405858294
-    },
-    {
-      "id": "402bdce5-8a3f-41bc-9d86-8bba50ed4eeb",
-      "firstName": "darko",
-      "lastName": "lazic",
-      "date": "2026-06-27",
-      "time": "18:50",
-      "timeEnd": "18:57",
-      "description": "farbanje",
-      "updatedAt": 1782406245706
     }
   ],
-  "updatedAt": 1782406182535
+  "updatedAt": 1782406191441
 }
