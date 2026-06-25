@@ -112,16 +112,32 @@ body {
   text-align: center;
 }
 
+.date-picker-btn {
+  border: none;
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 10px 8px;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+.date-picker-btn:active {
+  transform: scale(0.97);
+}
+
 .date-label {
   display: block;
   font-weight: 600;
   font-size: 1.1rem;
 }
 
-.date-full {
+.date-picker-hint {
   display: block;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-size: 0.75rem;
+  color: var(--accent-dark);
+  font-weight: 600;
   margin-top: 2px;
 }
 
@@ -497,4 +513,113 @@ body {
   font-size: 0.8rem;
   cursor: pointer;
   margin-right: 6px;
+}
+
+.save-info {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.save-hint {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+/* Kalendar */
+.calendar-modal {
+  padding-top: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  flex: 1;
+  text-align: center;
+}
+
+.nav-btn-sm {
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 10px;
+  background: var(--bg);
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cal-day:active {
+  transform: scale(0.92);
+}
+
+.cal-empty {
+  background: transparent;
+  pointer-events: none;
+}
+
+.cal-today {
+  border: 2px solid var(--accent);
+  font-weight: 700;
+}
+
+.cal-selected {
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.cal-has-appt::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-dark);
+}
+
+.cal-selected.cal-has-appt::after {
+  background: white;
+}
+
+.calendar-close {
+  width: 100%;
+  margin-top: 16px;
 }
