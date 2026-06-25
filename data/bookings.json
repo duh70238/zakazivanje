@@ -1,16 +1,6 @@
 {
   "appointments": [
     {
-      "id": "4d4487a8-4771-4eae-9017-c2fcd935f665",
-      "firstName": "milan",
-      "lastName": "stankovic",
-      "date": "2026-06-14",
-      "time": "19:14",
-      "timeEnd": "19:29",
-      "description": "sisanje",
-      "updatedAt": 1782407693592
-    },
-    {
       "id": "fcb2a31c-0b34-497e-8f8b-957905b3be96",
       "firstName": "Test()",
       "lastName": "Test",
@@ -31,5 +21,5 @@
       "updatedAt": 1782407773394
     }
   ],
-  "updatedAt": 1782407748605
+  "updatedAt": 1782407750467
 }
