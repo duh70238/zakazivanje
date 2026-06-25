@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#f8f0f4">
+  <title>Termini</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="header-top">
+        <h1>Termini</h1>
+        <span class="sync-badge" id="syncStatus" title="Status sinhronizacije">●</span>
+      </div>
+      <div class="date-nav">
+        <button type="button" class="nav-btn" id="prevDay" aria-label="Prethodni dan">‹</button>
+        <div class="date-display">
+          <span class="date-label" id="dateLabel">Danas</span>
+        </div>
+        <button type="button" class="nav-btn" id="nextDay" aria-label="Sledeći dan">›</button>
+      </div>
+      <button type="button" class="today-btn" id="goToday">Danas</button>
+    </header>
+
+    <section class="stats" id="stats">
+      <div class="stat stat-count">
+        <span class="stat-num" id="apptCount">0</span>
+        <span class="stat-label">Termina danas</span>
+      </div>
+    </section>
+
+    <main class="slots" id="slotsList" aria-live="polite"></main>
+
+    <button type="button" class="fab" id="addBtn" aria-label="Dodaj termin">+</button>
+  </div>
+
+  <!-- Modal: Dodaj / Izmeni -->
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal" role="dialog" aria-labelledby="modalTitle">
+      <h2 id="modalTitle">Novi termin</h2>
+      <form id="bookingForm">
+        <label>
+          Ime
+          <input type="text" id="firstName" required autocomplete="given-name" placeholder="npr. Ana">
+        </label>
+        <label>
+          Prezime
+          <input type="text" id="lastName" required autocomplete="family-name" placeholder="npr. Petrović">
+        </label>
+        <label>
+          Datum
+          <input type="date" id="bookingDate" required>
+        </label>
+        <div class="time-row">
+          <label>
+            Od
+            <input type="time" id="startTime" required>
+          </label>
+          <label>
+            Do
+            <input type="time" id="endTime" required>
+          </label>
+        </div>
+        <label>
+          Opis
+          <textarea id="description" rows="3" placeholder="npr. šišanje, farbanje..."></textarea>
+        </label>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" id="cancelBtn">Otkaži</button>
+          <button type="submit" class="btn btn-primary">Sačuvaj</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Detalji / Obriši -->
+  <div class="modal-overlay" id="detailOverlay" hidden>
+    <div class="modal" role="dialog">
+      <h2 id="detailName"></h2>
+      <p class="detail-time" id="detailTime"></p>
+      <p class="detail-range" id="detailRange"></p>
+      <p class="detail-desc" id="detailDesc"></p>
+      <div class="modal-actions detail-actions">
+        <button type="button" class="btn btn-ghost" id="closeDetail">Zatvori</button>
+        <button type="button" class="btn btn-primary" id="editBtn">Izmeni</button>
+        <button type="button" class="btn btn-danger" id="deleteBtn">Obriši</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
