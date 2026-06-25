@@ -1,16 +1,6 @@
 {
   "appointments": [
     {
-      "id": "57198c68-fadf-4b43-b4c4-9cf36eefe053",
-      "firstName": "dusan",
-      "lastName": "stankovi",
-      "date": "2026-06-14",
-      "time": "19:01",
-      "timeEnd": "19:19",
-      "description": "jsjsja",
-      "updatedAt": 1782406900346
-    },
-    {
       "id": "fcb2a31c-0b34-497e-8f8b-957905b3be96",
       "firstName": "Test()",
       "lastName": "Test",
@@ -21,25 +11,15 @@
       "updatedAt": 1782405527393
     },
     {
-      "id": "48c3cc05-e45f-4ff5-83f9-732350994031",
-      "firstName": "dud",
-      "lastName": "mud",
-      "date": "2026-06-28",
-      "time": "19:02",
-      "timeEnd": "19:25",
-      "description": "baba",
-      "updatedAt": 1782406933515
-    },
-    {
-      "id": "00461a1f-8e69-4e74-903e-c6f2254bcd51",
-      "firstName": "ss",
-      "lastName": "dd",
-      "date": "2026-06-30",
-      "time": "19:02",
-      "timeEnd": "19:07",
-      "description": "sss",
-      "updatedAt": 1782406963121
+      "id": "fcff779a-24b8-4170-9a62-2750bf4d3a03",
+      "firstName": "darko",
+      "lastName": "lazic",
+      "date": "2026-06-18",
+      "time": "18:43",
+      "timeEnd": "23:11",
+      "description": "11",
+      "updatedAt": 1782405858294
     }
   ],
-  "updatedAt": 1782406899888
+  "updatedAt": 1782406912184
 }
