@@ -103,16 +103,18 @@ function setSyncStatus(status, message) {
 
 async function loadFromCloud() {
   const data = await TerminiSave.loadCloud(API_URL);
-  if (!data) return null;
-  lastSavedAt = data.updatedAt || null;
-  return data.appointments;
+  if (data.ok) {
+    lastSavedAt = data.updatedAt || null;
+    return { appointments: data.appointments, error: null, tokenMissing: false };
+  }
+  return { appointments: [], error: data.error, tokenMissing: data.tokenMissing };
 }
 
 async function persist() {
   lastSavedAt = await TerminiSave.saveLocal(appointments);
 
   if (!API_URL) {
-    setSyncStatus('local', `${appointments.length} termina na telefonu`);
+    setSyncStatus('local', `✓ ${appointments.length} termina na ovom telefonu`);
     return { ok: true, cloud: false };
   }
 
@@ -123,37 +125,44 @@ async function persist() {
   syncPending = false;
 
   if (cloud.ok) {
-    setSyncStatus('synced', `${appointments.length} termina — telefon + cloud`);
+    setSyncStatus('synced', `✓ Telefon + cloud (${appointments.length})`);
     return { ok: true, cloud: true };
   }
 
-  setSyncStatus('local', `Sačuvano ovde (${appointments.length}). Cloud: ${cloud.error}`);
-  return { ok: true, cloud: false, error: cloud.error };
+  if (cloud.tokenMissing) {
+    setSyncStatus('local', `✓ Na telefonu. Blob: uradi Redeploy`);
+  } else {
+    setSyncStatus('local', `✓ Na telefonu (${appointments.length})`);
+  }
+  return { ok: true, cloud: false, error: cloud.error, tokenMissing: cloud.tokenMissing };
 }
 
 async function initData() {
   const local = await TerminiSave.loadAllLocal();
-  const remote = await loadFromCloud();
+  const cloud = await loadFromCloud();
 
-  if (remote !== null) {
-    appointments = TerminiSave.mergeAppointments(local, remote);
+  if (cloud.appointments.length > 0 || local.length === 0) {
+    appointments = TerminiSave.mergeAppointments(local, cloud.appointments);
   } else {
     appointments = local;
   }
 
   await TerminiSave.saveLocal(appointments);
 
-  if (API_URL) {
-    const result = await TerminiSave.saveCloud(API_URL, appointments);
-    if (result.ok) {
-      setSyncStatus('synced', `${appointments.length} termina — telefon + cloud`);
-    } else if (appointments.length > 0) {
-      setSyncStatus('local', `Sačuvano na telefonu. Poveži Blob na Vercel-u.`);
-    } else {
-      setSyncStatus('error', 'Poveži Blob: Vercel → Storage → Blob');
-    }
+  if (!API_URL) {
+    setSyncStatus('local', `✓ ${appointments.length} termina — samo ovaj telefon`);
+    return;
+  }
+
+  const upload = await TerminiSave.saveCloud(API_URL, appointments);
+  if (upload.ok) {
+    setSyncStatus('synced', `✓ Telefon + cloud (${appointments.length})`);
+  } else if (appointments.length > 0) {
+    setSyncStatus('local', `✓ ${appointments.length} na telefonu. Cloud čeka Redeploy`);
+  } else if (upload.tokenMissing) {
+    setSyncStatus('local', 'Telefon spreman. Blob: Connect + Redeploy');
   } else {
-    setSyncStatus('local', 'Samo lokalno — otvori Vercel link');
+    setSyncStatus('local', `✓ Na telefonu. Cloud: ${upload.error}`);
   }
 }
 
@@ -207,9 +216,9 @@ function renderBackupBar() {
   const saved = lastSavedAt ? `Poslednje čuvanje: ${formatSavedAt(lastSavedAt)}` : '';
   bar.innerHTML = `
   <div class="save-info">
-    <strong>🔒 Svaki termin se čuva na 5+ mesta</strong>
+    <strong>Telefon:</strong> termin ostaje u Safari memoriji za ovaj sajt.<br>
+    <strong>Cloud:</strong> ista kopija na Vercelu (telefon + komp).
     ${saved ? `<br><span>${saved}</span>` : ''}
-    <br><span class="save-hint">Telefon (2×) + baza telefona + istorija + cloud</span>
   </div>
   Ručna kopija:
   <br>
