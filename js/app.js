@@ -132,6 +132,19 @@ async function persist() {
 
 async function initData() {
   const cached = TerminiSave.loadCache();
+
+  if (API_URL) {
+    try {
+      const st = await fetch('/api/status', { cache: 'no-store' });
+      const status = await st.json();
+      if (!status.ok) {
+        appointments = cached;
+        setSyncStatus('error', status.message || 'Podesi GitHub na Vercel-u');
+        return;
+      }
+    } catch { /* nastavi */ }
+  }
+
   const remote = await loadFromGithub();
 
   if (remote.ok) {
@@ -141,10 +154,10 @@ async function initData() {
     setSyncStatus('synced', `✓ Na GitHub-u (${appointments.length})`);
   } else if (cached.length > 0) {
     appointments = cached;
-    setSyncStatus('local', `${cached.length} u kešu. Podesi GitHub token.`);
+    setSyncStatus('local', remote.error || 'Keš na telefonu');
   } else {
     appointments = [];
-    setSyncStatus('error', remote.notConfigured ? 'Dodaj GitHub token na Vercel' : remote.error);
+    setSyncStatus('error', remote.error || 'Podesi GitHub + Redeploy');
   }
 }
 
