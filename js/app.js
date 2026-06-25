@@ -91,78 +91,60 @@ function uuid() {
 function setSyncStatus(status, message) {
   els.syncStatus.className = `sync-badge ${status}`;
   const defaults = {
-    synced: 'Sačuvano (telefon + cloud)',
-    pending: 'Čuvanje...',
-    local: 'Sačuvano na telefonu',
-    error: 'Cloud nije povezan',
+    synced: 'Sačuvano na GitHub-u',
+    pending: 'Upis na GitHub...',
+    local: 'Keš na telefonu',
+    error: 'GitHub nije podešen',
   };
   const text = message || defaults[status] || '';
   els.syncStatus.title = text;
   if (els.syncText) els.syncText.textContent = text;
 }
 
-async function loadFromCloud() {
-  const data = await TerminiSave.loadCloud(API_URL);
-  if (data.ok) {
-    lastSavedAt = data.updatedAt || null;
-    return { appointments: data.appointments, error: null, tokenMissing: false };
-  }
-  return { appointments: [], error: data.error, tokenMissing: data.tokenMissing };
+async function loadFromGithub() {
+  return TerminiSave.loadGithub(API_URL);
 }
 
 async function persist() {
-  lastSavedAt = await TerminiSave.saveLocal(appointments);
-
   if (!API_URL) {
-    setSyncStatus('local', `✓ ${appointments.length} termina na ovom telefonu`);
-    return { ok: true, cloud: false };
+    TerminiSave.saveCache(appointments, Date.now());
+    setSyncStatus('error', 'Otvori link sajta');
+    return { ok: false, error: 'Nije online link' };
   }
 
   syncPending = true;
   setSyncStatus('pending');
 
-  const cloud = await TerminiSave.saveCloud(API_URL, appointments);
+  const result = await TerminiSave.saveGithub(API_URL, appointments);
   syncPending = false;
 
-  if (cloud.ok) {
-    setSyncStatus('synced', `✓ Telefon + cloud (${appointments.length})`);
-    return { ok: true, cloud: true };
+  if (result.ok) {
+    lastSavedAt = result.updatedAt;
+    TerminiSave.saveCache(appointments, lastSavedAt);
+    setSyncStatus('synced', `✓ Na GitHub-u (${appointments.length})`);
+    return { ok: true };
   }
 
-  if (cloud.tokenMissing) {
-    setSyncStatus('local', `✓ Na telefonu. Blob: uradi Redeploy`);
-  } else {
-    setSyncStatus('local', `✓ Na telefonu (${appointments.length})`);
-  }
-  return { ok: true, cloud: false, error: cloud.error, tokenMissing: cloud.tokenMissing };
+  TerminiSave.saveCache(appointments, Date.now());
+  setSyncStatus(result.notConfigured ? 'error' : 'local', result.error);
+  return { ok: false, error: result.error };
 }
 
 async function initData() {
-  const local = await TerminiSave.loadAllLocal();
-  const cloud = await loadFromCloud();
+  const cached = TerminiSave.loadCache();
+  const remote = await loadFromGithub();
 
-  if (cloud.appointments.length > 0 || local.length === 0) {
-    appointments = TerminiSave.mergeAppointments(local, cloud.appointments);
+  if (remote.ok) {
+    appointments = TerminiSave.mergeAppointments(cached, remote.appointments);
+    lastSavedAt = remote.updatedAt;
+    TerminiSave.saveCache(appointments, lastSavedAt);
+    setSyncStatus('synced', `✓ Na GitHub-u (${appointments.length})`);
+  } else if (cached.length > 0) {
+    appointments = cached;
+    setSyncStatus('local', `${cached.length} u kešu. Podesi GitHub token.`);
   } else {
-    appointments = local;
-  }
-
-  await TerminiSave.saveLocal(appointments);
-
-  if (!API_URL) {
-    setSyncStatus('local', `✓ ${appointments.length} termina — samo ovaj telefon`);
-    return;
-  }
-
-  const upload = await TerminiSave.saveCloud(API_URL, appointments);
-  if (upload.ok) {
-    setSyncStatus('synced', `✓ Telefon + cloud (${appointments.length})`);
-  } else if (appointments.length > 0) {
-    setSyncStatus('local', `✓ ${appointments.length} na telefonu. Cloud čeka Redeploy`);
-  } else if (upload.tokenMissing) {
-    setSyncStatus('local', 'Telefon spreman. Blob: Connect + Redeploy');
-  } else {
-    setSyncStatus('local', `✓ Na telefonu. Cloud: ${upload.error}`);
+    appointments = [];
+    setSyncStatus('error', remote.notConfigured ? 'Dodaj GitHub token na Vercel' : remote.error);
   }
 }
 
@@ -216,8 +198,7 @@ function renderBackupBar() {
   const saved = lastSavedAt ? `Poslednje čuvanje: ${formatSavedAt(lastSavedAt)}` : '';
   bar.innerHTML = `
   <div class="save-info">
-    <strong>Telefon:</strong> termin ostaje u Safari memoriji za ovaj sajt.<br>
-    <strong>Cloud:</strong> ista kopija na Vercelu (telefon + komp).
+    <strong>Baza = fajl na GitHub-u:</strong> <code>data/bookings.json</code>
     ${saved ? `<br><span>${saved}</span>` : ''}
   </div>
   Ručna kopija:
@@ -394,22 +375,14 @@ async function saveAppointment(e) {
     if (date !== selectedDate) selectedDate = date;
     render();
     const result = await persist();
-    if (result.cloud) {
-      showToast('Termin izmenjen ✓');
-    } else {
-      showToast(result.error ? `Sačuvano na telefonu. Cloud: ${result.error}` : 'Sačuvano na telefonu ✓');
-    }
+    showToast(result.ok ? 'Termin izmenjen ✓' : `Greška: ${result.error}`);
   } else {
     appointments.push({ id: uuid(), ...apptData });
     closeAddModal();
     if (date !== selectedDate) selectedDate = date;
     render();
     const result = await persist();
-    if (result.cloud) {
-      showToast('Termin sačuvan ✓');
-    } else {
-      showToast(result.error ? `Sačuvano na telefonu. Cloud: ${result.error}` : 'Sačuvano na telefonu ✓');
-    }
+    showToast(result.ok ? 'Termin sačuvan ✓' : `Nije na GitHub-u! ${result.error}`);
   }
 }
 
@@ -421,7 +394,7 @@ async function deleteAppointment() {
   closeDetailModal();
   render();
   const result = await persist();
-  showToast(result.cloud ? 'Termin obrisan' : 'Obrisano (sačuvano na telefonu)');
+  showToast(result.ok ? 'Termin obrisan' : `Greška: ${result.error}`);
 }
 
 function exportBackup() {
@@ -445,10 +418,9 @@ async function importBackup(e) {
     const data = JSON.parse(text);
     if (!Array.isArray(data.appointments)) throw new Error('Invalid');
     appointments = data.appointments.map(normalizeAppointment);
-    await TerminiSave.saveLocal(appointments);
     render();
-    await persist();
-    showToast('Backup uvezen ✓');
+    const result = await persist();
+    showToast(result.ok ? 'Backup uvezen ✓' : `Greška: ${result.error}`);
   } catch {
     showToast('Neispravan backup fajl');
   }
@@ -520,8 +492,8 @@ function bindEvents() {
   });
 
   setInterval(() => {
-    if (!syncPending && API_URL && navigator.onLine) {
-      TerminiSave.saveCloud(API_URL, appointments);
+    if (!syncPending && API_URL && navigator.onLine && appointments.length) {
+      TerminiSave.saveGithub(API_URL, appointments);
     }
   }, 3 * 60 * 1000);
 }
