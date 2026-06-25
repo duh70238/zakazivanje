@@ -1,16 +1,6 @@
 {
   "appointments": [
     {
-      "id": "57198c68-fadf-4b43-b4c4-9cf36eefe053",
-      "firstName": "dusan",
-      "lastName": "stankovi",
-      "date": "2026-06-14",
-      "time": "19:01",
-      "timeEnd": "19:19",
-      "description": "jsjsja",
-      "updatedAt": 1782406900346
-    },
-    {
       "id": "4d4487a8-4771-4eae-9017-c2fcd935f665",
       "firstName": "milan",
       "lastName": "stankovic",
@@ -41,5 +31,5 @@
       "updatedAt": 1782407773394
     }
   ],
-  "updatedAt": 1782407710091
+  "updatedAt": 1782407748605
 }
