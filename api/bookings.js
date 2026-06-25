@@ -1,70 +1,39 @@
-const FILE_PATH = process.env.GITHUB_FILE || 'data/bookings.json';
+import { head, put } from '@vercel/blob';
 
-function githubConfig() {
-  const token = process.env.GITHUB_TOKEN;
-  const owner = process.env.GITHUB_OWNER;
-  const repo = process.env.GITHUB_REPO;
-  if (!token || !owner || !repo) return null;
-  return { token, owner, repo };
+const PRIMARY = 'termini.json';
+const BACKUP = 'termini-backup.json';
+
+async function readBlob(name) {
+  try {
+    const blob = await head(name);
+    const res = await fetch(blob.url, { cache: 'no-store' });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
 }
 
-async function githubFetch(path, options = {}) {
-  const cfg = githubConfig();
-  const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${path}`;
-  const res = await fetch(url, {
-    ...options,
-    headers: {
-      Authorization: `Bearer ${cfg.token}`,
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      ...options.headers,
-    },
+async function writeBlob(name, data) {
+  await put(name, JSON.stringify(data), {
+    access: 'public',
+    addRandomSuffix: false,
+    allowOverwrite: true,
+    contentType: 'application/json',
   });
-  return res;
 }
 
-async function readFromGitHub() {
-  const res = await githubFetch(FILE_PATH);
-  if (res.status === 404) {
-    return { appointments: [], updatedAt: 0, sha: null };
+function mergeAppointments(...lists) {
+  const map = new Map();
+  for (const list of lists) {
+    if (!Array.isArray(list)) continue;
+    for (const a of list) {
+      if (!a?.id) continue;
+      const ex = map.get(a.id);
+      if (!ex || (a.updatedAt || 0) >= (ex.updatedAt || 0)) map.set(a.id, a);
+    }
   }
-  if (!res.ok) {
-    throw new Error(`GitHub read failed: ${res.status}`);
-  }
-  const meta = await res.json();
-  const text = Buffer.from(meta.content, 'base64').toString('utf8');
-  const data = JSON.parse(text);
-  return {
-    appointments: Array.isArray(data.appointments) ? data.appointments : [],
-    updatedAt: data.updatedAt || 0,
-    sha: meta.sha,
-  };
-}
-
-async function writeToGitHub(appointments, sha) {
-  const payload = {
-    appointments,
-    updatedAt: Date.now(),
-  };
-  const body = {
-    message: 'Azuriranje termina [skip ci]',
-    content: Buffer.from(JSON.stringify(payload, null, 2)).toString('base64'),
-  };
-  if (sha) body.sha = sha;
-
-  const res = await githubFetch(FILE_PATH, {
-    method: 'PUT',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    throw new Error(err.message || `GitHub write failed: ${res.status}`);
-  }
-
-  const result = await res.json();
-  return { ok: true, sha: result.content.sha, count: appointments.length };
+  return Array.from(map.values());
 }
 
 export default async function handler(req, res) {
@@ -72,25 +41,25 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end();
-  }
+  if (req.method === 'OPTIONS') return res.status(200).end();
 
-  if (!githubConfig()) {
+  if (!process.env.BLOB_READ_WRITE_TOKEN) {
     return res.status(503).json({
-      error: 'GitHub nije podešen. Dodaj GITHUB_TOKEN, GITHUB_OWNER i GITHUB_REPO na Vercel-u.',
+      error: 'Blob nije povezan. Vercel → Storage → Blob → Connect.',
       appointments: [],
     });
   }
 
   try {
     if (req.method === 'GET') {
-      const data = await readFromGitHub();
-      return res.status(200).json({
-        appointments: data.appointments,
-        updatedAt: data.updatedAt,
-        source: 'github',
-      });
+      const primary = await readBlob(PRIMARY);
+      const backup = await readBlob(BACKUP);
+      const appointments = mergeAppointments(
+        backup?.appointments,
+        primary?.appointments,
+      );
+      const updatedAt = Math.max(primary?.updatedAt || 0, backup?.updatedAt || 0);
+      return res.status(200).json({ appointments, updatedAt, source: 'cloud' });
     }
 
     if (req.method === 'PUT') {
@@ -99,14 +68,25 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'Neispravan format.' });
       }
 
-      const current = await readFromGitHub();
-      const result = await writeToGitHub(body.appointments, current.sha);
-      return res.status(200).json(result);
+      const current = await readBlob(PRIMARY);
+      if (current?.appointments?.length) {
+        await writeBlob(BACKUP, {
+          appointments: current.appointments,
+          updatedAt: current.updatedAt || Date.now(),
+        });
+      }
+
+      const payload = {
+        appointments: body.appointments,
+        updatedAt: Date.now(),
+      };
+      await writeBlob(PRIMARY, payload);
+      return res.status(200).json({ ok: true, count: body.appointments.length });
     }
 
-    return res.status(405).json({ error: 'Metoda nije dozvoljena.' });
+    return res.status(405).json({ error: 'Nije dozvoljeno.' });
   } catch (err) {
     console.error(err);
-    return res.status(500).json({ error: err.message || 'Greška na serveru.' });
+    return res.status(500).json({ error: 'Greška na serveru.' });
   }
 }
