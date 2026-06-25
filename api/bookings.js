@@ -1,5 +1,4 @@
 const FILE_PATH = process.env.GITHUB_FILE || 'data/bookings.json';
-const BACKUP_PATH = 'data/bookings-backup.json';
 
 function envCheck() {
   const token = (process.env.GITHUB_TOKEN || '').trim();
@@ -75,21 +74,6 @@ async function writeFile(path, content, sha, message) {
 
 async function saveAppointments(appointments) {
   const current = await readFile(FILE_PATH);
-
-  if (current.sha && current.data.appointments?.length) {
-    try {
-      const backupMeta = await readFile(BACKUP_PATH);
-      await writeFile(
-        BACKUP_PATH,
-        current.data,
-        backupMeta.sha,
-        'Backup termina [skip ci]',
-      );
-    } catch (e) {
-      console.warn('Backup preskocen:', e.message);
-    }
-  }
-
   const payload = {
     appointments,
     updatedAt: Date.now(),
@@ -129,20 +113,9 @@ module.exports = async function handler(req, res) {
   try {
     if (req.method === 'GET') {
       const primary = await readFile(FILE_PATH);
-      let appointments = primary.data.appointments;
-      let updatedAt = primary.data.updatedAt;
-
-      if (!appointments.length) {
-        const backup = await readFile(BACKUP_PATH);
-        if (backup.data.appointments.length) {
-          appointments = backup.data.appointments;
-          updatedAt = backup.data.updatedAt;
-        }
-      }
-
       return res.status(200).json({
-        appointments,
-        updatedAt,
+        appointments: primary.data.appointments,
+        updatedAt: primary.data.updatedAt,
         source: 'github',
         file: FILE_PATH,
       });
