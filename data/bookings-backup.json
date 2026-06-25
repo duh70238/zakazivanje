@@ -2,13 +2,13 @@
   "appointments": [
     {
       "id": "5c449c1a-6f0e-4a5c-bb2c-147d1a12f0f1",
-      "firstName": "s",
+      "firstName": "slavko",
       "lastName": "s",
       "date": "2026-06-25",
       "time": "18:15",
       "timeEnd": "22:22",
       "description": "s",
-      "updatedAt": 1782404156701
+      "updatedAt": 1782405281497
     },
     {
       "id": "dc61a835-2dac-4e78-85fc-c15db63f2422",
@@ -31,5 +31,5 @@
       "updatedAt": 1782404854662
     }
   ],
-  "updatedAt": 1782405212321
+  "updatedAt": 1782405219088
 }
