@@ -73,19 +73,21 @@ async function writeFile(path, content, sha, message) {
 }
 
 async function saveAppointments(appointments) {
-  const current = await readFile(FILE_PATH);
+  let current = await readFile(FILE_PATH);
   const payload = {
     appointments,
     updatedAt: Date.now(),
   };
 
-  try {
-    await writeFile(FILE_PATH, payload, current.sha, 'Azuriranje termina [skip ci]');
-  } catch (e) {
-    if (e.status === 409) {
-      const fresh = await readFile(FILE_PATH);
-      await writeFile(FILE_PATH, payload, fresh.sha, 'Azuriranje termina [skip ci]');
-    } else {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      await writeFile(FILE_PATH, payload, current.sha, 'Azuriranje termina [skip ci]');
+      return payload;
+    } catch (e) {
+      if (e.status === 409 && attempt < 2) {
+        current = await readFile(FILE_PATH);
+        continue;
+      }
       throw e;
     }
   }
@@ -97,6 +99,7 @@ module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate');
 
   if (req.method === 'OPTIONS') return res.status(200).end();
 
