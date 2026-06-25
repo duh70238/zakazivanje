@@ -2,5 +2,8 @@
   "name": "komsika-salon",
   "version": "1.0.0",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@vercel/blob": "^0.27.0"
+  }
 }
