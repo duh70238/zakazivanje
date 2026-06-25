@@ -1,15 +1,18 @@
-const STORAGE_KEY = 'komsika_bookings_v1';
 const IS_LOCAL_FILE = window.location.protocol === 'file:';
 const API_URL = IS_LOCAL_FILE ? null : '/api/bookings';
+
+const MONTHS = ['Januar', 'Februar', 'Mart', 'April', 'Maj', 'Jun', 'Jul', 'Avgust', 'Septembar', 'Oktobar', 'Novembar', 'Decembar'];
+const WEEKDAYS = ['Pon', 'Uto', 'Sre', 'Čet', 'Pet', 'Sub', 'Ned'];
 
 let appointments = [];
 let selectedDate = todayStr();
 let selectedAppointmentId = null;
 let editingAppointmentId = null;
 let syncPending = false;
+let lastSavedAt = null;
+let calendarView = { year: 0, month: 0 };
 
 const $ = (id) => document.getElementById(id);
-
 let els = {};
 
 function todayStr() {
@@ -41,21 +44,24 @@ function formatDisplayDate(str) {
   return `${days[d.getDay()]}, ${d.getDate()}. ${months[d.getMonth()]} ${d.getFullYear()}.`;
 }
 
+function formatSavedAt(ts) {
+  if (!ts) return '';
+  const d = new Date(ts);
+  return `${String(d.getDate()).padStart(2, '0')}.${String(d.getMonth() + 1).padStart(2, '0')}. ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+}
+
 function timeToMinutes(t) {
   const [h, m] = t.split(':').map(Number);
   return h * 60 + m;
 }
 
-function minutesToTime(mins) {
-  const h = Math.floor(mins / 60);
-  const m = mins % 60;
-  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
-}
-
 function normalizeAppointment(a) {
   if (a.timeEnd) return a;
   if (a.duration) {
-    return { ...a, timeEnd: minutesToTime(timeToMinutes(a.time) + a.duration) };
+    const end = timeToMinutes(a.time) + a.duration;
+    const h = Math.floor(end / 60);
+    const m = end % 60;
+    return { ...a, timeEnd: `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}` };
   }
   return { ...a, timeEnd: a.time };
 }
@@ -67,6 +73,12 @@ function getAppointmentsForDate(date) {
     .sort((a, b) => timeToMinutes(a.time) - timeToMinutes(b.time));
 }
 
+function getDatesWithAppointments() {
+  const set = new Set();
+  for (const a of appointments) set.add(a.date);
+  return set;
+}
+
 function formatTimeRange(appt) {
   const a = normalizeAppointment(appt);
   return `${a.time} – ${a.timeEnd}`;
@@ -76,38 +88,40 @@ function uuid() {
   return crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
 
-function loadLocal() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return [];
-    const data = JSON.parse(raw);
-    return Array.isArray(data.appointments) ? data.appointments.map(normalizeAppointment) : [];
-  } catch {
-    return [];
-  }
-}
-
-function saveLocal() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify({ appointments, updatedAt: Date.now() }));
-}
-
 function setSyncStatus(status) {
   els.syncStatus.className = `sync-badge ${status}`;
   const titles = {
-    synced: 'Sinhronizovano',
-    pending: 'Čuva se...',
-    offline: 'Samo lokalno (offline)',
-    error: 'Greška sinhronizacije',
+    synced: 'Sačuvano na GitHub-u',
+    pending: 'Čuva se na GitHub...',
+    offline: 'Nema interneta',
+    error: 'Greška — proveri GitHub podešavanje',
   };
   els.syncStatus.title = titles[status] || '';
 }
 
-async function syncToServer() {
-  saveLocal();
+async function loadFromGitHub() {
+  if (!API_URL) return null;
+  try {
+    const res = await fetch(API_URL, { cache: 'no-store' });
+    if (!res.ok) {
+      if (res.status === 503) return null;
+      throw new Error('fetch');
+    }
+    const data = await res.json();
+    lastSavedAt = data.updatedAt || null;
+    return Array.isArray(data.appointments) ? data.appointments.map(normalizeAppointment) : [];
+  } catch {
+    return null;
+  }
+}
+
+async function persist() {
   if (!API_URL) {
     setSyncStatus('offline');
+    showToast('Otvori app preko Vercel linka.');
     return false;
   }
+
   syncPending = true;
   setSyncStatus('pending');
 
@@ -121,12 +135,14 @@ async function syncToServer() {
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       if (res.status === 503) {
-        setSyncStatus('offline');
+        setSyncStatus('error');
+        showToast('GitHub nije podešen na Vercel-u.');
         return false;
       }
-      throw new Error(err.error || 'Sync failed');
+      throw new Error(err.error || 'save failed');
     }
 
+    lastSavedAt = Date.now();
     syncPending = false;
     setSyncStatus('synced');
     return true;
@@ -136,49 +152,14 @@ async function syncToServer() {
   }
 }
 
-async function loadFromServer() {
-  if (!API_URL) return null;
-  try {
-    const res = await fetch(API_URL, { cache: 'no-store' });
-    if (!res.ok) {
-      if (res.status === 503) return null;
-      throw new Error('Fetch failed');
-    }
-    const data = await res.json();
-    return Array.isArray(data.appointments) ? data.appointments.map(normalizeAppointment) : [];
-  } catch {
-    return null;
-  }
-}
-
-function mergeAppointments(local, remote) {
-  const map = new Map();
-  for (const a of local) map.set(a.id, normalizeAppointment(a));
-  for (const a of remote) {
-    const existing = map.get(a.id);
-    const normalized = normalizeAppointment(a);
-    if (!existing || (normalized.updatedAt || 0) >= (existing.updatedAt || 0)) {
-      map.set(a.id, normalized);
-    }
-  }
-  return Array.from(map.values()).sort((a, b) => {
-    const da = `${a.date} ${a.time}`;
-    const db = `${b.date} ${b.time}`;
-    return da.localeCompare(db);
-  });
-}
-
 async function initData() {
-  const local = loadLocal();
-  const remote = await loadFromServer();
-
+  const remote = await loadFromGitHub();
   if (remote !== null) {
-    appointments = mergeAppointments(local, remote);
-    saveLocal();
-    await syncToServer();
+    appointments = remote;
+    setSyncStatus('synced');
   } else {
-    appointments = local;
-    setSyncStatus('offline');
+    appointments = [];
+    setSyncStatus(API_URL ? 'error' : 'offline');
   }
 }
 
@@ -205,7 +186,6 @@ function render() {
   for (const appt of dayAppts) {
     const div = document.createElement('div');
     div.className = 'slot slot-busy';
-    div.dataset.id = appt.id;
     const desc = appt.description ? `<div class="slot-desc">${escapeHtml(appt.description)}</div>` : '';
     div.innerHTML = `
       <span class="slot-time">${appt.time}</span>
@@ -230,8 +210,14 @@ function renderBackupBar() {
     bar.className = 'backup-bar';
     els.slotsList.after(bar);
   }
+  const saved = lastSavedAt ? `Poslednje čuvanje: ${formatSavedAt(lastSavedAt)}` : '';
   bar.innerHTML = `
-  Podaci se automatski čuvaju. Rezervna kopija:
+  <div class="save-info">
+    <strong>Podaci su u fajlu na GitHub-u</strong>
+    ${saved ? `<br><span>${saved}</span>` : ''}
+    <br><span class="save-hint">data/bookings.json u tvom repou</span>
+  </div>
+  Ručna kopija:
   <br>
   <button type="button" id="exportBtn">Izvezi backup</button>
   <button type="button" id="importBtn">Uvezi backup</button>
@@ -240,6 +226,58 @@ function renderBackupBar() {
   bar.querySelector('#exportBtn').addEventListener('click', exportBackup);
   bar.querySelector('#importBtn').addEventListener('click', () => bar.querySelector('#importFile').click());
   bar.querySelector('#importFile').addEventListener('change', importBackup);
+}
+
+function openCalendar() {
+  const d = parseDate(selectedDate);
+  calendarView = { year: d.getFullYear(), month: d.getMonth() };
+  renderCalendar();
+  showModal(els.calendarOverlay);
+}
+
+function closeCalendar() {
+  hideModal(els.calendarOverlay);
+}
+
+function renderCalendar() {
+  const { year, month } = calendarView;
+  els.calendarTitle.textContent = `${MONTHS[month]} ${year}`;
+
+  els.calendarWeekdays.innerHTML = WEEKDAYS.map((d) => `<span>${d}</span>`).join('');
+
+  const first = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0).getDate();
+  let startPad = first.getDay() - 1;
+  if (startPad < 0) startPad = 6;
+
+  const datesWithAppts = getDatesWithAppointments();
+  const today = todayStr();
+  els.calendarGrid.innerHTML = '';
+
+  for (let i = 0; i < startPad; i++) {
+    const empty = document.createElement('span');
+    empty.className = 'cal-day cal-empty';
+    els.calendarGrid.appendChild(empty);
+  }
+
+  for (let day = 1; day <= lastDay; day++) {
+    const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cal-day';
+    btn.textContent = day;
+
+    if (dateStr === today) btn.classList.add('cal-today');
+    if (dateStr === selectedDate) btn.classList.add('cal-selected');
+    if (datesWithAppts.has(dateStr)) btn.classList.add('cal-has-appt');
+
+    btn.addEventListener('click', () => {
+      selectedDate = dateStr;
+      closeCalendar();
+      render();
+    });
+    els.calendarGrid.appendChild(btn);
+  }
 }
 
 function escapeHtml(str) {
@@ -348,24 +386,19 @@ async function saveAppointment(e) {
 
   if (editingAppointmentId) {
     const idx = appointments.findIndex((a) => a.id === editingAppointmentId);
-    if (idx !== -1) {
-      appointments[idx] = { ...appointments[idx], ...apptData };
-    }
+    if (idx !== -1) appointments[idx] = { ...appointments[idx], ...apptData };
     closeAddModal();
+    if (date !== selectedDate) selectedDate = date;
     render();
-    await syncToServer();
+    await persist();
     showToast('Termin izmenjen ✓');
   } else {
     appointments.push({ id: uuid(), ...apptData });
     closeAddModal();
+    if (date !== selectedDate) selectedDate = date;
     render();
-    await syncToServer();
+    await persist();
     showToast('Termin sačuvan ✓');
-  }
-
-  if (date !== selectedDate) {
-    selectedDate = date;
-    render();
   }
 }
 
@@ -376,7 +409,7 @@ async function deleteAppointment() {
   appointments = appointments.filter((a) => a.id !== selectedAppointmentId);
   closeDetailModal();
   render();
-  await syncToServer();
+  await persist();
   showToast('Termin obrisan');
 }
 
@@ -387,7 +420,7 @@ function exportBackup() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `komsika-backup-${todayStr()}.json`;
+  a.download = `termini-backup-${todayStr()}.json`;
   a.click();
   URL.revokeObjectURL(url);
   showToast('Backup preuzet');
@@ -400,10 +433,9 @@ async function importBackup(e) {
     const text = await file.text();
     const data = JSON.parse(text);
     if (!Array.isArray(data.appointments)) throw new Error('Invalid');
-    appointments = mergeAppointments(appointments, data.appointments);
-    saveLocal();
+    appointments = data.appointments.map(normalizeAppointment);
     render();
-    await syncToServer();
+    await persist();
     showToast('Backup uvezen ✓');
   } catch {
     showToast('Neispravan backup fajl');
@@ -427,11 +459,31 @@ function bindEvents() {
     render();
   });
 
-  els.addBtn.addEventListener('click', () => openAddModal());
+  els.openCalendar.addEventListener('click', openCalendar);
+  els.closeCalendar.addEventListener('click', closeCalendar);
+  els.prevMonth.addEventListener('click', () => {
+    calendarView.month -= 1;
+    if (calendarView.month < 0) {
+      calendarView.month = 11;
+      calendarView.year -= 1;
+    }
+    renderCalendar();
+  });
+  els.nextMonth.addEventListener('click', () => {
+    calendarView.month += 1;
+    if (calendarView.month > 11) {
+      calendarView.month = 0;
+      calendarView.year += 1;
+    }
+    renderCalendar();
+  });
+  els.calendarOverlay.addEventListener('click', (e) => {
+    if (e.target === els.calendarOverlay) closeCalendar();
+  });
 
+  els.addBtn.addEventListener('click', () => openAddModal());
   els.cancelBtn.addEventListener('click', closeAddModal);
   els.bookingForm.addEventListener('submit', saveAppointment);
-
   els.closeDetail.addEventListener('click', closeDetailModal);
   els.editBtn.addEventListener('click', () => {
     if (selectedAppointmentId) openEditModal(selectedAppointmentId);
@@ -446,7 +498,7 @@ function bindEvents() {
   });
 
   window.addEventListener('online', () => {
-    if (!syncPending) syncToServer();
+    if (!syncPending) persist();
   });
 
   document.addEventListener('visibilitychange', () => {
@@ -460,6 +512,7 @@ function cacheElements() {
   els = {
     syncStatus: $('syncStatus'),
     dateLabel: $('dateLabel'),
+    openCalendar: $('openCalendar'),
     modalTitle: $('modalTitle'),
     prevDay: $('prevDay'),
     nextDay: $('nextDay'),
@@ -469,6 +522,13 @@ function cacheElements() {
     addBtn: $('addBtn'),
     modalOverlay: $('modalOverlay'),
     detailOverlay: $('detailOverlay'),
+    calendarOverlay: $('calendarOverlay'),
+    calendarTitle: $('calendarTitle'),
+    calendarWeekdays: $('calendarWeekdays'),
+    calendarGrid: $('calendarGrid'),
+    prevMonth: $('prevMonth'),
+    nextMonth: $('nextMonth'),
+    closeCalendar: $('closeCalendar'),
     bookingForm: $('bookingForm'),
     firstName: $('firstName'),
     lastName: $('lastName'),
