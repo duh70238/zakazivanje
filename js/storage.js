@@ -117,17 +117,25 @@ window.TerminiSave = {
   },
 
   async loadCloud(apiUrl) {
-    if (!apiUrl) return null;
+    if (!apiUrl) return { ok: false, offline: true };
     try {
       const res = await fetch(apiUrl, { cache: 'no-store' });
-      if (!res.ok) return null;
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        return {
+          ok: false,
+          tokenMissing: res.status === 503 || data.tokenMissing,
+          error: data.error || `Server (${res.status})`,
+          appointments: [],
+        };
+      }
       return {
+        ok: true,
         appointments: mergeAppointments(data.appointments || []),
         updatedAt: data.updatedAt || null,
       };
     } catch {
-      return null;
+      return { ok: false, error: 'Nema veze', appointments: [] };
     }
   },
 
@@ -141,7 +149,11 @@ window.TerminiSave = {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
-        return { ok: false, error: data.error || `Server greška (${res.status})` };
+        return {
+          ok: false,
+          tokenMissing: res.status === 503 || data.tokenMissing,
+          error: data.error || `Server greška (${res.status})`,
+        };
       }
       return { ok: true };
     } catch {
