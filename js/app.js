@@ -403,11 +403,19 @@ async function deleteAppointment() {
   if (!selectedAppointmentId) return;
   if (!confirm('Da li sigurno želiš da obrišeš ovaj termin?')) return;
 
+  const before = appointments;
   appointments = appointments.filter((a) => a.id !== selectedAppointmentId);
   closeDetailModal();
   render();
+
   const result = await persist();
-  showToast(result.ok ? 'Termin obrisan' : `Greška: ${result.error}`);
+  if (!result.ok) {
+    appointments = before;
+    render();
+    showToast(`Nije obrisano: ${result.error}`);
+    return;
+  }
+  showToast('Termin obrisan');
 }
 
 function exportBackup() {
