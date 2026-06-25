@@ -11,16 +11,6 @@
       "updatedAt": 1782404156701
     },
     {
-      "id": "dc61a835-2dac-4e78-85fc-c15db63f2422",
-      "firstName": "s",
-      "lastName": "s",
-      "date": "2026-06-25",
-      "time": "18:25",
-      "timeEnd": "22:22",
-      "description": "2",
-      "updatedAt": 1782404740070
-    },
-    {
       "id": "fcb2a31c-0b34-497e-8f8b-957905b3be96",
       "firstName": "Test()",
       "lastName": "Test",
@@ -31,5 +21,5 @@
       "updatedAt": 1782405527393
     }
   ],
-  "updatedAt": 1782405775115
+  "updatedAt": 1782405798860
 }
