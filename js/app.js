@@ -138,7 +138,7 @@ async function initData() {
       const st = await fetch('/api/status', { cache: 'no-store' });
       const status = await st.json();
       if (!status.ok) {
-        appointments = cached;
+        appointments = cached.appointments.map(normalizeAppointment);
         setSyncStatus('error', status.message || 'Podesi GitHub na Vercel-u');
         return;
       }
@@ -148,12 +148,13 @@ async function initData() {
   const remote = await loadFromGithub();
 
   if (remote.ok) {
-    appointments = TerminiSave.mergeAppointments(cached, remote.appointments);
+    // GitHub je jedini izvor istine — ne spajaj sa starim kešom
+    appointments = (remote.appointments || []).map(normalizeAppointment);
     lastSavedAt = remote.updatedAt;
     TerminiSave.saveCache(appointments, lastSavedAt);
     setSyncStatus('synced', `✓ Na GitHub-u (${appointments.length})`);
-  } else if (cached.length > 0) {
-    appointments = cached;
+  } else if (cached.appointments.length > 0) {
+    appointments = cached.appointments.map(normalizeAppointment);
     setSyncStatus('local', remote.error || 'Keš na telefonu');
   } else {
     appointments = [];
