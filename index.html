@@ -21,9 +21,10 @@
       </div>
       <div class="date-nav">
         <button type="button" class="nav-btn" id="prevDay" aria-label="Prethodni dan">‹</button>
-        <div class="date-display">
+        <button type="button" class="date-display date-picker-btn" id="openCalendar" aria-label="Otvori kalendar">
           <span class="date-label" id="dateLabel">Danas</span>
-        </div>
+          <span class="date-picker-hint">Kalendar ›</span>
+        </button>
         <button type="button" class="nav-btn" id="nextDay" aria-label="Sledeći dan">›</button>
       </div>
       <button type="button" class="today-btn" id="goToday">Danas</button>
@@ -92,6 +93,20 @@
         <button type="button" class="btn btn-primary" id="editBtn">Izmeni</button>
         <button type="button" class="btn btn-danger" id="deleteBtn">Obriši</button>
       </div>
+    </div>
+  </div>
+
+  <!-- Modal: Kalendar -->
+  <div class="modal-overlay" id="calendarOverlay" hidden>
+    <div class="modal calendar-modal" role="dialog" aria-labelledby="calendarTitle">
+      <div class="calendar-header">
+        <button type="button" class="nav-btn nav-btn-sm" id="prevMonth" aria-label="Prethodni mesec">‹</button>
+        <h2 id="calendarTitle"></h2>
+        <button type="button" class="nav-btn nav-btn-sm" id="nextMonth" aria-label="Sledeći mesec">›</button>
+      </div>
+      <div class="calendar-weekdays" id="calendarWeekdays"></div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+      <button type="button" class="btn btn-ghost calendar-close" id="closeCalendar">Zatvori</button>
     </div>
   </div>
 

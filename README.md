@@ -1,67 +1,82 @@
-# Komsika — Aplikacija za zakazivanje
+# Termini — Aplikacija za zakazivanje
 
-Jednostavna mobilna aplikacija za beauty salon. Radi na telefonu, čuva sve rezervacije trajno.
+Podaci se čuvaju u jednom fajlu na GitHub-u: **`data/bookings.json`**
 
-## Funkcije
+Svaki put kad dodaš, izmeniš ili obrišeš termin, app ažurira taj fajl u tvom repou.
 
-- Pregled svih termina za dan (slobodni = zeleno, zauzeti = roze)
-- Dodavanje termina (ime, prezime, datum, vreme, trajanje)
-- Brisanje termina
-- Navigacija između dana
-- Automatsko čuvanje na server + lokalni backup
-- Ručni export/import backup (JSON)
+---
 
-## Deploy na Vercel
+## Kako radi
 
-### 1. Upload projekta
+```
+Telefon  →  Vercel API  →  GitHub (data/bookings.json)
+```
 
-1. Idi na [vercel.com](https://vercel.com) i uloguj se
-2. Klikni **Add New → Project**
-3. Importuj ovaj folder (ili push na GitHub pa import)
+- Jedan fajl = jedna „baza“
+- Vidiš ga direktno na GitHub-u u svom folderu
+- Git istorija čuva stare verzije (možeš vratiti ako zatreba)
+- Commit poruka sadrži `[skip ci]` da se Vercel ne redeploy-uje pri svakom čuvanju
 
-### 2. Podesi Blob storage (OBAVEZNO za trajno čuvanje)
+---
 
-Bez ovoga podaci ostaju samo na telefonu (localStorage).
+## Podešavanje (jednom)
 
-1. U Vercel dashboardu otvori projekat
-2. Idi na **Storage → Create Database → Blob**
-3. Kreiraj Blob store i poveži ga sa projektom
-4. Vercel automatski dodaje `BLOB_READ_WRITE_TOKEN` — ništa ručno ne treba
+### 1. GitHub repozitorijum
 
-### 3. Deploy
+1. Napravi repo na GitHub-u (npr. `termini-salon`)
+2. Uploaduj ceo ovaj folder ili push sa kompa
 
-Klikni **Deploy**. Aplikacija će biti dostupna na `tvoj-projekat.vercel.app`.
+### 2. GitHub token
+
+1. GitHub → **Settings → Developer settings → Personal access tokens**
+2. **Generate new token (classic)**
+3. Čekiraj samo **`repo`** (pristup repou)
+4. Kopiraj token (prikaže se samo jednom!)
+
+### 3. Vercel
+
+1. Importuj repo na [vercel.com](https://vercel.com)
+2. U projektu: **Settings → Environment Variables**
+3. Dodaj:
+
+| Ime | Vrednost |
+|-----|----------|
+| `GITHUB_TOKEN` | tvoj token |
+| `GITHUB_OWNER` | tvoje GitHub korisničko ime |
+| `GITHUB_REPO` | ime repoa (npr. `termini-salon`) |
+
+Opciono: `GITHUB_FILE` = `data/bookings.json` (podrazumevano)
+
+4. **Redeploy** projekat
 
 ### 4. Na telefonu
 
-- Otvori link u browseru (Chrome/Safari)
-- Na iPhone: Share → **Add to Home Screen** (kao aplikacija)
+- Otvori Vercel link
+- **Add to Home Screen** iz Safari-ja
 
-## Radno vreme
+---
 
-Podrazumevano: **09:00 – 20:00**, termini na svakih 30 min.
+## Gde su podaci
 
-Za promenu, uredi `CONFIG` u `js/app.js`:
+Otvori na GitHub-u:
 
-```js
-const CONFIG = {
-  startHour: 9,
-  endHour: 20,
-  slotStep: 30,
-};
+```
+tvoj-repo/data/bookings.json
 ```
 
-## Kako se čuvaju podaci
+Tu vidiš sve termine u JSON formatu. Svaka izmena u app-u ažurira ovaj fajl.
 
-1. **Vercel Blob** — glavno skladište (preživljava redeploy, brisanje keša, itd.)
-2. **localStorage** — instant backup na telefonu
-3. **JSON export** — ručna rezervna kopija
+---
 
-## Lokalno testiranje
+## Ako nešto ne radi
 
-```bash
-npm install
-npx vercel dev
-```
+- **Crvena tačka** = GitHub nije podešen ili nema interneta
+- Proveri da su `GITHUB_TOKEN`, `GITHUB_OWNER`, `GITHUB_REPO` tačni na Vercel-u
+- Token mora imati `repo` dozvolu
+- App mora biti otvoren preko Vercel linka, ne kao fajl sa diska
 
-Za lokalni API potreban je `BLOB_READ_WRITE_TOKEN` u `.env` fajlu (kopiraj iz Vercel dashboarda).
+---
+
+## Ručni backup
+
+U app-u na dnu: **Izvezi backup** — preuzme JSON na telefon kao dodatnu kopiju.
