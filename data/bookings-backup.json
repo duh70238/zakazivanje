@@ -1,16 +1,6 @@
 {
   "appointments": [
     {
-      "id": "32bd0cf1-a6ff-43e5-868c-fdaeadaeaea2",
-      "firstName": "darko",
-      "lastName": "lazic",
-      "date": "2026-06-26",
-      "time": "18:37",
-      "timeEnd": "18:43",
-      "description": "isanje",
-      "updatedAt": 1782405485558
-    },
-    {
       "id": "fcb2a31c-0b34-497e-8f8b-957905b3be96",
       "firstName": "Test()",
       "lastName": "Test",
@@ -21,5 +11,5 @@
       "updatedAt": 1782405527393
     }
   ],
-  "updatedAt": 1782405465559
+  "updatedAt": 1782405471494
 }
