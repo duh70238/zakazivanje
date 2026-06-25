@@ -10,6 +10,7 @@ let selectedAppointmentId = null;
 let editingAppointmentId = null;
 let syncPending = false;
 let lastSavedAt = null;
+let dirty = false;
 let calendarView = { year: 0, month: 0 };
 
 const $ = (id) => document.getElementById(id);
@@ -101,10 +102,6 @@ function setSyncStatus(status, message) {
   if (els.syncText) els.syncText.textContent = text;
 }
 
-async function loadFromGithub() {
-  return TerminiSave.loadGithub(API_URL);
-}
-
 async function persist() {
   if (!API_URL) {
     TerminiSave.saveCache(appointments, Date.now());
@@ -115,50 +112,59 @@ async function persist() {
   syncPending = true;
   setSyncStatus('pending');
 
-  const result = await TerminiSave.saveGithub(API_URL, appointments);
+  const result = await TerminiSave.save(API_URL, appointments);
   syncPending = false;
 
   if (result.ok) {
+    dirty = false;
     lastSavedAt = result.updatedAt;
-    TerminiSave.saveCache(appointments, lastSavedAt);
-    setSyncStatus('synced', `✓ Na GitHub-u (${appointments.length})`);
+    setSyncStatus('synced', `✓ Sačuvano (${appointments.length})`);
     return { ok: true };
   }
 
-  TerminiSave.saveCache(appointments, Date.now());
-  setSyncStatus(result.notConfigured ? 'error' : 'local', result.error);
+  dirty = true;
+  setSyncStatus(result.notConfigured ? 'error' : 'local', result.error || 'Greška');
   return { ok: false, error: result.error };
 }
 
 async function initData() {
-  const cached = TerminiSave.loadCache();
+  const data = await TerminiSave.loadInitial(API_URL);
 
-  if (API_URL) {
-    try {
-      const st = await fetch('/api/status', { cache: 'no-store' });
-      const status = await st.json();
-      if (!status.ok) {
-        appointments = cached.appointments.map(normalizeAppointment);
-        setSyncStatus('error', status.message || 'Podesi GitHub na Vercel-u');
-        return;
-      }
-    } catch { /* nastavi */ }
+  if (data.ok) {
+    appointments = (data.appointments || []).map(normalizeAppointment);
+    lastSavedAt = data.updatedAt || null;
+    dirty = false;
+    if (data.offline) {
+      setSyncStatus('local', data.error || 'Keš — nema neta');
+    } else if (data.source === 'recovery') {
+      setSyncStatus('synced', `✓ Vraćeno sa telefona (${appointments.length})`);
+    } else {
+      setSyncStatus('synced', `✓ Učitano (${appointments.length})`);
+    }
+  } else {
+    appointments = [];
+    setSyncStatus('error', 'Greška učitavanja');
   }
+}
 
-  const remote = await loadFromGithub();
-
+async function manualRefresh() {
+  if (TerminiSave.isSaving() || syncPending) {
+    showToast('Sačekaj da se završi čuvanje...');
+    return;
+  }
+  setSyncStatus('pending', 'Osvežavam...');
+  const remote = await TerminiSave.refresh(API_URL);
   if (remote.ok) {
-    // GitHub je jedini izvor istine — ne spajaj sa starim kešom
     appointments = (remote.appointments || []).map(normalizeAppointment);
     lastSavedAt = remote.updatedAt;
     TerminiSave.saveCache(appointments, lastSavedAt);
-    setSyncStatus('synced', `✓ Na GitHub-u (${appointments.length})`);
-  } else if (cached.appointments.length > 0) {
-    appointments = cached.appointments.map(normalizeAppointment);
-    setSyncStatus('local', remote.error || 'Keš na telefonu');
+    dirty = false;
+    render();
+    setSyncStatus('synced', `✓ Osveženo (${appointments.length})`);
+    showToast('Osveženo sa GitHub-a');
   } else {
-    appointments = [];
-    setSyncStatus('error', remote.error || 'Podesi GitHub + Redeploy');
+    setSyncStatus('error', remote.error);
+    showToast(remote.error || 'Greška');
   }
 }
 
@@ -217,10 +223,12 @@ function renderBackupBar() {
   </div>
   Ručna kopija:
   <br>
+  <button type="button" id="refreshBtn">Osveži sa GitHub-a</button>
   <button type="button" id="exportBtn">Izvezi backup</button>
   <button type="button" id="importBtn">Uvezi backup</button>
   <input type="file" id="importFile" accept=".json" hidden>
   `;
+  bar.querySelector('#refreshBtn').addEventListener('click', manualRefresh);
   bar.querySelector('#exportBtn').addEventListener('click', exportBackup);
   bar.querySelector('#importBtn').addEventListener('click', () => bar.querySelector('#importFile').click());
   bar.querySelector('#importFile').addEventListener('change', importBackup);
@@ -383,20 +391,38 @@ async function saveAppointment(e) {
   };
 
   if (editingAppointmentId) {
+    const before = [...appointments];
     const idx = appointments.findIndex((a) => a.id === editingAppointmentId);
     if (idx !== -1) appointments[idx] = { ...appointments[idx], ...apptData };
+    dirty = true;
     closeAddModal();
     if (date !== selectedDate) selectedDate = date;
     render();
     const result = await persist();
-    showToast(result.ok ? 'Termin izmenjen ✓' : `Greška: ${result.error}`);
+    if (!result.ok) {
+      appointments = before;
+      dirty = true;
+      render();
+      showToast(`Nije sačuvano! ${result.error}`);
+      return;
+    }
+    showToast('Termin izmenjen ✓');
   } else {
-    appointments.push({ id: uuid(), ...apptData });
+    const before = [...appointments];
+    const newAppt = { id: uuid(), ...apptData };
+    appointments.push(newAppt);
+    dirty = true;
     closeAddModal();
     if (date !== selectedDate) selectedDate = date;
     render();
     const result = await persist();
-    showToast(result.ok ? 'Termin sačuvan ✓' : `Nije na GitHub-u! ${result.error}`);
+    if (!result.ok) {
+      appointments = before;
+      render();
+      showToast(`Nije sačuvano! ${result.error}`);
+      return;
+    }
+    showToast('Termin sačuvan ✓');
   }
 }
 
@@ -404,8 +430,9 @@ async function deleteAppointment() {
   if (!selectedAppointmentId) return;
   if (!confirm('Da li sigurno želiš da obrišeš ovaj termin?')) return;
 
-  const before = appointments;
+  const before = [...appointments];
   appointments = appointments.filter((a) => a.id !== selectedAppointmentId);
+  dirty = true;
   closeDetailModal();
   render();
 
@@ -504,20 +531,17 @@ function bindEvents() {
   });
 
   window.addEventListener('online', () => {
-    if (!syncPending) persist();
-  });
-
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible') {
-      initData().then(render);
+    if (dirty && !syncPending && !TerminiSave.isSaving()) {
+      persist();
     }
   });
 
-  setInterval(() => {
-    if (!syncPending && API_URL && navigator.onLine && appointments.length) {
-      TerminiSave.saveGithub(API_URL, appointments);
+  window.addEventListener('beforeunload', (e) => {
+    if (TerminiSave.isSaving() || syncPending || dirty) {
+      e.preventDefault();
+      e.returnValue = '';
     }
-  }, 3 * 60 * 1000);
+  });
 }
 
 function cacheElements() {
