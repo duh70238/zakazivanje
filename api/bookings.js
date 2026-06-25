@@ -67,21 +67,46 @@ async function writeFile(path, content, sha, message) {
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
-    throw new Error(err.message || `GitHub write ${res.status}`);
+    const e = new Error(err.message || `GitHub write ${res.status}`);
+    e.status = res.status;
+    throw e;
   }
 }
 
-function mergeAppointments(...lists) {
-  const map = new Map();
-  for (const list of lists) {
-    if (!Array.isArray(list)) continue;
-    for (const a of list) {
-      if (!a?.id) continue;
-      const ex = map.get(a.id);
-      if (!ex || (a.updatedAt || 0) >= (ex.updatedAt || 0)) map.set(a.id, a);
+async function saveAppointments(appointments) {
+  const current = await readFile(FILE_PATH);
+
+  if (current.sha && current.data.appointments?.length) {
+    try {
+      const backupMeta = await readFile(BACKUP_PATH);
+      await writeFile(
+        BACKUP_PATH,
+        current.data,
+        backupMeta.sha,
+        'Backup termina [skip ci]',
+      );
+    } catch (e) {
+      console.warn('Backup preskocen:', e.message);
     }
   }
-  return Array.from(map.values());
+
+  const payload = {
+    appointments,
+    updatedAt: Date.now(),
+  };
+
+  try {
+    await writeFile(FILE_PATH, payload, current.sha, 'Azuriranje termina [skip ci]');
+  } catch (e) {
+    if (e.status === 409) {
+      const fresh = await readFile(FILE_PATH);
+      await writeFile(FILE_PATH, payload, fresh.sha, 'Azuriranje termina [skip ci]');
+    } else {
+      throw e;
+    }
+  }
+
+  return payload;
 }
 
 module.exports = async function handler(req, res) {
@@ -104,12 +129,17 @@ module.exports = async function handler(req, res) {
   try {
     if (req.method === 'GET') {
       const primary = await readFile(FILE_PATH);
-      const backup = await readFile(BACKUP_PATH);
-      const appointments = mergeAppointments(
-        backup.data.appointments,
-        primary.data.appointments,
-      );
-      const updatedAt = Math.max(primary.data.updatedAt, backup.data.updatedAt);
+      let appointments = primary.data.appointments;
+      let updatedAt = primary.data.updatedAt;
+
+      if (!appointments.length) {
+        const backup = await readFile(BACKUP_PATH);
+        if (backup.data.appointments.length) {
+          appointments = backup.data.appointments;
+          updatedAt = backup.data.updatedAt;
+        }
+      }
+
       return res.status(200).json({
         appointments,
         updatedAt,
@@ -124,22 +154,7 @@ module.exports = async function handler(req, res) {
         return res.status(400).json({ error: 'Neispravan format.' });
       }
 
-      const current = await readFile(FILE_PATH);
-      if (current.sha && current.data.appointments?.length) {
-        const backupMeta = await readFile(BACKUP_PATH);
-        await writeFile(
-          BACKUP_PATH,
-          current.data,
-          backupMeta.sha,
-          'Backup termina [skip ci]',
-        );
-      }
-
-      const payload = {
-        appointments: body.appointments,
-        updatedAt: Date.now(),
-      };
-      await writeFile(FILE_PATH, payload, current.sha, 'Azuriranje termina [skip ci]');
+      const payload = await saveAppointments(body.appointments);
 
       return res.status(200).json({
         ok: true,
