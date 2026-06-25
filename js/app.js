@@ -88,78 +88,72 @@ function uuid() {
   return crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
 
-function setSyncStatus(status) {
+function setSyncStatus(status, message) {
   els.syncStatus.className = `sync-badge ${status}`;
-  const titles = {
-    synced: 'Sačuvano na GitHub-u',
-    pending: 'Čuva se na GitHub...',
-    offline: 'Nema interneta',
-    error: 'Greška — proveri GitHub podešavanje',
+  const defaults = {
+    synced: 'Sačuvano (telefon + cloud)',
+    pending: 'Čuvanje...',
+    local: 'Sačuvano na telefonu',
+    error: 'Cloud nije povezan',
   };
-  els.syncStatus.title = titles[status] || '';
+  const text = message || defaults[status] || '';
+  els.syncStatus.title = text;
+  if (els.syncText) els.syncText.textContent = text;
 }
 
-async function loadFromGitHub() {
-  if (!API_URL) return null;
-  try {
-    const res = await fetch(API_URL, { cache: 'no-store' });
-    if (!res.ok) {
-      if (res.status === 503) return null;
-      throw new Error('fetch');
-    }
-    const data = await res.json();
-    lastSavedAt = data.updatedAt || null;
-    return Array.isArray(data.appointments) ? data.appointments.map(normalizeAppointment) : [];
-  } catch {
-    return null;
-  }
+async function loadFromCloud() {
+  const data = await TerminiSave.loadCloud(API_URL);
+  if (!data) return null;
+  lastSavedAt = data.updatedAt || null;
+  return data.appointments;
 }
 
 async function persist() {
+  lastSavedAt = await TerminiSave.saveLocal(appointments);
+
   if (!API_URL) {
-    setSyncStatus('offline');
-    showToast('Otvori app preko Vercel linka.');
-    return false;
+    setSyncStatus('local', `${appointments.length} termina na telefonu`);
+    return { ok: true, cloud: false };
   }
 
   syncPending = true;
   setSyncStatus('pending');
 
-  try {
-    const res = await fetch(API_URL, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ appointments }),
-    });
+  const cloud = await TerminiSave.saveCloud(API_URL, appointments);
+  syncPending = false;
 
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      if (res.status === 503) {
-        setSyncStatus('error');
-        showToast('GitHub nije podešen na Vercel-u.');
-        return false;
-      }
-      throw new Error(err.error || 'save failed');
-    }
-
-    lastSavedAt = Date.now();
-    syncPending = false;
-    setSyncStatus('synced');
-    return true;
-  } catch {
-    setSyncStatus(navigator.onLine ? 'error' : 'offline');
-    return false;
+  if (cloud.ok) {
+    setSyncStatus('synced', `${appointments.length} termina — telefon + cloud`);
+    return { ok: true, cloud: true };
   }
+
+  setSyncStatus('local', `Sačuvano ovde (${appointments.length}). Cloud: ${cloud.error}`);
+  return { ok: true, cloud: false, error: cloud.error };
 }
 
 async function initData() {
-  const remote = await loadFromGitHub();
+  const local = await TerminiSave.loadAllLocal();
+  const remote = await loadFromCloud();
+
   if (remote !== null) {
-    appointments = remote;
-    setSyncStatus('synced');
+    appointments = TerminiSave.mergeAppointments(local, remote);
   } else {
-    appointments = [];
-    setSyncStatus(API_URL ? 'error' : 'offline');
+    appointments = local;
+  }
+
+  await TerminiSave.saveLocal(appointments);
+
+  if (API_URL) {
+    const result = await TerminiSave.saveCloud(API_URL, appointments);
+    if (result.ok) {
+      setSyncStatus('synced', `${appointments.length} termina — telefon + cloud`);
+    } else if (appointments.length > 0) {
+      setSyncStatus('local', `Sačuvano na telefonu. Poveži Blob na Vercel-u.`);
+    } else {
+      setSyncStatus('error', 'Poveži Blob: Vercel → Storage → Blob');
+    }
+  } else {
+    setSyncStatus('local', 'Samo lokalno — otvori Vercel link');
   }
 }
 
@@ -213,9 +207,9 @@ function renderBackupBar() {
   const saved = lastSavedAt ? `Poslednje čuvanje: ${formatSavedAt(lastSavedAt)}` : '';
   bar.innerHTML = `
   <div class="save-info">
-    <strong>Podaci su u fajlu na GitHub-u</strong>
+    <strong>🔒 Svaki termin se čuva na 5+ mesta</strong>
     ${saved ? `<br><span>${saved}</span>` : ''}
-    <br><span class="save-hint">data/bookings.json u tvom repou</span>
+    <br><span class="save-hint">Telefon (2×) + baza telefona + istorija + cloud</span>
   </div>
   Ručna kopija:
   <br>
@@ -390,15 +384,23 @@ async function saveAppointment(e) {
     closeAddModal();
     if (date !== selectedDate) selectedDate = date;
     render();
-    await persist();
-    showToast('Termin izmenjen ✓');
+    const result = await persist();
+    if (result.cloud) {
+      showToast('Termin izmenjen ✓');
+    } else {
+      showToast(result.error ? `Sačuvano na telefonu. Cloud: ${result.error}` : 'Sačuvano na telefonu ✓');
+    }
   } else {
     appointments.push({ id: uuid(), ...apptData });
     closeAddModal();
     if (date !== selectedDate) selectedDate = date;
     render();
-    await persist();
-    showToast('Termin sačuvan ✓');
+    const result = await persist();
+    if (result.cloud) {
+      showToast('Termin sačuvan ✓');
+    } else {
+      showToast(result.error ? `Sačuvano na telefonu. Cloud: ${result.error}` : 'Sačuvano na telefonu ✓');
+    }
   }
 }
 
@@ -409,8 +411,8 @@ async function deleteAppointment() {
   appointments = appointments.filter((a) => a.id !== selectedAppointmentId);
   closeDetailModal();
   render();
-  await persist();
-  showToast('Termin obrisan');
+  const result = await persist();
+  showToast(result.cloud ? 'Termin obrisan' : 'Obrisano (sačuvano na telefonu)');
 }
 
 function exportBackup() {
@@ -434,6 +436,7 @@ async function importBackup(e) {
     const data = JSON.parse(text);
     if (!Array.isArray(data.appointments)) throw new Error('Invalid');
     appointments = data.appointments.map(normalizeAppointment);
+    await TerminiSave.saveLocal(appointments);
     render();
     await persist();
     showToast('Backup uvezen ✓');
@@ -506,11 +509,18 @@ function bindEvents() {
       initData().then(render);
     }
   });
+
+  setInterval(() => {
+    if (!syncPending && API_URL && navigator.onLine) {
+      TerminiSave.saveCloud(API_URL, appointments);
+    }
+  }, 3 * 60 * 1000);
 }
 
 function cacheElements() {
   els = {
     syncStatus: $('syncStatus'),
+    syncText: $('syncText'),
     dateLabel: $('dateLabel'),
     openCalendar: $('openCalendar'),
     modalTitle: $('modalTitle'),
