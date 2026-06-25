@@ -1,38 +1,74 @@
-import { head, put } from '@vercel/blob';
+const FILE_PATH = process.env.GITHUB_FILE || 'data/bookings.json';
+const BACKUP_PATH = 'data/bookings-backup.json';
 
-const PRIMARY = 'termini.json';
-const BACKUP = 'termini-backup.json';
-
-function getBlobToken() {
-  return (
-    process.env.BLOB_READ_WRITE_TOKEN ||
-    process.env.zakazivanje_blob_READ_WRITE_TOKEN ||
-    process.env.ZAKAZIVANJE_BLOB_READ_WRITE_TOKEN
-  );
+function envCheck() {
+  const token = (process.env.GITHUB_TOKEN || '').trim();
+  const owner = (process.env.GITHUB_OWNER || '').trim();
+  const repo = (process.env.GITHUB_REPO || '').trim();
+  const missing = [];
+  if (!token) missing.push('GITHUB_TOKEN');
+  if (!owner) missing.push('GITHUB_OWNER');
+  if (!repo) missing.push('GITHUB_REPO');
+  return { token, owner, repo, missing, ready: missing.length === 0 };
 }
 
-async function readBlob(name) {
-  const token = getBlobToken();
-  if (!token) return null;
-  try {
-    const blob = await head(name, { token });
-    const res = await fetch(blob.url, { cache: 'no-store' });
-    if (!res.ok) return null;
-    return await res.json();
-  } catch {
-    return null;
-  }
+function githubEnv() {
+  const c = envCheck();
+  if (!c.ready) return null;
+  return { token: c.token, owner: c.owner, repo: c.repo };
 }
 
-async function writeBlob(name, data) {
-  const token = getBlobToken();
-  await put(name, JSON.stringify(data), {
-    token,
-    access: 'public',
-    addRandomSuffix: false,
-    allowOverwrite: true,
-    contentType: 'application/json',
+async function githubRequest(path, options = {}) {
+  const env = githubEnv();
+  const url = `https://api.github.com/repos/${env.owner}/${env.repo}/contents/${path}`;
+  const res = await fetch(url, {
+    ...options,
+    headers: {
+      Authorization: `Bearer ${env.token}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      ...options.headers,
+    },
   });
+  return res;
+}
+
+async function readFile(path) {
+  const res = await githubRequest(path);
+  if (res.status === 404) return { data: { appointments: [], updatedAt: 0 }, sha: null };
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.message || `GitHub read ${res.status}`);
+  }
+  const meta = await res.json();
+  const text = Buffer.from(meta.content, 'base64').toString('utf8');
+  const data = JSON.parse(text);
+  return {
+    data: {
+      appointments: Array.isArray(data.appointments) ? data.appointments : [],
+      updatedAt: data.updatedAt || 0,
+    },
+    sha: meta.sha,
+  };
+}
+
+async function writeFile(path, content, sha, message) {
+  const body = {
+    message,
+    content: Buffer.from(JSON.stringify(content, null, 2)).toString('base64'),
+  };
+  if (sha) body.sha = sha;
+
+  const res = await githubRequest(path, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.message || `GitHub write ${res.status}`);
+  }
 }
 
 function mergeAppointments(...lists) {
@@ -48,31 +84,38 @@ function mergeAppointments(...lists) {
   return Array.from(map.values());
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') return res.status(200).end();
 
-  if (!getBlobToken()) {
+  const check = envCheck();
+  if (!check.ready) {
     return res.status(503).json({
-      error: 'Blob token nedostaje. Poveži zakazivanje-blob sa projektom i uradi Redeploy.',
-      tokenMissing: true,
+      error: `Fali: ${check.missing.join(', ')}. Vercel → Settings → Environment Variables → REDEPLOY.`,
+      configured: false,
+      missing: check.missing,
       appointments: [],
     });
   }
 
   try {
     if (req.method === 'GET') {
-      const primary = await readBlob(PRIMARY);
-      const backup = await readBlob(BACKUP);
+      const primary = await readFile(FILE_PATH);
+      const backup = await readFile(BACKUP_PATH);
       const appointments = mergeAppointments(
-        backup?.appointments,
-        primary?.appointments,
+        backup.data.appointments,
+        primary.data.appointments,
       );
-      const updatedAt = Math.max(primary?.updatedAt || 0, backup?.updatedAt || 0);
-      return res.status(200).json({ appointments, updatedAt, source: 'cloud' });
+      const updatedAt = Math.max(primary.data.updatedAt, backup.data.updatedAt);
+      return res.status(200).json({
+        appointments,
+        updatedAt,
+        source: 'github',
+        file: FILE_PATH,
+      });
     }
 
     if (req.method === 'PUT') {
@@ -81,25 +124,34 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'Neispravan format.' });
       }
 
-      const current = await readBlob(PRIMARY);
-      if (current?.appointments?.length) {
-        await writeBlob(BACKUP, {
-          appointments: current.appointments,
-          updatedAt: current.updatedAt || Date.now(),
-        });
+      const current = await readFile(FILE_PATH);
+      if (current.sha && current.data.appointments?.length) {
+        const backupMeta = await readFile(BACKUP_PATH);
+        await writeFile(
+          BACKUP_PATH,
+          current.data,
+          backupMeta.sha,
+          'Backup termina [skip ci]',
+        );
       }
 
       const payload = {
         appointments: body.appointments,
         updatedAt: Date.now(),
       };
-      await writeBlob(PRIMARY, payload);
-      return res.status(200).json({ ok: true, count: body.appointments.length });
+      await writeFile(FILE_PATH, payload, current.sha, 'Azuriranje termina [skip ci]');
+
+      return res.status(200).json({
+        ok: true,
+        count: body.appointments.length,
+        file: FILE_PATH,
+        updatedAt: payload.updatedAt,
+      });
     }
 
     return res.status(405).json({ error: 'Nije dozvoljeno.' });
   } catch (err) {
     console.error(err);
-    return res.status(500).json({ error: 'Greška na serveru.' });
+    return res.status(500).json({ error: err.message || 'Greška.' });
   }
-}
+};
