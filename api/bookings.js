@@ -3,9 +3,19 @@ import { head, put } from '@vercel/blob';
 const PRIMARY = 'termini.json';
 const BACKUP = 'termini-backup.json';
 
+function getBlobToken() {
+  return (
+    process.env.BLOB_READ_WRITE_TOKEN ||
+    process.env.zakazivanje_blob_READ_WRITE_TOKEN ||
+    process.env.ZAKAZIVANJE_BLOB_READ_WRITE_TOKEN
+  );
+}
+
 async function readBlob(name) {
+  const token = getBlobToken();
+  if (!token) return null;
   try {
-    const blob = await head(name);
+    const blob = await head(name, { token });
     const res = await fetch(blob.url, { cache: 'no-store' });
     if (!res.ok) return null;
     return await res.json();
@@ -15,7 +25,9 @@ async function readBlob(name) {
 }
 
 async function writeBlob(name, data) {
+  const token = getBlobToken();
   await put(name, JSON.stringify(data), {
+    token,
     access: 'public',
     addRandomSuffix: false,
     allowOverwrite: true,
@@ -43,9 +55,10 @@ export default async function handler(req, res) {
 
   if (req.method === 'OPTIONS') return res.status(200).end();
 
-  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+  if (!getBlobToken()) {
     return res.status(503).json({
-      error: 'Blob nije povezan. Vercel → Storage → Blob → Connect.',
+      error: 'Blob token nedostaje. Poveži zakazivanje-blob sa projektom i uradi Redeploy.',
+      tokenMissing: true,
       appointments: [],
     });
   }
