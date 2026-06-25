@@ -1,4 +1,4 @@
-const LS_CACHE = 'termini_github_cache';
+const LS_CACHE = 'termini_github_v5';
 
 function mergeAppointments(...lists) {
   const map = new Map();
@@ -27,11 +27,14 @@ window.TerminiSave = {
   loadCache() {
     try {
       const raw = localStorage.getItem(LS_CACHE);
-      if (!raw) return [];
+      if (!raw) return { appointments: [], updatedAt: 0 };
       const data = JSON.parse(raw);
-      return Array.isArray(data.appointments) ? data.appointments : [];
+      return {
+        appointments: Array.isArray(data.appointments) ? data.appointments : [],
+        updatedAt: data.updatedAt || 0,
+      };
     } catch {
-      return [];
+      return { appointments: [], updatedAt: 0 };
     }
   },
 
@@ -49,7 +52,7 @@ window.TerminiSave = {
       }
       return {
         ok: true,
-        appointments: mergeAppointments(data.appointments || []),
+        appointments: data.appointments || [],
         updatedAt: data.updatedAt || null,
       };
     } catch {
