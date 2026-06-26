@@ -61,6 +61,16 @@
       "updatedAt": 1782497087216
     },
     {
+      "id": "3df08e0b-a887-4e83-883c-05b1457bad8b",
+      "firstName": "Nina Kipar",
+      "lastName": "ruke",
+      "date": "2026-06-14",
+      "time": "11:00",
+      "timeEnd": "12:00",
+      "description": "",
+      "updatedAt": 1782497141877
+    },
+    {
       "id": "7d00bd39-6494-4d72-ab89-93c27a557239",
       "firstName": "Darko",
       "lastName": "Petrovic",
@@ -101,5 +111,5 @@
       "updatedAt": 1782492324341
     }
   ],
-  "updatedAt": 1782497088036
+  "updatedAt": 1782497142713
 }
