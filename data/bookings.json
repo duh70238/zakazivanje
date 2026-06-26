@@ -81,6 +81,16 @@
       "updatedAt": 1782497170461
     },
     {
+      "id": "0568f75d-1d96-4640-b724-0b6702680253",
+      "firstName": "Nadezda",
+      "lastName": "Ruke noge pedikir, frenc",
+      "date": "2026-06-15",
+      "time": "09:30",
+      "timeEnd": "12:30",
+      "description": "",
+      "updatedAt": 1782497229727
+    },
+    {
       "id": "7d00bd39-6494-4d72-ab89-93c27a557239",
       "firstName": "Darko",
       "lastName": "Petrovic",
@@ -121,5 +131,5 @@
       "updatedAt": 1782492324341
     }
   ],
-  "updatedAt": 1782497171264
+  "updatedAt": 1782497230465
 }
