@@ -41,6 +41,16 @@
       "updatedAt": 1782496995203
     },
     {
+      "id": "63ba9dbc-39f8-45e2-bc5d-5eb892bc17ab",
+      "firstName": "Kaca Mikijeva",
+      "lastName": "izlivanje",
+      "date": "2026-06-11",
+      "time": "20:00",
+      "timeEnd": "22:00",
+      "description": "",
+      "updatedAt": 1782497038626
+    },
+    {
       "id": "7d00bd39-6494-4d72-ab89-93c27a557239",
       "firstName": "Darko",
       "lastName": "Petrovic",
@@ -81,5 +91,5 @@
       "updatedAt": 1782492324341
     }
   ],
-  "updatedAt": 1782496996081
+  "updatedAt": 1782497039363
 }
