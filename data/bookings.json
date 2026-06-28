@@ -141,16 +141,6 @@
       "updatedAt": 1782679061213
     },
     {
-      "id": "70913f35-59f6-4af5-9929-36bc5837a2f0",
-      "firstName": "makaka",
-      "lastName": "jajajja",
-      "date": "2026-07-21",
-      "time": "18:00",
-      "timeEnd": "18:15",
-      "description": "",
-      "updatedAt": 1782679130744
-    },
-    {
       "id": "f54ff86b-06bc-436a-83c6-6a9b4e9be743",
       "firstName": "Natasa Bileca",
       "lastName": "Ruke",
@@ -161,5 +151,5 @@
       "updatedAt": 1782679102181
     }
   ],
-  "updatedAt": 1782679131529
+  "updatedAt": 1782679150059
 }
