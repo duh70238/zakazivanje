@@ -169,7 +169,17 @@
       "timeEnd": "19:30",
       "description": "",
       "updatedAt": 1782679102181
+    },
+    {
+      "id": "a426d1ba-604e-4f22-835d-66998a498498",
+      "firstName": "ja",
+      "lastName": "trepavice",
+      "date": "2026-07-23",
+      "time": "13:00",
+      "timeEnd": "14:30",
+      "description": "",
+      "updatedAt": 1782815665120
     }
   ],
-  "updatedAt": 1782806426155
+  "updatedAt": 1782815667100
 }
