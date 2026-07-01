@@ -151,6 +151,16 @@
       "updatedAt": 1782929593894
     },
     {
+      "id": "c8e8c00a-eb67-42ce-a1da-42fe0678de53",
+      "firstName": "Natase Telekom drugarica",
+      "lastName": "ruke",
+      "date": "2026-07-02",
+      "time": "16:30",
+      "timeEnd": "17:30",
+      "description": "",
+      "updatedAt": 1782929655103
+    },
+    {
       "id": "14497634-4f38-4e58-9c9e-c3726e60e029",
       "firstName": "Milica Kacina",
       "lastName": "izliva",
@@ -241,5 +251,5 @@
       "updatedAt": 1782845804636
     }
   ],
-  "updatedAt": 1782929594374
+  "updatedAt": 1782929656232
 }
