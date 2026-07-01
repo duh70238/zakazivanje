@@ -171,6 +171,16 @@
       "updatedAt": 1782929682767
     },
     {
+      "id": "aaecee37-d1df-448e-aa8a-ae426f0ed970",
+      "firstName": "Tetka od sestre",
+      "lastName": "ruke",
+      "date": "2026-07-02",
+      "time": "18:45",
+      "timeEnd": "19:45",
+      "description": "",
+      "updatedAt": 1782929714821
+    },
+    {
       "id": "14497634-4f38-4e58-9c9e-c3726e60e029",
       "firstName": "Milica Kacina",
       "lastName": "izliva",
@@ -261,5 +271,5 @@
       "updatedAt": 1782845804636
     }
   ],
-  "updatedAt": 1782929684224
+  "updatedAt": 1782929716026
 }
