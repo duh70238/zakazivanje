@@ -111,16 +111,6 @@
       "updatedAt": 1782496737377
     },
     {
-      "id": "c65f81bc-e952-4801-a6f5-17f39dd3cec9",
-      "firstName": "i'm s",
-      "lastName": "sss",
-      "date": "2026-06-30",
-      "time": "19:29",
-      "timeEnd": "19:45",
-      "description": "sjsks",
-      "updatedAt": 1782408574217
-    },
-    {
       "id": "14497634-4f38-4e58-9c9e-c3726e60e029",
       "firstName": "Milica Kacina",
       "lastName": "izliva",
@@ -191,5 +181,5 @@
       "updatedAt": 1782845804636
     }
   ],
-  "updatedAt": 1782845805356
+  "updatedAt": 1782865293765
 }
