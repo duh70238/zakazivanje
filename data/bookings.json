@@ -279,7 +279,17 @@
       "timeEnd": "17:30",
       "description": "",
       "updatedAt": 1782845804636
+    },
+    {
+      "id": "1e2d6adb-f53d-4550-9834-ff176face283",
+      "firstName": "Olja Telekom",
+      "lastName": "ruke crta",
+      "date": "2026-08-01",
+      "time": "11:00",
+      "timeEnd": "12:00",
+      "description": "",
+      "updatedAt": 1783006453265
     }
   ],
-  "updatedAt": 1783002354319
+  "updatedAt": 1783006454072
 }
