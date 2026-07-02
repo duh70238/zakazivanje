@@ -235,10 +235,10 @@
       "firstName": "Natasa Bileca",
       "lastName": "Ruke",
       "date": "2026-07-21",
-      "time": "18:30",
-      "timeEnd": "19:30",
+      "time": "19:30",
+      "timeEnd": "20:30",
       "description": "",
-      "updatedAt": 1782679102181
+      "updatedAt": 1783014995732
     },
     {
       "id": "d7fe6170-5303-46e6-bcf9-662fb447c3f7",
@@ -301,5 +301,5 @@
       "updatedAt": 1783006453265
     }
   ],
-  "updatedAt": 1783011229483
+  "updatedAt": 1783014997061
 }
