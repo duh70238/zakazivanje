@@ -191,6 +191,16 @@
       "updatedAt": 1783061575508
     },
     {
+      "id": "5d31a734-57f7-4cf7-bd21-9b583df5953a",
+      "firstName": "Nina Kipar",
+      "lastName": "ruke",
+      "date": "2026-07-05",
+      "time": "11:00",
+      "timeEnd": "12:00",
+      "description": "",
+      "updatedAt": 1783061600918
+    },
+    {
       "id": "14497634-4f38-4e58-9c9e-c3726e60e029",
       "firstName": "Milica Kacina",
       "lastName": "izliva",
@@ -321,5 +331,5 @@
       "updatedAt": 1783006453265
     }
   ],
-  "updatedAt": 1783061575769
+  "updatedAt": 1783061601498
 }
