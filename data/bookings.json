@@ -201,6 +201,16 @@
       "updatedAt": 1783061600918
     },
     {
+      "id": "3fa9c9fb-5308-4800-a27b-8bcb9d33a78e",
+      "firstName": "Doktorka od Marije",
+      "lastName": "Ruke",
+      "date": "2026-07-05",
+      "time": "12:00",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1783064532225
+    },
+    {
       "id": "14497634-4f38-4e58-9c9e-c3726e60e029",
       "firstName": "Milica Kacina",
       "lastName": "izliva",
@@ -341,5 +351,5 @@
       "updatedAt": 1783006453265
     }
   ],
-  "updatedAt": 1783064390821
+  "updatedAt": 1783064533114
 }
