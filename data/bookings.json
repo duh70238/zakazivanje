@@ -192,13 +192,13 @@
     },
     {
       "id": "5d31a734-57f7-4cf7-bd21-9b583df5953a",
-      "firstName": "Nina Kipar",
+      "firstName": "Sestra Mikijeva",
       "lastName": "ruke",
       "date": "2026-07-05",
       "time": "11:00",
       "timeEnd": "12:00",
       "description": "",
-      "updatedAt": 1783061600918
+      "updatedAt": 1783129290686
     },
     {
       "id": "3fa9c9fb-5308-4800-a27b-8bcb9d33a78e",
@@ -391,5 +391,5 @@
       "updatedAt": 1783006453265
     }
   ],
-  "updatedAt": 1783129266662
+  "updatedAt": 1783129291487
 }
