@@ -411,6 +411,16 @@
       "updatedAt": 1783286582024
     },
     {
+      "id": "b5c7c99d-e1c2-4238-9c2d-8e527201d119",
+      "firstName": "Rodjendan ti je 😂",
+      "lastName": "Zabavi seee",
+      "date": "2026-07-26",
+      "time": "07:00",
+      "timeEnd": "23:23",
+      "description": "",
+      "updatedAt": 1783286617942
+    },
+    {
       "id": "cb181dac-42d3-4097-9b85-398f123f34ba",
       "firstName": "Milena mala kcerka",
       "lastName": "ruke gl",
@@ -491,5 +501,5 @@
       "updatedAt": 1783242849680
     }
   ],
-  "updatedAt": 1783286582687
+  "updatedAt": 1783286618565
 }
