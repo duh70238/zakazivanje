@@ -271,6 +271,16 @@
       "updatedAt": 1782492324341
     },
     {
+      "id": "09fa588b-57b6-403c-af13-e3843a5b6446",
+      "firstName": "Sestr",
+      "lastName": "ruke noge",
+      "date": "2026-07-18",
+      "time": "16:00",
+      "timeEnd": "17:30",
+      "description": "",
+      "updatedAt": 1783283177509
+    },
+    {
       "id": "895a52f5-2ac7-45d5-a888-fcfeda672e6c",
       "firstName": "Ivona losi nokti",
       "lastName": "ruke",
@@ -451,5 +461,5 @@
       "updatedAt": 1783242849680
     }
   ],
-  "updatedAt": 1783257757358
+  "updatedAt": 1783283177853
 }
