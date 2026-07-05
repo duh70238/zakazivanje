@@ -441,6 +441,16 @@
       "updatedAt": 1783257756816
     },
     {
+      "id": "2d95e916-6a5e-4c9b-acdb-bf34cb5708ea",
+      "firstName": "Jana Priboj",
+      "lastName": "Ruke noge",
+      "date": "2026-07-31",
+      "time": "18:00",
+      "timeEnd": "19:30",
+      "description": "",
+      "updatedAt": 1783283634721
+    },
+    {
       "id": "1e2d6adb-f53d-4550-9834-ff176face283",
       "firstName": "Olja Telekom",
       "lastName": "ruke crta",
@@ -461,5 +471,5 @@
       "updatedAt": 1783242849680
     }
   ],
-  "updatedAt": 1783283177853
+  "updatedAt": 1783283635930
 }
