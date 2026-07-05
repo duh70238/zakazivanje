@@ -402,13 +402,13 @@
     },
     {
       "id": "25fcccee-69ee-4908-abc0-22fc3c0608d3",
-      "firstName": "Valintina Marina",
+      "firstName": "Valintina Marijina",
       "lastName": "sve i gel ruke",
       "date": "2026-07-25",
       "time": "17:00",
       "timeEnd": "19:00",
       "description": "",
-      "updatedAt": 1783250881192
+      "updatedAt": 1783286582024
     },
     {
       "id": "cb181dac-42d3-4097-9b85-398f123f34ba",
@@ -491,5 +491,5 @@
       "updatedAt": 1783242849680
     }
   ],
-  "updatedAt": 1783286471362
+  "updatedAt": 1783286582687
 }
