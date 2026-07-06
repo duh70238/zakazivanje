@@ -281,6 +281,16 @@
       "updatedAt": 1782680714674
     },
     {
+      "id": "575d1e7b-f557-4c91-98c4-012a6a5bb564",
+      "firstName": "Majka Cerka",
+      "lastName": "noge",
+      "date": "2026-07-08",
+      "time": "20:00",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1783332189877
+    },
+    {
       "id": "ffadb05f-7088-435d-8d02-0a49a90b7ad6",
       "firstName": "Jana Priboj",
       "lastName": "ruke",
@@ -521,5 +531,5 @@
       "updatedAt": 1783242849680
     }
   ],
-  "updatedAt": 1783331666001
+  "updatedAt": 1783332191183
 }
