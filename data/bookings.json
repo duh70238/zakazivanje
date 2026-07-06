@@ -231,6 +231,16 @@
       "updatedAt": 1783233825820
     },
     {
+      "id": "cd179bdc-4ed5-4928-b9fd-dafed7b35a13",
+      "firstName": "Isidora medicina",
+      "lastName": "ruke",
+      "date": "2026-07-07",
+      "time": "08:30",
+      "timeEnd": "09:30",
+      "description": "",
+      "updatedAt": 1783330272123
+    },
+    {
       "id": "55f1c0ab-b3a9-477d-a441-0a6f168b0bc2",
       "firstName": "Dunja",
       "lastName": "Ruke noge",
@@ -501,5 +511,5 @@
       "updatedAt": 1783242849680
     }
   ],
-  "updatedAt": 1783286647781
+  "updatedAt": 1783330273490
 }
