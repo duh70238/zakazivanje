@@ -241,6 +241,16 @@
       "updatedAt": 1783330272123
     },
     {
+      "id": "a52609ec-6c7b-407b-998f-718a12f92e89",
+      "firstName": "Kacina koleg",
+      "lastName": "ruke gl",
+      "date": "2026-07-07",
+      "time": "10:00",
+      "timeEnd": "11:00",
+      "description": "",
+      "updatedAt": 1783420323483
+    },
+    {
       "id": "19b08a91-b71f-4c36-858c-d0ebca5da247",
       "firstName": "Natasa moja",
       "lastName": "ruke",
@@ -541,5 +551,5 @@
       "updatedAt": 1783242849680
     }
   ],
-  "updatedAt": 1783420270089
+  "updatedAt": 1783420324272
 }
