@@ -609,17 +609,7 @@
       "timeEnd": "12:00",
       "description": "",
       "updatedAt": 1783453033522
-    },
-    {
-      "id": "e766ab0b-68f0-41e4-ad14-457423f95aa0",
-      "firstName": "Milica Kacina Mrcajevci",
-      "lastName": "korek",
-      "date": "2026-08-28",
-      "time": "18:00",
-      "timeEnd": "19:00",
-      "description": "",
-      "updatedAt": 1783534011146
     }
   ],
-  "updatedAt": 1783534012880
+  "updatedAt": 1783534033381
 }
