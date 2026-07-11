@@ -601,6 +601,16 @@
       "updatedAt": 1783511057802
     },
     {
+      "id": "4585129e-6339-4b36-b39a-c886dd4afcea",
+      "firstName": "Nina kipar",
+      "lastName": "ruke",
+      "date": "2026-08-01",
+      "time": "13:30",
+      "timeEnd": "14:30",
+      "description": "",
+      "updatedAt": 1783790588188
+    },
+    {
       "id": "5b204fd7-5397-47b3-95b5-fa9036de4f04",
       "firstName": "Milica poreska",
       "lastName": "ruke noge frenc",
@@ -641,5 +651,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1783786613532
+  "updatedAt": 1783790589427
 }
