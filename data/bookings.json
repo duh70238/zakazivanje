@@ -463,12 +463,12 @@
     {
       "id": "472dde38-2693-4c1f-9bda-d9c1c1be734e",
       "firstName": "Teodora Brankova",
-      "lastName": "Ruke noge frenc",
+      "lastName": "Ruke noge frenc oko 5500 hiljada",
       "date": "2026-07-24",
       "time": "16:30",
       "timeEnd": "19:00",
       "description": "",
-      "updatedAt": 1783786534855
+      "updatedAt": 1783786612780
     },
     {
       "id": "9da1cc40-cd6c-4fca-9664-8ece00a09564",
@@ -641,5 +641,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1783786535876
+  "updatedAt": 1783786613532
 }
