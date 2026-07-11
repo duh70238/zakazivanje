@@ -501,6 +501,16 @@
       "updatedAt": 1783503969353
     },
     {
+      "id": "c37f10e2-a089-40a4-85e4-4c0fc490fc35",
+      "firstName": "Lana Dalmacija",
+      "lastName": "ruke",
+      "date": "2026-07-24",
+      "time": "15:30",
+      "timeEnd": "16:30",
+      "description": "",
+      "updatedAt": 1783799607253
+    },
+    {
       "id": "472dde38-2693-4c1f-9bda-d9c1c1be734e",
       "firstName": "Teodora Brankova",
       "lastName": "Ruke noge frenc oko 5500 hiljada",
@@ -701,5 +711,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1783799493352
+  "updatedAt": 1783799607992
 }
