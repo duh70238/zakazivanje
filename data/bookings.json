@@ -671,6 +671,16 @@
       "updatedAt": 1783790588188
     },
     {
+      "id": "d2945d4d-4886-4804-9dfc-f210548a8865",
+      "firstName": "Snajka Datsika",
+      "lastName": "ruke",
+      "date": "2026-08-01",
+      "time": "14:30",
+      "timeEnd": "15:30",
+      "description": "",
+      "updatedAt": 1783866027019
+    },
+    {
       "id": "5b204fd7-5397-47b3-95b5-fa9036de4f04",
       "firstName": "Milica poreska",
       "lastName": "ruke noge frenc",
@@ -711,5 +721,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1783799607992
+  "updatedAt": 1783866028238
 }
