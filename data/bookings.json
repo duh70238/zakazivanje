@@ -621,6 +621,16 @@
       "updatedAt": 1783791548123
     },
     {
+      "id": "e64a4e66-3f83-4f1d-950b-eadd150f6422",
+      "firstName": "Nova komsi",
+      "lastName": "ruke",
+      "date": "2026-07-29",
+      "time": "18:30",
+      "timeEnd": "19:30",
+      "description": "",
+      "updatedAt": 1784064405304
+    },
+    {
       "id": "90584f3b-95b6-448e-aa41-712e738a0105",
       "firstName": "Sanja rostilj",
       "lastName": "ruke",
@@ -741,5 +751,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1783976718382
+  "updatedAt": 1784064405586
 }
