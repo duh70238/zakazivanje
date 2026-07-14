@@ -451,6 +451,16 @@
       "updatedAt": 1782865527501
     },
     {
+      "id": "b7c1dec0-59e3-4113-b6d5-04399ead66e6",
+      "firstName": "Nova komsi",
+      "lastName": "noge",
+      "date": "2026-07-22",
+      "time": "18:30",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1784064440758
+    },
+    {
       "id": "a426d1ba-604e-4f22-835d-66998a498498",
       "firstName": "ja",
       "lastName": "trepavice",
@@ -751,5 +761,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784064405586
+  "updatedAt": 1784064441425
 }
