@@ -511,6 +511,16 @@
       "updatedAt": 1783503969353
     },
     {
+      "id": "d99fab05-d281-451d-91c2-aa7390729374",
+      "firstName": "Ena zvezdice",
+      "lastName": "crta",
+      "date": "2026-07-24",
+      "time": "12:30",
+      "timeEnd": "14:15",
+      "description": "",
+      "updatedAt": 1784130017740
+    },
+    {
       "id": "c37f10e2-a089-40a4-85e4-4c0fc490fc35",
       "firstName": "Lana Dalmacija",
       "lastName": "ruke",
@@ -761,5 +771,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784064441425
+  "updatedAt": 1784130018323
 }
