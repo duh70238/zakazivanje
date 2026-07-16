@@ -431,16 +431,6 @@
       "updatedAt": 1783014995732
     },
     {
-      "id": "4f37ad3b-fab5-4a49-9c93-a86e3641e95d",
-      "firstName": "Datsika",
-      "lastName": "ruke frenc",
-      "date": "2026-07-22",
-      "time": "13:00",
-      "timeEnd": "14:30",
-      "description": "",
-      "updatedAt": 1783085673113
-    },
-    {
       "id": "c0bbbf51-cd4f-449f-a862-bd76a185a78f",
       "firstName": "Nataly Kanada",
       "lastName": "ruke",
@@ -801,5 +791,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784191859438
+  "updatedAt": 1784192017098
 }
