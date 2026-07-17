@@ -411,6 +411,16 @@
       "updatedAt": 1784282007904
     },
     {
+      "id": "c13d7518-e883-446c-b081-8fba80c5fa00",
+      "firstName": "Dikic",
+      "lastName": "ruke",
+      "date": "2026-07-19",
+      "time": "15:30",
+      "timeEnd": "16:30",
+      "description": "",
+      "updatedAt": 1784322358944
+    },
+    {
       "id": "f3e85a79-bf42-4919-88d8-87daeecd7d24",
       "firstName": "Datsika",
       "lastName": "ruke frenc",
@@ -871,5 +881,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784320744172
+  "updatedAt": 1784322359418
 }
