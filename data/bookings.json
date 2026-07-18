@@ -381,6 +381,16 @@
       "updatedAt": 1784198042079
     },
     {
+      "id": "d991b37b-dd6c-42d4-910b-eafc47365170",
+      "firstName": "Masa zgodna",
+      "lastName": "ruke",
+      "date": "2026-07-18",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1784390553022
+    },
+    {
       "id": "895a52f5-2ac7-45d5-a888-fcfeda672e6c",
       "firstName": "Ivona losi nokti",
       "lastName": "ruke",
@@ -891,5 +901,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784385603159
+  "updatedAt": 1784390554506
 }
