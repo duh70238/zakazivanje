@@ -501,6 +501,16 @@
       "updatedAt": 1784285617232
     },
     {
+      "id": "6873ee79-eb31-4cfa-b6b7-b33fd66c1a87",
+      "firstName": "Anitina drugarica",
+      "lastName": "ruke",
+      "date": "2026-07-22",
+      "time": "15:00",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1784482714647
+    },
+    {
       "id": "c0bbbf51-cd4f-449f-a862-bd76a185a78f",
       "firstName": "Nataly Kanada",
       "lastName": "ruke",
@@ -951,5 +961,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784482690680
+  "updatedAt": 1784482715240
 }
