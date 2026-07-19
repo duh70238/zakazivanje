@@ -671,6 +671,16 @@
       "updatedAt": 1783420269608
     },
     {
+      "id": "39668d19-8e6b-4262-9f21-b5b4ab9bf1fe",
+      "firstName": "Masina mama",
+      "lastName": "ruke",
+      "date": "2026-07-27",
+      "time": "14:30",
+      "timeEnd": "15:30",
+      "description": "",
+      "updatedAt": 1784468698662
+    },
+    {
       "id": "cb181dac-42d3-4097-9b85-398f123f34ba",
       "firstName": "Milena mala kcerka",
       "lastName": "ruke gl",
@@ -931,5 +941,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784463718239
+  "updatedAt": 1784468699392
 }
