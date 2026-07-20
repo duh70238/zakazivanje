@@ -541,16 +541,6 @@
       "updatedAt": 1782865527501
     },
     {
-      "id": "b7c1dec0-59e3-4113-b6d5-04399ead66e6",
-      "firstName": "Nova komsi",
-      "lastName": "noge i pedikir",
-      "date": "2026-07-22",
-      "time": "18:00",
-      "timeEnd": "19:00",
-      "description": "",
-      "updatedAt": 1784130788190
-    },
-    {
       "id": "56012fdc-9e19-4ce8-a6db-1d6e1b6c2b9c",
       "firstName": "Natasa Dunjina",
       "lastName": "ruke noge",
@@ -981,5 +971,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784543061856
+  "updatedAt": 1784543819530
 }
