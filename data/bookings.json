@@ -753,12 +753,12 @@
     {
       "id": "e64a4e66-3f83-4f1d-950b-eadd150f6422",
       "firstName": "Nova komsi",
-      "lastName": "ruke",
+      "lastName": "ruke pedi i noge",
       "date": "2026-07-29",
       "time": "18:30",
-      "timeEnd": "19:30",
+      "timeEnd": "20:00",
       "description": "",
-      "updatedAt": 1784064405304
+      "updatedAt": 1784546906128
     },
     {
       "id": "bdb9091c-77f3-4f84-9958-de084099f935",
@@ -971,5 +971,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784543819530
+  "updatedAt": 1784546906688
 }
