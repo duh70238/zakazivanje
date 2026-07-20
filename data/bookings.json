@@ -881,6 +881,16 @@
       "updatedAt": 1783504133370
     },
     {
+      "id": "7a473d93-213c-4531-9a46-7897f74579b3",
+      "firstName": "Sestra ruke noge",
+      "lastName": "gl",
+      "date": "2026-08-10",
+      "time": "10:30",
+      "timeEnd": "12:00",
+      "description": "",
+      "updatedAt": 1784565437790
+    },
+    {
       "id": "4b530447-932b-4a5c-a28e-81e92acdbfa0",
       "firstName": "Sestra",
       "lastName": "ruke noge",
@@ -1021,5 +1031,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784548820014
+  "updatedAt": 1784565438232
 }
