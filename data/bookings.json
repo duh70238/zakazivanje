@@ -791,6 +791,16 @@
       "updatedAt": 1783257756816
     },
     {
+      "id": "d7c91dd1-02d3-4029-8a28-7f92a265d283",
+      "firstName": "Miona",
+      "lastName": "ruke",
+      "date": "2026-07-30",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1784548819146
+    },
+    {
       "id": "fafb3ff4-df84-4b3f-b63f-5b6fe24ec342",
       "firstName": "Crni nokti",
       "lastName": "gellak",
@@ -1011,5 +1021,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784548578712
+  "updatedAt": 1784548820014
 }
