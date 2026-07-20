@@ -711,6 +711,16 @@
       "updatedAt": 1783286470998
     },
     {
+      "id": "3b68a37b-e55e-47f1-b9b4-addc8291325f",
+      "firstName": "Lanina Mama",
+      "lastName": "ruke",
+      "date": "2026-07-27",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1784572431197
+    },
+    {
       "id": "79f1a506-53dc-4342-a894-1aa16638f054",
       "firstName": "Kuma Milicina Jelena",
       "lastName": "ruke noge pedikir",
@@ -1031,5 +1041,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784565438232
+  "updatedAt": 1784572431544
 }
