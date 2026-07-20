@@ -901,6 +901,16 @@
       "updatedAt": 1784475964686
     },
     {
+      "id": "8cbfcd45-50fc-40d8-98f0-a2b1e2ffb9ac",
+      "firstName": "Lana Vesnina",
+      "lastName": "ruke noge",
+      "date": "2026-08-10",
+      "time": "19:00",
+      "timeEnd": "20:30",
+      "description": "",
+      "updatedAt": 1784548476428
+    },
+    {
       "id": "3f7b0df9-ccc0-4c95-8438-22f510a4da3c",
       "firstName": "Vasilisa Teodorina",
       "lastName": "Ruke noge",
@@ -991,5 +1001,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784547265710
+  "updatedAt": 1784548477192
 }
