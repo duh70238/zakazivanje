@@ -945,10 +945,10 @@
       "firstName": "Poreska mama",
       "lastName": "polu",
       "date": "2026-08-02",
-      "time": "16:30",
-      "timeEnd": "17:30",
+      "time": "17:00",
+      "timeEnd": "18:00",
       "description": "",
-      "updatedAt": 1784652825282
+      "updatedAt": 1784652919109
     },
     {
       "id": "b11a8b4a-9f27-412c-a771-05140503c5a5",
@@ -1111,5 +1111,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784652826013
+  "updatedAt": 1784652920188
 }
