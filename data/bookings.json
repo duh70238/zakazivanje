@@ -631,6 +631,16 @@
       "updatedAt": 1783786612780
     },
     {
+      "id": "f4ce5865-c059-4c25-92be-133b8c780e36",
+      "firstName": "Bojana adv",
+      "lastName": "Ruke",
+      "date": "2026-07-24",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1784634072562
+    },
+    {
       "id": "9ed0a0eb-f277-4f99-a861-efc61498287e",
       "firstName": "Jelena Anina komsinica",
       "lastName": "ruke",
@@ -1061,5 +1071,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784627583974
+  "updatedAt": 1784634073782
 }
