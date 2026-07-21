@@ -641,6 +641,16 @@
       "updatedAt": 1784634072562
     },
     {
+      "id": "d7ff0575-1995-4a6b-9196-4719faf6ffb9",
+      "firstName": "Mala plava",
+      "lastName": "ruke",
+      "date": "2026-07-25",
+      "time": "08:30",
+      "timeEnd": "09:45",
+      "description": "",
+      "updatedAt": 1784646137965
+    },
+    {
       "id": "9ed0a0eb-f277-4f99-a861-efc61498287e",
       "firstName": "Jelena Anina komsinica",
       "lastName": "ruke",
@@ -1091,5 +1101,5 @@
       "updatedAt": 1783453033522
     }
   ],
-  "updatedAt": 1784644615566
+  "updatedAt": 1784646139511
 }
