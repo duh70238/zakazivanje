@@ -1106,9 +1106,9 @@
       "lastName": "ruke noge",
       "date": "2026-08-13",
       "time": "19:00",
-      "timeEnd": "19:30",
+      "timeEnd": "20:30",
       "description": "",
-      "updatedAt": 1784745187647
+      "updatedAt": 1784745199485
     },
     {
       "id": "fbdb764c-9846-4731-8405-4ed9605fd5e7",
@@ -1141,5 +1141,5 @@
       "updatedAt": 1784725241767
     }
   ],
-  "updatedAt": 1784745188258
+  "updatedAt": 1784745199985
 }
