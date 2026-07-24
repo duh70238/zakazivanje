@@ -1161,6 +1161,16 @@
       "updatedAt": 1784826793160
     },
     {
+      "id": "37380e32-93d5-40fd-9e2b-14cc7b18878c",
+      "firstName": "Lana Dalm",
+      "lastName": "ruke",
+      "date": "2026-08-14",
+      "time": "20:00",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1784904166497
+    },
+    {
       "id": "fbdb764c-9846-4731-8405-4ed9605fd5e7",
       "firstName": "Maya",
       "lastName": "ruke noge",
@@ -1201,5 +1211,5 @@
       "updatedAt": 1784725241767
     }
   ],
-  "updatedAt": 1784885815487
+  "updatedAt": 1784904167398
 }
