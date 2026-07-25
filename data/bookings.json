@@ -861,6 +861,16 @@
       "updatedAt": 1784824110281
     },
     {
+      "id": "05073b16-c28c-490c-a6fa-0a32ec6a5876",
+      "firstName": "Dunjina gellak ruke puno prica",
+      "lastName": "ruke",
+      "date": "2026-07-30",
+      "time": "14:00",
+      "timeEnd": "15:00",
+      "description": "",
+      "updatedAt": 1785008659147
+    },
+    {
       "id": "8ea405f3-fc79-47e2-ac01-d7759cbdc589",
       "firstName": "Sanjina kcerka",
       "lastName": "ruke",
@@ -1281,5 +1291,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785000157815
+  "updatedAt": 1785008659721
 }
