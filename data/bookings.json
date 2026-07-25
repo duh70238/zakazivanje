@@ -1061,6 +1061,16 @@
       "updatedAt": 1783936471015
     },
     {
+      "id": "f5d06ea5-9089-454a-8aff-0bd93680eb19",
+      "firstName": "Neda",
+      "lastName": "ruke",
+      "date": "2026-08-11",
+      "time": "15:30",
+      "timeEnd": "17:30",
+      "description": "",
+      "updatedAt": 1784977069284
+    },
+    {
       "id": "1fda5a0a-2449-4d0d-a502-ac2760cbf94e",
       "firstName": "Milica sestra",
       "lastName": "+381 63 7052 398",
@@ -1231,5 +1241,5 @@
       "updatedAt": 1784725241767
     }
   ],
-  "updatedAt": 1784922307474
+  "updatedAt": 1784977069766
 }
