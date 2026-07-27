@@ -1251,6 +1251,16 @@
       "updatedAt": 1783453033522
     },
     {
+      "id": "7e19d918-77be-40c4-85cd-dcab6e711143",
+      "firstName": "Mala plava",
+      "lastName": "ruke",
+      "date": "2026-08-18",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1785139758143
+    },
+    {
       "id": "503c4a78-ee58-4730-854b-8e200ccf9b41",
       "firstName": "Jana Spanija",
       "lastName": "ruke",
@@ -1301,5 +1311,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785085021799
+  "updatedAt": 1785139758635
 }
