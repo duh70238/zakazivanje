@@ -91,16 +91,6 @@
       "updatedAt": 1782497229727
     },
     {
-      "id": "7d00bd39-6494-4d72-ab89-93c27a557239",
-      "firstName": "Darko",
-      "lastName": "Petrovic",
-      "date": "2026-06-25",
-      "time": "19:17",
-      "timeEnd": "19:37",
-      "description": "kakalksksoa",
-      "updatedAt": 1782408539267
-    },
-    {
       "id": "1859a26a-2730-49c4-bc6b-1801e14b2846",
       "firstName": "Natase",
       "lastName": "plave",
@@ -1351,5 +1341,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785171751825
+  "updatedAt": 1785195120405
 }
