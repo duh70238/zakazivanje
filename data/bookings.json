@@ -581,16 +581,6 @@
       "updatedAt": 1782923898969
     },
     {
-      "id": "308a7178-f84b-4cbf-9dcc-9c2b1629bc01",
-      "firstName": "Mica Masa",
-      "lastName": "ruke",
-      "date": "2026-07-23",
-      "time": "19:00",
-      "timeEnd": "20:00",
-      "description": "",
-      "updatedAt": 1783503969353
-    },
-    {
       "id": "d99fab05-d281-451d-91c2-aa7390729374",
       "firstName": "Ena zvezdice",
       "lastName": "crta",
@@ -1341,5 +1331,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785195120405
+  "updatedAt": 1785196158303
 }
