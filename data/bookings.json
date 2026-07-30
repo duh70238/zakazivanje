@@ -1351,6 +1351,16 @@
       "updatedAt": 1784816993042
     },
     {
+      "id": "6a930bfa-2bbe-4af8-8f30-f0a38a529252",
+      "firstName": "Miona",
+      "lastName": "ruke",
+      "date": "2026-08-20",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1785431861997
+    },
+    {
       "id": "4f517da3-6ef2-44eb-91aa-5543d7009a2c",
       "firstName": "Marijiii rodjus",
       "lastName": "❤️",
@@ -1431,5 +1441,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785422627800
+  "updatedAt": 1785431862434
 }
