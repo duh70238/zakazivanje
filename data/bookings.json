@@ -992,13 +992,13 @@
     },
     {
       "id": "b11a8b4a-9f27-412c-a771-05140503c5a5",
-      "firstName": "Ivana",
-      "lastName": "ruke noge",
+      "firstName": "Milica koms",
+      "lastName": "rukee",
       "date": "2026-08-02",
       "time": "18:00",
       "timeEnd": "19:30",
       "description": "",
-      "updatedAt": 1783504133370
+      "updatedAt": 1785416007171
     },
     {
       "id": "7a473d93-213c-4531-9a46-7897f74579b3",
@@ -1411,5 +1411,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785415616905
+  "updatedAt": 1785416007739
 }
