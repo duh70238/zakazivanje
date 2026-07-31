@@ -871,16 +871,6 @@
       "updatedAt": 1784548819146
     },
     {
-      "id": "fafb3ff4-df84-4b3f-b63f-5b6fe24ec342",
-      "firstName": "Crni nokti",
-      "lastName": "gellak",
-      "date": "2026-07-31",
-      "time": "15:00",
-      "timeEnd": "15:45",
-      "description": "",
-      "updatedAt": 1784547030075
-    },
-    {
       "id": "def6ebcf-2166-433d-8e3f-ab06e5fb675f",
       "firstName": "Isidora medicina",
       "lastName": "ruke",
@@ -889,6 +879,16 @@
       "timeEnd": "17:00",
       "description": "",
       "updatedAt": 1785235959509
+    },
+    {
+      "id": "fafb3ff4-df84-4b3f-b63f-5b6fe24ec342",
+      "firstName": "Crni nokti",
+      "lastName": "gellak",
+      "date": "2026-07-31",
+      "time": "17:00",
+      "timeEnd": "17:45",
+      "description": "",
+      "updatedAt": 1785497191149
     },
     {
       "id": "2d95e916-6a5e-4c9b-acdb-bf34cb5708ea",
@@ -1431,5 +1431,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785490507173
+  "updatedAt": 1785497191576
 }
