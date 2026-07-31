@@ -691,16 +691,6 @@
       "updatedAt": 1783286617942
     },
     {
-      "id": "2995b663-e8dc-4eec-9ad4-0e42e365e3b4",
-      "firstName": "Marija kacina koleg",
-      "lastName": "Ruke",
-      "date": "2026-07-27",
-      "time": "10:00",
-      "timeEnd": "11:00",
-      "description": "",
-      "updatedAt": 1783420269608
-    },
-    {
       "id": "39668d19-8e6b-4262-9f21-b5b4ab9bf1fe",
       "firstName": "Masina mama",
       "lastName": "ruke",
@@ -1451,5 +1441,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785433573693
+  "updatedAt": 1785485452728
 }
