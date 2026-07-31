@@ -901,16 +901,6 @@
       "updatedAt": 1783286647296
     },
     {
-      "id": "29dddb4f-eff7-43a4-8edd-ea7eb80d307b",
-      "firstName": "Dijana Sisa pse 0641222200",
-      "lastName": "ruke noge",
-      "date": "2026-08-01",
-      "time": "09:30",
-      "timeEnd": "11:00",
-      "description": "",
-      "updatedAt": 1785000157281
-    },
-    {
       "id": "1e2d6adb-f53d-4550-9834-ff176face283",
       "firstName": "Olja Telekom",
       "lastName": "ruke crta",
@@ -1441,5 +1431,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785485476988
+  "updatedAt": 1785490507173
 }
