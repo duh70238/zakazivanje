@@ -882,13 +882,13 @@
     },
     {
       "id": "2d95e916-6a5e-4c9b-acdb-bf34cb5708ea",
-      "firstName": "Jana Priboj 2",
-      "lastName": "Ruke noge",
+      "firstName": "Kaca sestra",
+      "lastName": "Ruke",
       "date": "2026-07-31",
       "time": "18:00",
       "timeEnd": "19:30",
       "description": "",
-      "updatedAt": 1783286647296
+      "updatedAt": 1785497269156
     },
     {
       "id": "def6ebcf-2166-433d-8e3f-ab06e5fb675f",
@@ -1431,5 +1431,5 @@
       "updatedAt": 1784983498233
     }
   ],
-  "updatedAt": 1785497243649
+  "updatedAt": 1785497269988
 }
