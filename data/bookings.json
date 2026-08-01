@@ -951,6 +951,16 @@
       "updatedAt": 1783866027019
     },
     {
+      "id": "2dfca098-c204-46fe-998a-3ff325c68ad0",
+      "firstName": "Nina komsinica iz zgrade",
+      "lastName": "ruke gl",
+      "date": "2026-08-02",
+      "time": "12:30",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1785628117266
+    },
+    {
       "id": "1dcfe174-97bb-4477-8375-d52afa75c51d",
       "firstName": "Anita",
       "lastName": "sve",
@@ -1521,5 +1531,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1785592235078
+  "updatedAt": 1785628117932
 }
