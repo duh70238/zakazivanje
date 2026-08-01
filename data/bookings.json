@@ -1479,7 +1479,17 @@
       "timeEnd": "12:00",
       "description": "",
       "updatedAt": 1784983498233
+    },
+    {
+      "id": "6140f979-43d6-42a1-a3ed-e0be863307a9",
+      "firstName": "Olja Telekom",
+      "lastName": "ruke boja",
+      "date": "2026-09-10",
+      "time": "15:00",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1785578367646
     }
   ],
-  "updatedAt": 1785531255045
+  "updatedAt": 1785578368026
 }
