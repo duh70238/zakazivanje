@@ -1391,6 +1391,16 @@
       "updatedAt": 1784816993042
     },
     {
+      "id": "d9f52326-c856-499e-b202-1e12d4692670",
+      "firstName": "Nina Kipar",
+      "lastName": "ruke",
+      "date": "2026-08-20",
+      "time": "17:00",
+      "timeEnd": "18:00",
+      "description": "",
+      "updatedAt": 1785588009512
+    },
+    {
       "id": "6a930bfa-2bbe-4af8-8f30-f0a38a529252",
       "firstName": "Miona",
       "lastName": "ruke",
@@ -1501,5 +1511,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1785580609703
+  "updatedAt": 1785588010009
 }
