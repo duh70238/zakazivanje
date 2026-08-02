@@ -1471,6 +1471,16 @@
       "updatedAt": 1785687643440
     },
     {
+      "id": "c252da92-1ffa-4d43-a3f7-2f845e3bc9f6",
+      "firstName": "Kcerka",
+      "lastName": "ruke noge",
+      "date": "2026-08-25",
+      "time": "18:30",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1785687671855
+    },
+    {
       "id": "c087701c-4f44-4189-8576-2f03d8e945f5",
       "firstName": "Sanja rostilj",
       "lastName": "gl",
@@ -1541,5 +1551,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1785687643993
+  "updatedAt": 1785687672870
 }
