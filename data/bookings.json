@@ -1001,16 +1001,6 @@
       "updatedAt": 1785416007171
     },
     {
-      "id": "4e7e45bb-5b1d-4a2e-9e76-c447141f6cb5",
-      "firstName": "Brankica adv",
-      "lastName": "ruke noge",
-      "date": "2026-08-02",
-      "time": "19:30",
-      "timeEnd": "21:00",
-      "description": "",
-      "updatedAt": 1785526115543
-    },
-    {
       "id": "e468d6d2-5270-4a31-82e4-3a848c8153cc",
       "firstName": "Mica Masa",
       "lastName": "ruke noge",
@@ -1571,5 +1561,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1785703499301
+  "updatedAt": 1785707497119
 }
