@@ -1471,6 +1471,16 @@
       "updatedAt": 1785168323391
     },
     {
+      "id": "041ea3ea-6be2-4974-a2c8-dff145153389",
+      "firstName": "Mica Masa",
+      "lastName": "ruke",
+      "date": "2026-08-24",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1785703497838
+    },
+    {
       "id": "485cdb39-09d2-4c35-861d-42a285f8a139",
       "firstName": "Mama poreska",
       "lastName": "ruke noge",
@@ -1561,5 +1571,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1785687781738
+  "updatedAt": 1785703499301
 }
