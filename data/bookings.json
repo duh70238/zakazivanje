@@ -1301,6 +1301,16 @@
       "updatedAt": 1785736184771
     },
     {
+      "id": "12afdf13-c710-4e30-ada6-15db105e47b9",
+      "firstName": "Nova koms",
+      "lastName": "ruke",
+      "date": "2026-08-15",
+      "time": "14:30",
+      "timeEnd": "15:30",
+      "description": "",
+      "updatedAt": 1785737718578
+    },
+    {
       "id": "df812316-ff1f-46b7-a459-40bb7cc246ec",
       "firstName": "Natasa Moja",
       "lastName": "ruke",
@@ -1571,5 +1581,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1785736278516
+  "updatedAt": 1785737719004
 }
