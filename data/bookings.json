@@ -1081,6 +1081,16 @@
       "updatedAt": 1784548476428
     },
     {
+      "id": "43b5f361-4bce-4c3c-83fa-0e3145feb912",
+      "firstName": "Helena",
+      "lastName": "ruke noge",
+      "date": "2026-08-10",
+      "time": "20:30",
+      "timeEnd": "22:00",
+      "description": "",
+      "updatedAt": 1785962492111
+    },
+    {
       "id": "d5fba8a6-6267-4378-8b2e-59b7c6704c21",
       "firstName": "Datsika",
       "lastName": "ruke",
@@ -1591,5 +1601,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1785961360539
+  "updatedAt": 1785962492834
 }
