@@ -1091,6 +1091,16 @@
       "updatedAt": 1785962492111
     },
     {
+      "id": "a282b1ea-09c8-4ddc-bcbf-ebf6748f8dba",
+      "firstName": "Profesorica matem Alexandra",
+      "lastName": "ruke",
+      "date": "2026-08-11",
+      "time": "10:00",
+      "timeEnd": "11:00",
+      "description": "",
+      "updatedAt": 1786136359735
+    },
+    {
       "id": "d5fba8a6-6267-4378-8b2e-59b7c6704c21",
       "firstName": "Datsika",
       "lastName": "ruke",
@@ -1631,5 +1641,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786106549650
+  "updatedAt": 1786136360494
 }
