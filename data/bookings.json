@@ -1185,10 +1185,10 @@
       "firstName": "Ivana Dragana",
       "lastName": "Ruke gellak",
       "date": "2026-08-12",
-      "time": "16:00",
-      "timeEnd": "17:45",
+      "time": "11:30",
+      "timeEnd": "13:30",
       "description": "",
-      "updatedAt": 1784317594530
+      "updatedAt": 1786210802879
     },
     {
       "id": "de494a5a-02bd-4f2d-bfeb-83ae65ed8cea",
@@ -1661,5 +1661,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786208031623
+  "updatedAt": 1786210803630
 }
