@@ -1161,16 +1161,6 @@
       "updatedAt": 1784922237341
     },
     {
-      "id": "65844881-4fb9-42bc-b0b1-cb17e2abe1e9",
-      "firstName": "Sonja mozda i kcerka",
-      "lastName": "ruke",
-      "date": "2026-08-11",
-      "time": "20:45",
-      "timeEnd": "22:00",
-      "description": "",
-      "updatedAt": 1786208030857
-    },
-    {
       "id": "dc37b4b8-0c2e-4286-990d-e3cb19e656ae",
       "firstName": "Dunja",
       "lastName": "sve",
@@ -1691,5 +1681,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786299917539
+  "updatedAt": 1786299949591
 }
