@@ -1271,6 +1271,16 @@
       "updatedAt": 1784745199485
     },
     {
+      "id": "66b4054f-d964-4981-a9f4-30c119533942",
+      "firstName": "Sonja",
+      "lastName": "ruke",
+      "date": "2026-08-13",
+      "time": "20:30",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1786299786725
+    },
+    {
       "id": "09d2a215-75ef-4ce5-8f12-76466073272f",
       "firstName": "jana priboje",
       "lastName": "proveri",
@@ -1671,5 +1681,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786217768064
+  "updatedAt": 1786299787237
 }
