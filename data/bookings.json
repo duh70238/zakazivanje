@@ -1521,6 +1521,16 @@
       "updatedAt": 1785431861997
     },
     {
+      "id": "a975115e-b1c6-46f9-a0a3-14f9c2ce8f43",
+      "firstName": "Lanina mama",
+      "lastName": "ruke",
+      "date": "2026-08-20",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1786394573050
+    },
+    {
       "id": "4f517da3-6ef2-44eb-91aa-5543d7009a2c",
       "firstName": "Marijiii rodjus",
       "lastName": "❤️",
@@ -1731,5 +1741,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786387866541
+  "updatedAt": 1786394573730
 }
