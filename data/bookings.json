@@ -1631,6 +1631,16 @@
       "updatedAt": 1785339068073
     },
     {
+      "id": "6af6240d-172c-488e-bd9a-6988788a769c",
+      "firstName": "Dikic",
+      "lastName": "ruke",
+      "date": "2026-08-29",
+      "time": "10:00",
+      "timeEnd": "11:00",
+      "description": "",
+      "updatedAt": 1786377612001
+    },
+    {
       "id": "6be4e57a-11cc-4dd1-a596-745a20a69bf7",
       "firstName": "Angela Merkel",
       "lastName": "ruke",
@@ -1701,5 +1711,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786377552062
+  "updatedAt": 1786377612936
 }
