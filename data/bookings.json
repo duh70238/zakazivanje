@@ -1631,6 +1631,16 @@
       "updatedAt": 1785339068073
     },
     {
+      "id": "89b993cd-229c-4e46-88b4-0ac24347dcd3",
+      "firstName": "Helena",
+      "lastName": "ruke noge frenc",
+      "date": "2026-08-27",
+      "time": "18:30",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1786387865907
+    },
+    {
       "id": "6af6240d-172c-488e-bd9a-6988788a769c",
       "firstName": "Dikic",
       "lastName": "ruke",
@@ -1721,5 +1731,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786387151299
+  "updatedAt": 1786387866541
 }
