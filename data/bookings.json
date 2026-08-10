@@ -1171,16 +1171,6 @@
       "updatedAt": 1786394824167
     },
     {
-      "id": "dc37b4b8-0c2e-4286-990d-e3cb19e656ae",
-      "firstName": "Dunja",
-      "lastName": "sve",
-      "date": "2026-08-12",
-      "time": "10:00",
-      "timeEnd": "11:45",
-      "description": "",
-      "updatedAt": 1786210849978
-    },
-    {
       "id": "069bd206-3289-42f1-9feb-c58f06fa141a",
       "firstName": "Ivana Dragana",
       "lastName": "Ruke gellak",
@@ -1751,5 +1741,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786394824700
+  "updatedAt": 1786394970380
 }
