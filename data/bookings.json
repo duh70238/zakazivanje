@@ -1591,16 +1591,6 @@
       "updatedAt": 1786048766930
     },
     {
-      "id": "f7ca1ba0-97b6-419a-b6fc-e90aab7f2453",
-      "firstName": "Marina jp",
-      "lastName": "ruke noge lak",
-      "date": "2026-08-24",
-      "time": "16:30",
-      "timeEnd": "18:00",
-      "description": "",
-      "updatedAt": 1785168323391
-    },
-    {
       "id": "041ea3ea-6be2-4974-a2c8-dff145153389",
       "firstName": "Mica Masa",
       "lastName": "ruke",
@@ -1801,5 +1791,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786484026373
+  "updatedAt": 1786484042100
 }
