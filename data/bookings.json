@@ -1681,6 +1681,16 @@
       "updatedAt": 1785580608561
     },
     {
+      "id": "84316f56-623f-428d-b026-6e3c4c6738d2",
+      "firstName": "odmaraj",
+      "lastName": "ceo dann",
+      "date": "2026-08-30",
+      "time": "08:00",
+      "timeEnd": "22:00",
+      "description": "",
+      "updatedAt": 1786473680373
+    },
+    {
       "id": "ccdb11a1-3bc2-4c7c-bff3-417b59d4f9fb",
       "firstName": "neda",
       "lastName": "ruke noge",
@@ -1771,5 +1781,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786461683288
+  "updatedAt": 1786473681986
 }
