@@ -1701,6 +1701,16 @@
       "updatedAt": 1786443242579
     },
     {
+      "id": "90959896-e3c5-46a2-a35a-7b8a1d60d4b6",
+      "firstName": "Sestra gl Milica banka postanska",
+      "lastName": "0637052398",
+      "date": "2026-08-31",
+      "time": "13:30",
+      "timeEnd": "14:30",
+      "description": "",
+      "updatedAt": 1786461681891
+    },
+    {
       "id": "a123b10e-8940-4101-bd22-96369d1594af",
       "firstName": "Sestra",
       "lastName": "ruke",
@@ -1761,5 +1771,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786443243012
+  "updatedAt": 1786461683288
 }
