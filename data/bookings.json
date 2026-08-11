@@ -1721,6 +1721,16 @@
       "updatedAt": 1786461681891
     },
     {
+      "id": "4b307917-7341-4f0f-aef5-b9caf0db05b9",
+      "firstName": "Zdravka tetka",
+      "lastName": "ruke",
+      "date": "2026-08-31",
+      "time": "17:00",
+      "timeEnd": "18:00",
+      "description": "",
+      "updatedAt": 1786473734318
+    },
+    {
       "id": "a123b10e-8940-4101-bd22-96369d1594af",
       "firstName": "Sestra",
       "lastName": "ruke",
@@ -1781,5 +1791,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786473681986
+  "updatedAt": 1786473735163
 }
