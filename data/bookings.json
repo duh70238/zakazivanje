@@ -1691,6 +1691,16 @@
       "updatedAt": 1784977120276
     },
     {
+      "id": "a07d6170-5db6-4493-a544-547ea2459488",
+      "firstName": "Datsika",
+      "lastName": "ruke",
+      "date": "2026-08-31",
+      "time": "12:30",
+      "timeEnd": "13:30",
+      "description": "",
+      "updatedAt": 1786443242579
+    },
+    {
       "id": "a123b10e-8940-4101-bd22-96369d1594af",
       "firstName": "Sestra",
       "lastName": "ruke",
@@ -1751,5 +1761,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786396646945
+  "updatedAt": 1786443243012
 }
