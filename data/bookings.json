@@ -1315,10 +1315,10 @@
       "firstName": "Dejana",
       "lastName": "ruke",
       "date": "2026-08-14",
-      "time": "17:30",
-      "timeEnd": "18:30",
+      "time": "16:00",
+      "timeEnd": "17:00",
       "description": "",
-      "updatedAt": 1784826793160
+      "updatedAt": 1786540467311
     },
     {
       "id": "37380e32-93d5-40fd-9e2b-14cc7b18878c",
@@ -1801,5 +1801,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786536093173
+  "updatedAt": 1786540468562
 }
