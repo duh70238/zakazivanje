@@ -1325,10 +1325,10 @@
       "firstName": "Lana Dalm",
       "lastName": "ruke",
       "date": "2026-08-14",
-      "time": "20:00",
-      "timeEnd": "21:00",
+      "time": "17:00",
+      "timeEnd": "18:00",
       "description": "",
-      "updatedAt": 1784904166497
+      "updatedAt": 1786655273961
     },
     {
       "id": "fbdb764c-9846-4731-8405-4ed9605fd5e7",
@@ -1841,5 +1841,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786640868340
+  "updatedAt": 1786655275378
 }
