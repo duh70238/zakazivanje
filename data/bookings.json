@@ -1441,6 +1441,16 @@
       "updatedAt": 1785402879801
     },
     {
+      "id": "71acaa11-0c42-4577-b1ca-15298d8c27f5",
+      "firstName": "Mica masa drugarica",
+      "lastName": "ruke noge frenc",
+      "date": "2026-08-19",
+      "time": "12:30",
+      "timeEnd": "15:00",
+      "description": "",
+      "updatedAt": 1786659316334
+    },
+    {
       "id": "f0090fed-2c39-4821-92e1-872d4ec10f3c",
       "firstName": "Mala plava",
       "lastName": "ruke",
@@ -1841,5 +1851,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786655275378
+  "updatedAt": 1786659317403
 }
