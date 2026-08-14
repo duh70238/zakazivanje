@@ -1281,16 +1281,6 @@
       "updatedAt": 1786299786725
     },
     {
-      "id": "09d2a215-75ef-4ce5-8f12-76466073272f",
-      "firstName": "jana priboje",
-      "lastName": "proveri",
-      "date": "2026-08-14",
-      "time": "11:00",
-      "timeEnd": "12:00",
-      "description": "",
-      "updatedAt": 1786140504176
-    },
-    {
       "id": "a9e45586-da74-4fc8-9888-e2c7005f665b",
       "firstName": "Dunja sve",
       "lastName": "ruke ped noge",
@@ -1299,6 +1289,16 @@
       "timeEnd": "13:00",
       "description": "",
       "updatedAt": 1786733767112
+    },
+    {
+      "id": "09d2a215-75ef-4ce5-8f12-76466073272f",
+      "firstName": "Jana skida r i noge",
+      "lastName": "P",
+      "date": "2026-08-14",
+      "time": "13:00",
+      "timeEnd": "14:00",
+      "description": "",
+      "updatedAt": 1786733812934
     },
     {
       "id": "48832bcf-73d0-47e7-af9e-484a2b4f0569",
@@ -1931,5 +1931,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786733768060
+  "updatedAt": 1786733813652
 }
