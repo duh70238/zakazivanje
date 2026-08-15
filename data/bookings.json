@@ -1901,6 +1901,16 @@
       "updatedAt": 1786377550984
     },
     {
+      "id": "9117ff33-b850-40df-9305-6e946644da07",
+      "firstName": "Nova koms",
+      "lastName": "ruke",
+      "date": "2026-09-05",
+      "time": "12:00",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1786800452220
+    },
+    {
       "id": "b5d05585-07e4-4060-a32d-c73bea35a303",
       "firstName": "Lana Dalm",
       "lastName": "ruke",
@@ -1951,5 +1961,5 @@
       "updatedAt": 1785578773371
     }
   ],
-  "updatedAt": 1786796987695
+  "updatedAt": 1786800453597
 }
