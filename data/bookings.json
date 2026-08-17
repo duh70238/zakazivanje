@@ -2009,7 +2009,17 @@
       "timeEnd": "19:00",
       "description": "",
       "updatedAt": 1786889989856
+    },
+    {
+      "id": "bfb290e4-31db-4676-b7c5-126ef9a524ba",
+      "firstName": "Natasa Masina",
+      "lastName": "ruke",
+      "date": "2026-09-15",
+      "time": "15:00",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1786973299429
     }
   ],
-  "updatedAt": 1786968213152
+  "updatedAt": 1786973300496
 }
