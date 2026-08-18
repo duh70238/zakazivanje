@@ -1901,6 +1901,16 @@
       "updatedAt": 1786968212157
     },
     {
+      "id": "45a2bfe3-25c8-47bd-99cf-12e2528c5c03",
+      "firstName": "Jelena 060-3088398",
+      "lastName": "za edukaciju javite",
+      "date": "2026-09-01",
+      "time": "16:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1787073271286
+    },
+    {
       "id": "1c19da09-7799-4af0-bca2-1890a2a58459",
       "firstName": "Dejana",
       "lastName": "ruke",
@@ -2071,5 +2081,5 @@
       "updatedAt": 1786973299429
     }
   ],
-  "updatedAt": 1787045878404
+  "updatedAt": 1787073272430
 }
