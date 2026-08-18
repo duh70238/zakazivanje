@@ -1981,6 +1981,16 @@
       "updatedAt": 1786800625498
     },
     {
+      "id": "41641d38-70b8-466f-b4d1-d539011a990b",
+      "firstName": "Ne radis",
+      "lastName": "odm",
+      "date": "2026-09-06",
+      "time": "08:00",
+      "timeEnd": "22:00",
+      "description": "",
+      "updatedAt": 1787087041225
+    },
+    {
       "id": "41fdec9c-a431-4557-8741-aa5118fb7db8",
       "firstName": "Trepavice",
       "lastName": "ja",
@@ -2091,5 +2101,5 @@
       "updatedAt": 1786973299429
     }
   ],
-  "updatedAt": 1787086984337
+  "updatedAt": 1787087042184
 }
