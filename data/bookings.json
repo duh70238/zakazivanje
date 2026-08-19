@@ -1531,16 +1531,6 @@
       "updatedAt": 1786899102760
     },
     {
-      "id": "073c94e8-7713-4cc2-977c-7f0faa7009e8",
-      "firstName": "Ada mol kuma",
-      "lastName": "ruke noge",
-      "date": "2026-08-20",
-      "time": "10:00",
-      "timeEnd": "12:00",
-      "description": "",
-      "updatedAt": 1785256534878
-    },
-    {
       "id": "df195f28-9730-4c51-9846-45450eb2f198",
       "firstName": "Milica Kacina",
       "lastName": "065-44-23-521",
@@ -2111,5 +2101,5 @@
       "updatedAt": 1786973299429
     }
   ],
-  "updatedAt": 1787142367034
+  "updatedAt": 1787144830916
 }
