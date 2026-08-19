@@ -1531,16 +1531,6 @@
       "updatedAt": 1786899102760
     },
     {
-      "id": "df195f28-9730-4c51-9846-45450eb2f198",
-      "firstName": "Milica Kacina",
-      "lastName": "065-44-23-521",
-      "date": "2026-08-20",
-      "time": "12:00",
-      "timeEnd": "13:00",
-      "description": "",
-      "updatedAt": 1785261805965
-    },
-    {
       "id": "a577c8d8-5785-43f8-bff9-d9ff7afad189",
       "firstName": "Visoka Aldxandr",
       "lastName": "ruke",
@@ -1559,6 +1549,16 @@
       "timeEnd": "16:00",
       "description": "",
       "updatedAt": 1784816993042
+    },
+    {
+      "id": "df195f28-9730-4c51-9846-45450eb2f198",
+      "firstName": "Milica Kacina",
+      "lastName": "065-44-23-521",
+      "date": "2026-08-20",
+      "time": "16:00",
+      "timeEnd": "17:00",
+      "description": "",
+      "updatedAt": 1787171262619
     },
     {
       "id": "d9f52326-c856-499e-b202-1e12d4692670",
@@ -2111,5 +2111,5 @@
       "updatedAt": 1786973299429
     }
   ],
-  "updatedAt": 1787154639545
+  "updatedAt": 1787171263193
 }
