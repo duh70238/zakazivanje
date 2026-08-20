@@ -2091,6 +2091,16 @@
       "updatedAt": 1787086983744
     },
     {
+      "id": "85d3f011-acfe-4831-8167-3c5f84915826",
+      "firstName": "Aristotelova zena",
+      "lastName": "ruke",
+      "date": "2026-09-12",
+      "time": "12:00",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1787242465048
+    },
+    {
       "id": "6b8bdecb-798d-4134-9efe-b1acb03a4e3d",
       "firstName": "Natasa moja",
       "lastName": "ruke",
@@ -2131,5 +2141,5 @@
       "updatedAt": 1786973299429
     }
   ],
-  "updatedAt": 1787234934418
+  "updatedAt": 1787242465737
 }
