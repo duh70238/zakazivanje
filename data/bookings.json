@@ -1751,6 +1751,16 @@
       "updatedAt": 1786640867853
     },
     {
+      "id": "ae77bae4-d5b7-45c1-a574-f0b62f70090c",
+      "firstName": "Zdrava hrana",
+      "lastName": "ruke",
+      "date": "2026-08-27",
+      "time": "13:00",
+      "timeEnd": "14:30",
+      "description": "",
+      "updatedAt": 1787259176911
+    },
+    {
       "id": "c2f6a259-44ff-4323-bfe3-d35bda1ab7ca",
       "firstName": "Sanjina cerka",
       "lastName": "fremc",
@@ -2171,5 +2181,5 @@
       "updatedAt": 1787254524931
     }
   ],
-  "updatedAt": 1787257878938
+  "updatedAt": 1787259177272
 }
