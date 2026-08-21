@@ -1665,10 +1665,10 @@
       "firstName": "Gaga viber",
       "lastName": "ruke gl",
       "date": "2026-08-22",
-      "time": "12:30",
-      "timeEnd": "13:30",
+      "time": "14:00",
+      "timeEnd": "15:00",
       "description": "",
-      "updatedAt": 1786968142679
+      "updatedAt": 1787337820242
     },
     {
       "id": "7b306d08-8f1e-4a7a-bc86-87e4a643d902",
@@ -2231,5 +2231,5 @@
       "updatedAt": 1787254524931
     }
   ],
-  "updatedAt": 1787337737414
+  "updatedAt": 1787337821099
 }
