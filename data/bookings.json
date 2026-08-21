@@ -1761,6 +1761,16 @@
       "updatedAt": 1786640867853
     },
     {
+      "id": "357bac6a-c033-492f-9b5a-dfd82fbff76d",
+      "firstName": "Kuma Ada m",
+      "lastName": "sve",
+      "date": "2026-08-26",
+      "time": "19:00",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1787337736911
+    },
+    {
       "id": "ae77bae4-d5b7-45c1-a574-f0b62f70090c",
       "firstName": "Zdrava hrana",
       "lastName": "ruke",
@@ -2221,5 +2231,5 @@
       "updatedAt": 1787254524931
     }
   ],
-  "updatedAt": 1787336677528
+  "updatedAt": 1787337737414
 }
