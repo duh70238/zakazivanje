@@ -1851,6 +1851,16 @@
       "updatedAt": 1785580608561
     },
     {
+      "id": "6614f752-1674-403d-a758-889d1775d727",
+      "firstName": "Ivona",
+      "lastName": "ruke",
+      "date": "2026-08-29",
+      "time": "12:00",
+      "timeEnd": "14:00",
+      "description": "",
+      "updatedAt": 1787561374757
+    },
+    {
       "id": "84316f56-623f-428d-b026-6e3c4c6738d2",
       "firstName": "odmaraj",
       "lastName": "ceo dann",
@@ -2241,5 +2251,5 @@
       "updatedAt": 1787414318232
     }
   ],
-  "updatedAt": 1787414318717
+  "updatedAt": 1787561375272
 }
