@@ -1851,6 +1851,16 @@
       "updatedAt": 1786956391775
     },
     {
+      "id": "a4419275-93f4-463c-abc6-7490886c9f45",
+      "firstName": "Anjina babica",
+      "lastName": "sve",
+      "date": "2026-08-28",
+      "time": "19:00",
+      "timeEnd": "20:30",
+      "description": "",
+      "updatedAt": 1787605312492
+    },
+    {
       "id": "6af6240d-172c-488e-bd9a-6988788a769c",
       "firstName": "Dikic",
       "lastName": "ruke",
@@ -2261,5 +2271,5 @@
       "updatedAt": 1787414318232
     }
   ],
-  "updatedAt": 1787575917652
+  "updatedAt": 1787605312830
 }
