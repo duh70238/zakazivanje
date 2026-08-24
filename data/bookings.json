@@ -1931,16 +1931,6 @@
       "updatedAt": 1786473734318
     },
     {
-      "id": "2f5458c8-b132-442a-b851-f6fa01454e10",
-      "firstName": "Ivona losi nokti",
-      "lastName": "ruke",
-      "date": "2026-08-31",
-      "time": "20:00",
-      "timeEnd": "21:30",
-      "description": "",
-      "updatedAt": 1786535526464
-    },
-    {
       "id": "a123b10e-8940-4101-bd22-96369d1594af",
       "firstName": "Sestra",
       "lastName": "ruke",
@@ -2261,5 +2251,5 @@
       "updatedAt": 1787414318232
     }
   ],
-  "updatedAt": 1787571393322
+  "updatedAt": 1787571560469
 }
