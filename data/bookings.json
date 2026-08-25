@@ -2041,6 +2041,16 @@
       "updatedAt": 1786534739741
     },
     {
+      "id": "45d2c655-823c-4a85-9ae7-e42e463ff2ea",
+      "firstName": "Ana Min kulz",
+      "lastName": "ruke",
+      "date": "2026-09-04",
+      "time": "16:00",
+      "timeEnd": "17:00",
+      "description": "",
+      "updatedAt": 1787658962597
+    },
+    {
       "id": "21b2f543-d051-40db-9165-61af2524c747",
       "firstName": "Ana",
       "lastName": "ruke",
@@ -2271,5 +2281,5 @@
       "updatedAt": 1787414318232
     }
   ],
-  "updatedAt": 1787655415143
+  "updatedAt": 1787658963777
 }
