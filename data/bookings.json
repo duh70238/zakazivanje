@@ -2291,6 +2291,16 @@
       "updatedAt": 1787414318232
     },
     {
+      "id": "f50621f3-55b8-4e42-9ffc-0cb91e20cf7a",
+      "firstName": "Nova komsinic",
+      "lastName": "ruke",
+      "date": "2026-09-19",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1787687484848
+    },
+    {
       "id": "12bea3ed-2af7-47c2-92e3-91898815d56a",
       "firstName": "Poredka",
       "lastName": "mama kci",
@@ -2311,5 +2321,5 @@
       "updatedAt": 1787681529325
     }
   ],
-  "updatedAt": 1787687039302
+  "updatedAt": 1787687486237
 }
