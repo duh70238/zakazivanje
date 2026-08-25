@@ -1751,16 +1751,6 @@
       "updatedAt": 1785422626258
     },
     {
-      "id": "d65ab754-f6ee-4000-86fd-cdf594c0ca9d",
-      "firstName": "Anjina babica",
-      "lastName": "ruke noge",
-      "date": "2026-08-26",
-      "time": "17:30",
-      "timeEnd": "19:00",
-      "description": "",
-      "updatedAt": 1786640867853
-    },
-    {
       "id": "357bac6a-c033-492f-9b5a-dfd82fbff76d",
       "firstName": "Kuma Ada m",
       "lastName": "sve",
@@ -2271,5 +2261,5 @@
       "updatedAt": 1787414318232
     }
   ],
-  "updatedAt": 1787605312830
+  "updatedAt": 1787655385461
 }
