@@ -1901,6 +1901,16 @@
       "updatedAt": 1787561374757
     },
     {
+      "id": "2a505db1-9e35-4195-987e-3c016c6a6665",
+      "firstName": "Crta",
+      "lastName": "crvena",
+      "date": "2026-08-29",
+      "time": "14:00",
+      "timeEnd": "15:30",
+      "description": "",
+      "updatedAt": 1787772206198
+    },
+    {
       "id": "84316f56-623f-428d-b026-6e3c4c6738d2",
       "firstName": "odmaraj",
       "lastName": "ceo dann",
@@ -2371,5 +2381,5 @@
       "updatedAt": 1787768592749
     }
   ],
-  "updatedAt": 1787768593292
+  "updatedAt": 1787772208235
 }
