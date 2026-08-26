@@ -2081,6 +2081,16 @@
       "updatedAt": 1787658962597
     },
     {
+      "id": "61d6ab94-ab8a-4bdb-8fc9-9431f726fdc0",
+      "firstName": "Sto prica Natasine koleginice",
+      "lastName": "ruke",
+      "date": "2026-09-04",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1787772911299
+    },
+    {
       "id": "9117ff33-b850-40df-9305-6e946644da07",
       "firstName": "Nova koms",
       "lastName": "ruke noge",
@@ -2381,5 +2391,5 @@
       "updatedAt": 1787768592749
     }
   ],
-  "updatedAt": 1787772208235
+  "updatedAt": 1787772911832
 }
