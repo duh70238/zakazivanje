@@ -1781,6 +1781,16 @@
       "updatedAt": 1787337736911
     },
     {
+      "id": "b4cac303-570b-4a78-a60c-bb672ba9c9fc",
+      "firstName": "Nataly K",
+      "lastName": "ruke",
+      "date": "2026-08-27",
+      "time": "12:00",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1787739391178
+    },
+    {
       "id": "ae77bae4-d5b7-45c1-a574-f0b62f70090c",
       "firstName": "Zdrava hrana",
       "lastName": "ruke",
@@ -2331,5 +2341,5 @@
       "updatedAt": 1787681529325
     }
   ],
-  "updatedAt": 1787690341594
+  "updatedAt": 1787739392492
 }
