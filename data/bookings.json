@@ -2321,6 +2321,16 @@
       "updatedAt": 1787687484848
     },
     {
+      "id": "880f3569-7309-4e4c-8640-5ee9176a8b01",
+      "firstName": "Vidi",
+      "lastName": "da odmaras 😂",
+      "date": "2026-09-21",
+      "time": "08:00",
+      "timeEnd": "22:00",
+      "description": "",
+      "updatedAt": 1787754585440
+    },
+    {
       "id": "78f0f527-1fe0-4d4c-97bd-736db2befaff",
       "firstName": "Sanja",
       "lastName": "rostilj",
@@ -2351,5 +2361,5 @@
       "updatedAt": 1787681529325
     }
   ],
-  "updatedAt": 1787754564005
+  "updatedAt": 1787754586172
 }
