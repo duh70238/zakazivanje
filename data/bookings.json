@@ -1981,6 +1981,16 @@
       "updatedAt": 1786473734318
     },
     {
+      "id": "8440ad22-c371-4ebc-a87b-ca90108ad974",
+      "firstName": "Danka dr",
+      "lastName": "ruke",
+      "date": "2026-08-31",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1787837743839
+    },
+    {
       "id": "a123b10e-8940-4101-bd22-96369d1594af",
       "firstName": "Sestra",
       "lastName": "ruke",
@@ -2431,5 +2441,5 @@
       "updatedAt": 1787768592749
     }
   ],
-  "updatedAt": 1787833151023
+  "updatedAt": 1787837745130
 }
