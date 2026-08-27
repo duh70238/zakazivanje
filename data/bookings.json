@@ -2311,6 +2311,16 @@
       "updatedAt": 1787154639085
     },
     {
+      "id": "ff9074a1-8ec1-44db-986e-674c2f71bc6a",
+      "firstName": "Zdrava hrana",
+      "lastName": "korekcija",
+      "date": "2026-09-15",
+      "time": "13:00",
+      "timeEnd": "14:00",
+      "description": "",
+      "updatedAt": 1787833150171
+    },
+    {
       "id": "1b0eb234-c32d-4da7-b6c7-0b2031a81a6d",
       "firstName": "Jana",
       "lastName": "spanija ruke",
@@ -2421,5 +2431,5 @@
       "updatedAt": 1787768592749
     }
   ],
-  "updatedAt": 1787822917690
+  "updatedAt": 1787833151023
 }
