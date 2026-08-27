@@ -2181,6 +2181,16 @@
       "updatedAt": 1786788493168
     },
     {
+      "id": "75e10d10-57cd-4f43-a593-5067b873132e",
+      "firstName": "Grupa",
+      "lastName": "skola",
+      "date": "2026-09-08",
+      "time": "11:00",
+      "timeEnd": "14:00",
+      "description": "",
+      "updatedAt": 1787822917208
+    },
+    {
       "id": "fff86314-11c6-42a2-a332-f3ae78468096",
       "firstName": "Alex zgrada ispd",
       "lastName": "sve",
@@ -2411,5 +2421,5 @@
       "updatedAt": 1787768592749
     }
   ],
-  "updatedAt": 1787785894769
+  "updatedAt": 1787822917690
 }
