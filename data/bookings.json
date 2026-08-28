@@ -1991,16 +1991,6 @@
       "updatedAt": 1787837743839
     },
     {
-      "id": "a123b10e-8940-4101-bd22-96369d1594af",
-      "firstName": "Sestra",
-      "lastName": "ruke",
-      "date": "2026-09-01",
-      "time": "11:00",
-      "timeEnd": "12:00",
-      "description": "",
-      "updatedAt": 1786361357057
-    },
-    {
       "id": "22f93c08-fce6-4f33-b243-0a075a9d9114",
       "firstName": "Anita",
       "lastName": "sve",
@@ -2471,5 +2461,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1787862084814
+  "updatedAt": 1787916061723
 }
