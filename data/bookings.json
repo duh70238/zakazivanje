@@ -1841,6 +1841,16 @@
       "updatedAt": 1787571392849
     },
     {
+      "id": "51a937ab-efa7-48e6-bcd7-11c68515cfdb",
+      "firstName": "Sestra",
+      "lastName": "ruke",
+      "date": "2026-08-28",
+      "time": "14:30",
+      "timeEnd": "15:00",
+      "description": "",
+      "updatedAt": 1787944631419
+    },
+    {
       "id": "8c5b2dc5-71e5-4fa5-8130-f3b08e27b1dd",
       "firstName": "Tanja crni",
       "lastName": "ruke gl",
@@ -2501,5 +2511,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1787944032509
+  "updatedAt": 1787944632164
 }
