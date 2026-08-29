@@ -2401,6 +2401,16 @@
       "updatedAt": 1787859253023
     },
     {
+      "id": "01e07277-8272-4e25-8436-32041cf14962",
+      "firstName": "Angela M",
+      "lastName": "ruke",
+      "date": "2026-09-18",
+      "time": "12:30",
+      "timeEnd": "13:30",
+      "description": "",
+      "updatedAt": 1787997072697
+    },
+    {
       "id": "9c20fac1-1cde-4102-860b-9687447c917b",
       "firstName": "Sestra rukr nogr",
       "lastName": "e",
@@ -2541,5 +2551,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1787994130386
+  "updatedAt": 1787997073465
 }
