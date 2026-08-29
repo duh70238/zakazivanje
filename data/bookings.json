@@ -2251,6 +2251,16 @@
       "updatedAt": 1786640826567
     },
     {
+      "id": "7d3c61c3-7be6-4e33-8c5b-9d70786f4424",
+      "firstName": "Snajkina cerka",
+      "lastName": "frenc",
+      "date": "2026-09-09",
+      "time": "11:00",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1788033758849
+    },
+    {
       "id": "c751752f-9e51-4696-a43c-61018f2e63e5",
       "firstName": "Milica crnogorka",
       "lastName": "ruke",
@@ -2581,5 +2591,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788027572154
+  "updatedAt": 1788033759983
 }
