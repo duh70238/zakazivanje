@@ -2231,6 +2231,16 @@
       "updatedAt": 1787822917208
     },
     {
+      "id": "e4ade8ec-e396-4439-943d-c04c114bba22",
+      "firstName": "Bojana Ivanina",
+      "lastName": "ruke noge",
+      "date": "2026-09-08",
+      "time": "14:45",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1788196936072
+    },
+    {
       "id": "fff86314-11c6-42a2-a332-f3ae78468096",
       "firstName": "Alex zgrada ispd",
       "lastName": "sve",
@@ -2651,5 +2661,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788195926889
+  "updatedAt": 1788196937183
 }
