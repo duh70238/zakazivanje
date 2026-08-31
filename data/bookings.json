@@ -2421,6 +2421,16 @@
       "updatedAt": 1787254524931
     },
     {
+      "id": "779b00ab-6c4f-4667-b217-168221e081e3",
+      "firstName": "Milenina sestra banka",
+      "lastName": "ruke gl 0637052398",
+      "date": "2026-09-16",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1788179089417
+    },
+    {
       "id": "9a63509b-fc3d-43a2-ac6b-ee5fe562c152",
       "firstName": "Helena",
       "lastName": "boja",
@@ -2611,5 +2621,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788176534370
+  "updatedAt": 1788179090183
 }
