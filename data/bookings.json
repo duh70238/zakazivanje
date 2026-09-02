@@ -2131,6 +2131,16 @@
       "updatedAt": 1788347341688
     },
     {
+      "id": "09b2d2f8-cd8d-4961-9828-07fa18eb93b6",
+      "firstName": "Kaca sestra",
+      "lastName": "ruke",
+      "date": "2026-09-03",
+      "time": "19:00",
+      "timeEnd": "20:30",
+      "description": "",
+      "updatedAt": 1788347360399
+    },
+    {
       "id": "401be243-e7bf-4445-a3d3-608e8519be6f",
       "firstName": "Valentina od MN",
       "lastName": "Sve",
@@ -2731,5 +2741,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788347342672
+  "updatedAt": 1788347361260
 }
