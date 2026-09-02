@@ -2121,6 +2121,16 @@
       "updatedAt": 1786548771245
     },
     {
+      "id": "c359842f-aa1e-4a8d-b465-54e443c3a8b1",
+      "firstName": "Mala sto prica",
+      "lastName": "ruke",
+      "date": "2026-09-03",
+      "time": "18:15",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1788347341688
+    },
+    {
       "id": "401be243-e7bf-4445-a3d3-608e8519be6f",
       "firstName": "Valentina od MN",
       "lastName": "Sve",
@@ -2721,5 +2731,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788347172556
+  "updatedAt": 1788347342672
 }
