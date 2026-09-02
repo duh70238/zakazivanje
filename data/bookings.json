@@ -2085,10 +2085,10 @@
       "firstName": "Lana",
       "lastName": "ruke noge",
       "date": "2026-09-02",
-      "time": "19:30",
-      "timeEnd": "21:00",
+      "time": "18:00",
+      "timeEnd": "19:30",
       "description": "",
-      "updatedAt": 1786387150474
+      "updatedAt": 1788347172051
     },
     {
       "id": "5d403323-fbf1-4112-8191-066d923b41a4",
@@ -2721,5 +2721,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788346734726
+  "updatedAt": 1788347172556
 }
