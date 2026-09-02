@@ -2231,6 +2231,16 @@
       "updatedAt": 1786788493168
     },
     {
+      "id": "ae3752fb-b9e6-4b34-a359-c3737c3a2912",
+      "firstName": "Nikina",
+      "lastName": "mama",
+      "date": "2026-09-07",
+      "time": "20:00",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1788345317715
+    },
+    {
       "id": "75e10d10-57cd-4f43-a593-5067b873132e",
       "firstName": "Grupa",
       "lastName": "skola",
@@ -2701,5 +2711,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788345181808
+  "updatedAt": 1788345318467
 }
