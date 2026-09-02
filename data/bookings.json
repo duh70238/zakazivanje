@@ -2051,6 +2051,16 @@
       "updatedAt": 1787234885559
     },
     {
+      "id": "d933e07b-d31d-4cb3-9cec-815ba0d18eb7",
+      "firstName": "Nova devojka",
+      "lastName": "Ruke, noge skida",
+      "date": "2026-09-02",
+      "time": "14:30",
+      "timeEnd": "15:30",
+      "description": "",
+      "updatedAt": 1788347550416
+    },
+    {
       "id": "1c19da09-7799-4af0-bca2-1890a2a58459",
       "firstName": "Dejana",
       "lastName": "ruke",
@@ -2721,5 +2731,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788347517541
+  "updatedAt": 1788347551098
 }
