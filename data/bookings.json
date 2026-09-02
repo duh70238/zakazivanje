@@ -2496,9 +2496,9 @@
       "lastName": "ruke",
       "date": "2026-09-17",
       "time": "17:30",
-      "timeEnd": "19:30",
+      "timeEnd": "18:30",
       "description": "",
-      "updatedAt": 1788195926114
+      "updatedAt": 1788382190798
     },
     {
       "id": "9a63509b-fc3d-43a2-ac6b-ee5fe562c152",
@@ -2771,5 +2771,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788377129938
+  "updatedAt": 1788382191379
 }
