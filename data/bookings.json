@@ -2125,10 +2125,10 @@
       "firstName": "Valentina od MN",
       "lastName": "Sve",
       "date": "2026-09-04",
-      "time": "10:00",
-      "timeEnd": "12:00",
+      "time": "11:00",
+      "timeEnd": "12:15",
       "description": "",
-      "updatedAt": 1784983498233
+      "updatedAt": 1788346733936
     },
     {
       "id": "9cf036eb-713d-49de-824b-c706d497fa9d",
@@ -2721,5 +2721,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788346544377
+  "updatedAt": 1788346734726
 }
