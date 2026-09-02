@@ -2171,16 +2171,6 @@
       "updatedAt": 1786534739741
     },
     {
-      "id": "45d2c655-823c-4a85-9ae7-e42e463ff2ea",
-      "firstName": "Ana Min kulz",
-      "lastName": "ruke",
-      "date": "2026-09-04",
-      "time": "16:00",
-      "timeEnd": "17:00",
-      "description": "",
-      "updatedAt": 1787658962597
-    },
-    {
       "id": "9117ff33-b850-40df-9305-6e946644da07",
       "firstName": "Nova koms",
       "lastName": "ruke noge",
@@ -2741,5 +2731,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788360550047
+  "updatedAt": 1788360558182
 }
