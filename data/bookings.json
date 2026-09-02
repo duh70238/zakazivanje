@@ -2061,6 +2061,16 @@
       "updatedAt": 1788347550416
     },
     {
+      "id": "2be0c8f5-43e2-43cb-a604-b16c37303f90",
+      "firstName": "Marija N",
+      "lastName": "ruke",
+      "date": "2026-09-02",
+      "time": "16:00",
+      "timeEnd": "17:00",
+      "description": "",
+      "updatedAt": 1788347561386
+    },
+    {
       "id": "1c19da09-7799-4af0-bca2-1890a2a58459",
       "firstName": "Dejana",
       "lastName": "ruke",
@@ -2069,16 +2079,6 @@
       "timeEnd": "18:00",
       "description": "",
       "updatedAt": 1786720739040
-    },
-    {
-      "id": "2be0c8f5-43e2-43cb-a604-b16c37303f90",
-      "firstName": "Marija N",
-      "lastName": "ruke",
-      "date": "2026-09-02",
-      "time": "17:00",
-      "timeEnd": "18:00",
-      "description": "",
-      "updatedAt": 1787947910849
     },
     {
       "id": "4cac1880-a2b9-49c0-83f7-0caab8322c6d",
@@ -2731,5 +2731,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788347551098
+  "updatedAt": 1788347562058
 }
