@@ -2762,13 +2762,13 @@
     },
     {
       "id": "0beb3ab2-231e-467e-8de2-36c8ff14e35a",
-      "firstName": "Milena Eb",
+      "firstName": "Milena Eb frenc",
       "lastName": "Ruke noge skida",
       "date": "2026-09-25",
       "time": "19:00",
-      "timeEnd": "20:15",
+      "timeEnd": "20:35",
       "description": "",
-      "updatedAt": 1788452369642
+      "updatedAt": 1788452400748
     },
     {
       "id": "5c682d27-3b9f-4a01-853c-b093ead1c174",
@@ -2801,5 +2801,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788452371336
+  "updatedAt": 1788452402926
 }
