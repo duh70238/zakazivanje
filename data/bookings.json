@@ -2761,6 +2761,16 @@
       "updatedAt": 1787981127083
     },
     {
+      "id": "0beb3ab2-231e-467e-8de2-36c8ff14e35a",
+      "firstName": "Milena Eb",
+      "lastName": "Ruke noge skida",
+      "date": "2026-09-25",
+      "time": "19:00",
+      "timeEnd": "20:15",
+      "description": "",
+      "updatedAt": 1788452369642
+    },
+    {
       "id": "5c682d27-3b9f-4a01-853c-b093ead1c174",
       "firstName": "Nika",
       "lastName": "sve fren",
@@ -2791,5 +2801,5 @@
       "updatedAt": 1787847840175
     }
   ],
-  "updatedAt": 1788446923486
+  "updatedAt": 1788452371336
 }
