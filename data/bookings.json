@@ -2829,7 +2829,17 @@
       "timeEnd": "17:00",
       "description": "",
       "updatedAt": 1788530345893
+    },
+    {
+      "id": "3cfafb52-a25d-4529-a70c-085f79342d67",
+      "firstName": "Ivana Dragana WMA",
+      "lastName": "ruke gl",
+      "date": "2026-11-13",
+      "time": "15:00",
+      "timeEnd": "17:00",
+      "description": "",
+      "updatedAt": 1788530404446
     }
   ],
-  "updatedAt": 1788530346718
+  "updatedAt": 1788530405464
 }
