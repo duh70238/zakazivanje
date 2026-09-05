@@ -2645,10 +2645,10 @@
       "firstName": "Nova komsinic",
       "lastName": "ruke",
       "date": "2026-09-19",
-      "time": "18:00",
-      "timeEnd": "19:00",
+      "time": "19:15",
+      "timeEnd": "20:00",
       "description": "",
-      "updatedAt": 1787687484848
+      "updatedAt": 1788606370819
     },
     {
       "id": "880f3569-7309-4e4c-8640-5ee9176a8b01",
@@ -2881,5 +2881,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1788602715232
+  "updatedAt": 1788606371472
 }
