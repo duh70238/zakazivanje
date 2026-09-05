@@ -2391,16 +2391,6 @@
       "updatedAt": 1788541834286
     },
     {
-      "id": "bf5aeb81-4403-442e-bf70-4bc3bf23d15a",
-      "firstName": "Ivana",
-      "lastName": "Bojanina",
-      "date": "2026-09-11",
-      "time": "13:00",
-      "timeEnd": "14:00",
-      "description": "",
-      "updatedAt": 1788187177508
-    },
-    {
       "id": "816d2f2b-262d-48ee-9e74-3d324b451a42",
       "firstName": "Bojana",
       "lastName": "advokat",
@@ -2921,5 +2911,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1788631267650
+  "updatedAt": 1788631282844
 }
