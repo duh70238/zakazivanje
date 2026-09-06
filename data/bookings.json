@@ -2861,6 +2861,16 @@
       "updatedAt": 1788530290672
     },
     {
+      "id": "b09fb0d4-d628-4ba2-b8dd-ba4517048d27",
+      "firstName": "Nova koms",
+      "lastName": "ruke",
+      "date": "2026-10-06",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1788697621981
+    },
+    {
       "id": "d702fdfe-c827-40ad-a533-c49f9f2e12a3",
       "firstName": "Ivana Dragana WMA",
       "lastName": "ruke",
@@ -2901,5 +2911,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1788653684028
+  "updatedAt": 1788697622521
 }
