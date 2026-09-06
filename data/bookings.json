@@ -2321,6 +2321,16 @@
       "updatedAt": 1788446922998
     },
     {
+      "id": "32c5ccf8-8ec1-4dc1-bc37-b51de22c7fec",
+      "firstName": "Masa Bojovic",
+      "lastName": "ruke frenc",
+      "date": "2026-09-09",
+      "time": "11:00",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1788713159150
+    },
+    {
       "id": "7d3c61c3-7be6-4e33-8c5b-9d70786f4424",
       "firstName": "Snajkina cerka",
       "lastName": "frenc",
@@ -2911,5 +2921,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1788713058295
+  "updatedAt": 1788713160170
 }
