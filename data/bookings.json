@@ -2325,10 +2325,10 @@
       "firstName": "Snajkina cerka",
       "lastName": "frenc",
       "date": "2026-09-09",
-      "time": "11:00",
-      "timeEnd": "13:00",
+      "time": "13:00",
+      "timeEnd": "15:00",
       "description": "",
-      "updatedAt": 1788033758849
+      "updatedAt": 1788713057654
     },
     {
       "id": "2314ff91-ddc5-4c93-9121-79b0f4087cf6",
@@ -2911,5 +2911,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1788697622521
+  "updatedAt": 1788713058295
 }
