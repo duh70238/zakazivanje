@@ -2921,6 +2921,16 @@
       "updatedAt": 1788796569237
     },
     {
+      "id": "4160565a-d611-4ae1-90a2-a86454300eec",
+      "firstName": "Maya",
+      "lastName": "ruke",
+      "date": "2026-09-30",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1788807451033
+    },
+    {
       "id": "efc5382d-8422-4a1e-ae87-3b3cbfd45c11",
       "firstName": "Ana Min kult",
       "lastName": "ruke noge",
@@ -2991,5 +3001,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1788804255593
+  "updatedAt": 1788807451849
 }
