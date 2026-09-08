@@ -2401,6 +2401,16 @@
       "updatedAt": 1788541834286
     },
     {
+      "id": "12a51171-5594-4eb8-b247-b45cab39b097",
+      "firstName": "Grupa",
+      "lastName": "edukacija",
+      "date": "2026-09-11",
+      "time": "11:00",
+      "timeEnd": "15:00",
+      "description": "",
+      "updatedAt": 1788861924825
+    },
+    {
       "id": "816d2f2b-262d-48ee-9e74-3d324b451a42",
       "firstName": "Bojana",
       "lastName": "advokat",
@@ -3001,5 +3011,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1788807451849
+  "updatedAt": 1788861925732
 }
