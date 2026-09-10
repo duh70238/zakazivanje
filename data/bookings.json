@@ -2411,6 +2411,16 @@
       "updatedAt": 1788541834286
     },
     {
+      "id": "5d6dbac8-aa76-431c-8d44-bf0f5a16dfb9",
+      "firstName": "Brankica advokat",
+      "lastName": "ruke, noge skida",
+      "date": "2026-09-10",
+      "time": "19:45",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1789008080108
+    },
+    {
       "id": "12a51171-5594-4eb8-b247-b45cab39b097",
       "firstName": "Grupa",
       "lastName": "edukacija",
@@ -3061,5 +3071,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789008055321
+  "updatedAt": 1789008081046
 }
