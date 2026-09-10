@@ -3021,6 +3021,16 @@
       "updatedAt": 1788890284458
     },
     {
+      "id": "72fab639-20b4-467e-8fde-05680ba0352e",
+      "firstName": "Olja Telekom",
+      "lastName": "ruke",
+      "date": "2026-10-06",
+      "time": "16:00",
+      "timeEnd": "17:00",
+      "description": "",
+      "updatedAt": 1789052009252
+    },
+    {
       "id": "b09fb0d4-d628-4ba2-b8dd-ba4517048d27",
       "firstName": "Nova koms",
       "lastName": "ruke",
@@ -3081,5 +3091,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789048939825
+  "updatedAt": 1789052010261
 }
