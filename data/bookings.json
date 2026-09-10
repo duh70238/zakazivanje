@@ -2885,10 +2885,10 @@
       "firstName": "Bojana Masina",
       "lastName": "Sve",
       "date": "2026-09-25",
-      "time": "15:00",
-      "timeEnd": "17:00",
+      "time": "14:00",
+      "timeEnd": "16:00",
       "description": "",
-      "updatedAt": 1788441059392
+      "updatedAt": 1789072707805
     },
     {
       "id": "1159d29d-658c-4bff-8ef3-aaab72bbc34a",
@@ -3131,5 +3131,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789059133272
+  "updatedAt": 1789072708256
 }
