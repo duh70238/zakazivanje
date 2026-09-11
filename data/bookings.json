@@ -2431,16 +2431,6 @@
       "updatedAt": 1788861924825
     },
     {
-      "id": "816d2f2b-262d-48ee-9e74-3d324b451a42",
-      "firstName": "Bojana",
-      "lastName": "advokat",
-      "date": "2026-09-12",
-      "time": "11:00",
-      "timeEnd": "12:00",
-      "description": "",
-      "updatedAt": 1787333124661
-    },
-    {
       "id": "85d3f011-acfe-4831-8167-3c5f84915826",
       "firstName": "Aristotelova zena",
       "lastName": "ruke",
@@ -3151,5 +3141,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789159630588
+  "updatedAt": 1789159843170
 }
