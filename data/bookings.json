@@ -2631,6 +2631,16 @@
       "updatedAt": 1789159591036
     },
     {
+      "id": "1354cd9d-6efd-401d-a8f5-8ea0ed0979ec",
+      "firstName": "Kaacina koleginica",
+      "lastName": "Ruke",
+      "date": "2026-09-17",
+      "time": "19:45",
+      "timeEnd": "20:45",
+      "description": "",
+      "updatedAt": 1789159629844
+    },
+    {
       "id": "80f90563-461f-4235-bd1f-64d414906caa",
       "firstName": "Bojana",
       "lastName": "lak",
@@ -3141,5 +3151,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789159591653
+  "updatedAt": 1789159630588
 }
