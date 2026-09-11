@@ -2431,6 +2431,16 @@
       "updatedAt": 1788861924825
     },
     {
+      "id": "664398dc-b574-4da5-a831-fea32e4b6f3d",
+      "firstName": "Nedas",
+      "lastName": "ruke noge",
+      "date": "2026-09-12",
+      "time": "10:30",
+      "timeEnd": "12:00",
+      "description": "",
+      "updatedAt": 1789159867316
+    },
+    {
       "id": "85d3f011-acfe-4831-8167-3c5f84915826",
       "firstName": "Aristotelova zena",
       "lastName": "ruke",
@@ -3141,5 +3151,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789159843170
+  "updatedAt": 1789159868172
 }
