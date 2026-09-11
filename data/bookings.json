@@ -2626,9 +2626,9 @@
       "lastName": "boja",
       "date": "2026-09-17",
       "time": "18:30",
-      "timeEnd": "20:30",
+      "timeEnd": "19:45",
       "description": "",
-      "updatedAt": 1787859253023
+      "updatedAt": 1789159591036
     },
     {
       "id": "80f90563-461f-4235-bd1f-64d414906caa",
@@ -3141,5 +3141,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789072731072
+  "updatedAt": 1789159591653
 }
