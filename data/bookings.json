@@ -3091,6 +3091,16 @@
       "updatedAt": 1788890284458
     },
     {
+      "id": "3a675e60-708e-43e0-9988-f55c21fed2c5",
+      "firstName": "Artstotelova z",
+      "lastName": "ruke",
+      "date": "2026-10-03",
+      "time": "15:00",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1789211595964
+    },
+    {
       "id": "fd955108-4898-496c-ad0c-3fb0d35be091",
       "firstName": "Neda",
       "lastName": "sve",
@@ -3221,5 +3231,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789207626442
+  "updatedAt": 1789211597666
 }
