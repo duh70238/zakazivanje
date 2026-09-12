@@ -3131,6 +3131,16 @@
       "updatedAt": 1788697621981
     },
     {
+      "id": "0c8dafd8-7bbc-48de-929a-7f63872e0e2c",
+      "firstName": "Miona",
+      "lastName": "ruke",
+      "date": "2026-10-06",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1789215084143
+    },
+    {
       "id": "9f55d8c7-dc85-49e6-b382-c12006057b4b",
       "firstName": "Ada mol",
       "lastName": "ruke",
@@ -3231,5 +3241,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789211597666
+  "updatedAt": 1789215085656
 }
