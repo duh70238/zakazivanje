@@ -2531,6 +2531,16 @@
       "updatedAt": 1787154639085
     },
     {
+      "id": "410f6074-c579-4e7e-b689-8f4da18cdff5",
+      "firstName": "Marije N drugarica",
+      "lastName": "ruke noge",
+      "date": "2026-09-14",
+      "time": "20:00",
+      "timeEnd": "21:30",
+      "description": "",
+      "updatedAt": 1789232163206
+    },
+    {
       "id": "ff9074a1-8ec1-44db-986e-674c2f71bc6a",
       "firstName": "Zdrava hrana",
       "lastName": "korekcija",
@@ -3251,5 +3261,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789218910267
+  "updatedAt": 1789232163748
 }
