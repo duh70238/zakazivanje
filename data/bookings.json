@@ -3133,12 +3133,12 @@
     {
       "id": "0c8dafd8-7bbc-48de-929a-7f63872e0e2c",
       "firstName": "Miona",
-      "lastName": "ruke",
+      "lastName": "ruke frenc",
       "date": "2026-10-06",
       "time": "19:00",
-      "timeEnd": "20:00",
+      "timeEnd": "20:30",
       "description": "",
-      "updatedAt": 1789215084143
+      "updatedAt": 1789215109708
     },
     {
       "id": "9f55d8c7-dc85-49e6-b382-c12006057b4b",
@@ -3241,5 +3241,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789215085656
+  "updatedAt": 1789215110496
 }
