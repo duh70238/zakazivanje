@@ -2761,6 +2761,16 @@
       "updatedAt": 1787919524450
     },
     {
+      "id": "7b86005c-f00b-4ee2-ab10-aab60beadf17",
+      "firstName": "Nikina drugarica",
+      "lastName": "Ruke/noge",
+      "date": "2026-09-19",
+      "time": "16:00",
+      "timeEnd": "18:00",
+      "description": "",
+      "updatedAt": 1789305987237
+    },
+    {
       "id": "718acebb-729d-4c52-a9f2-e83ca26c0043",
       "firstName": "Ivana B",
       "lastName": "ruke nogeee",
@@ -3271,5 +3281,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789305628082
+  "updatedAt": 1789305987803
 }
