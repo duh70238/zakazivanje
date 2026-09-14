@@ -2601,16 +2601,6 @@
       "updatedAt": 1788800363300
     },
     {
-      "id": "aa1503a7-1243-4cc0-ae6a-063864b6b333",
-      "firstName": "d",
-      "lastName": "d",
-      "date": "2026-09-15",
-      "time": "20:10",
-      "timeEnd": "22:40",
-      "description": "",
-      "updatedAt": 1789429274792
-    },
-    {
       "id": "762f67f1-8dbf-443e-a63e-4ac7523fd165",
       "firstName": "Marija trep",
       "lastName": "Ruke noge frenc",
@@ -3341,5 +3331,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789429150881
+  "updatedAt": 1789429159862
 }
