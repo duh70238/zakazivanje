@@ -2611,16 +2611,6 @@
       "updatedAt": 1788717313868
     },
     {
-      "id": "6005488b-f3ea-468c-8d47-1171555ab2f2",
-      "firstName": "Marija JP",
-      "lastName": "ruke noge lak",
-      "date": "2026-09-16",
-      "time": "16:30",
-      "timeEnd": "18:00",
-      "description": "",
-      "updatedAt": 1787254524931
-    },
-    {
       "id": "779b00ab-6c4f-4667-b217-168221e081e3",
       "firstName": "Milenina sestra banka",
       "lastName": "ruke gl 0637052398",
@@ -3281,5 +3271,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789307706088
+  "updatedAt": 1789385409351
 }
