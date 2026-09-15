@@ -3251,6 +3251,16 @@
       "updatedAt": 1789474371301
     },
     {
+      "id": "925519a4-a742-4bf3-b13e-d5d6288edd13",
+      "firstName": "Masina mama",
+      "lastName": "ruke",
+      "date": "2026-10-15",
+      "time": "15:00",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1789481860935
+    },
+    {
       "id": "614624d4-9283-4185-aaaf-61475dcfdccb",
       "firstName": "Alex zgrada ispof",
       "lastName": "pete i sve",
@@ -3351,5 +3361,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789478077022
+  "updatedAt": 1789481862788
 }
