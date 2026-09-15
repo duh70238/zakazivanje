@@ -2581,16 +2581,6 @@
       "updatedAt": 1786973299429
     },
     {
-      "id": "f482cdac-5285-4802-9cb7-3b6af35b6580",
-      "firstName": "Micq Masa",
-      "lastName": "ruke noge frenc",
-      "date": "2026-09-15",
-      "time": "17:00",
-      "timeEnd": "19:00",
-      "description": "",
-      "updatedAt": 1787685414776
-    },
-    {
       "id": "012eb4f7-76c5-466c-81f6-8568037d96bd",
       "firstName": "Tamaraa",
       "lastName": "pedikir i ruke lak",
@@ -3391,5 +3381,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789492303835
+  "updatedAt": 1789498406827
 }
