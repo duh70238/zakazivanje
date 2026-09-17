@@ -2781,6 +2781,16 @@
       "updatedAt": 1789668742535
     },
     {
+      "id": "cd6573f2-fdcf-405b-bfac-134a5eb577aa",
+      "firstName": "Angela M",
+      "lastName": "ruke",
+      "date": "2026-09-19",
+      "time": "17:00",
+      "timeEnd": "18:00",
+      "description": "",
+      "updatedAt": 1789677186124
+    },
+    {
       "id": "880f3569-7309-4e4c-8640-5ee9176a8b01",
       "firstName": "Vidi",
       "lastName": "da odmaras 😂",
@@ -3381,5 +3391,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789670518092
+  "updatedAt": 1789677186653
 }
