@@ -2783,12 +2783,12 @@
     {
       "id": "7b86005c-f00b-4ee2-ab10-aab60beadf17",
       "firstName": "Nikina drugarica",
-      "lastName": "Ruke/noge",
+      "lastName": "Ruke",
       "date": "2026-09-19",
       "time": "16:00",
       "timeEnd": "18:00",
       "description": "",
-      "updatedAt": 1789305987237
+      "updatedAt": 1789668742535
     },
     {
       "id": "880f3569-7309-4e4c-8640-5ee9176a8b01",
@@ -3391,5 +3391,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789668433714
+  "updatedAt": 1789668743428
 }
