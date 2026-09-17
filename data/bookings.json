@@ -2701,6 +2701,16 @@
       "updatedAt": 1788346542974
     },
     {
+      "id": "20083429-973f-43b5-a327-44216bdf9eac",
+      "firstName": "Ivana",
+      "lastName": "ruke noge",
+      "date": "2026-09-18",
+      "time": "12:00",
+      "timeEnd": "13:30",
+      "description": "",
+      "updatedAt": 1789668386590
+    },
+    {
       "id": "9c20fac1-1cde-4102-860b-9687447c917b",
       "firstName": "Sestra rukr nogr",
       "lastName": "e",
@@ -3401,5 +3411,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789668359311
+  "updatedAt": 1789668387502
 }
