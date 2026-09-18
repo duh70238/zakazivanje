@@ -3231,16 +3231,6 @@
       "updatedAt": 1789401054285
     },
     {
-      "id": "2fb99813-4e4c-43c4-b9c8-8ba10e451da4",
-      "firstName": "Sestra",
-      "lastName": "frenc",
-      "date": "2026-10-09",
-      "time": "15:00",
-      "timeEnd": "16:30",
-      "description": "",
-      "updatedAt": 1789736935275
-    },
-    {
       "id": "80e4aba1-28b9-4e63-ac35-27aa9d149d32",
       "firstName": "Tanja",
       "lastName": "gl",
@@ -3249,6 +3239,16 @@
       "timeEnd": "15:30",
       "description": "",
       "updatedAt": 1789738992761
+    },
+    {
+      "id": "2fb99813-4e4c-43c4-b9c8-8ba10e451da4",
+      "firstName": "Sestra",
+      "lastName": "frenc",
+      "date": "2026-10-09",
+      "time": "15:30",
+      "timeEnd": "17:00",
+      "description": "",
+      "updatedAt": 1789739012081
     },
     {
       "id": "ecd6b9d8-06ba-4a52-a2d5-b224ddeff9bb",
@@ -3411,5 +3411,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789738994601
+  "updatedAt": 1789739012927
 }
