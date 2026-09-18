@@ -2792,13 +2792,13 @@
     },
     {
       "id": "cd6573f2-fdcf-405b-bfac-134a5eb577aa",
-      "firstName": "Angela M",
-      "lastName": "ruke",
+      "firstName": "Sestra Janina",
+      "lastName": "sve",
       "date": "2026-09-19",
       "time": "17:00",
-      "timeEnd": "18:00",
+      "timeEnd": "18:30",
       "description": "",
-      "updatedAt": 1789677186124
+      "updatedAt": 1789766835448
     },
     {
       "id": "880f3569-7309-4e4c-8640-5ee9176a8b01",
@@ -3441,5 +3441,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789766577135
+  "updatedAt": 1789766835950
 }
