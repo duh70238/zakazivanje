@@ -3141,6 +3141,16 @@
       "updatedAt": 1788890284458
     },
     {
+      "id": "74ff63b2-4f46-4098-b72f-bda9c9a8587b",
+      "firstName": "Snajkina cerka",
+      "lastName": "ruke frenc",
+      "date": "2026-10-03",
+      "time": "13:30",
+      "timeEnd": "15:00",
+      "description": "",
+      "updatedAt": 1789766576504
+    },
+    {
       "id": "3a675e60-708e-43e0-9988-f55c21fed2c5",
       "firstName": "Artstotelova z",
       "lastName": "ruke",
@@ -3431,5 +3441,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789753479498
+  "updatedAt": 1789766577135
 }
