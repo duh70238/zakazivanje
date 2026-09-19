@@ -3131,6 +3131,16 @@
       "updatedAt": 1789059131756
     },
     {
+      "id": "dd5e3ef8-a67e-4eaa-a308-82d0d772dbc1",
+      "firstName": "Drustverne igre",
+      "lastName": "lak i pedikir",
+      "date": "2026-10-02",
+      "time": "13:30",
+      "timeEnd": "15:00",
+      "description": "",
+      "updatedAt": 1789826368698
+    },
+    {
       "id": "255e8524-a7b7-49a6-a3b1-40602308151e",
       "firstName": "Ivana Dragana WMA",
       "lastName": "gl",
@@ -3461,5 +3471,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789825570835
+  "updatedAt": 1789826369406
 }
