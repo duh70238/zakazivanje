@@ -2781,16 +2781,6 @@
       "updatedAt": 1789766870034
     },
     {
-      "id": "cd6573f2-fdcf-405b-bfac-134a5eb577aa",
-      "firstName": "Sestra Janina",
-      "lastName": "sve",
-      "date": "2026-09-19",
-      "time": "17:00",
-      "timeEnd": "18:30",
-      "description": "",
-      "updatedAt": 1789766835448
-    },
-    {
       "id": "5ba5165f-9ab7-42e9-9df1-d218837ecfbe",
       "firstName": "Dikic",
       "lastName": "ruke",
@@ -3481,5 +3471,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789831024866
+  "updatedAt": 1789832892313
 }
