@@ -3251,6 +3251,16 @@
       "updatedAt": 1789052009252
     },
     {
+      "id": "6bca0315-2f9e-4365-8b50-a8ec25cd3093",
+      "firstName": "Lanina mama",
+      "lastName": "gl",
+      "date": "2026-10-06",
+      "time": "17:00",
+      "timeEnd": "18:00",
+      "description": "",
+      "updatedAt": 1790070036633
+    },
+    {
       "id": "b09fb0d4-d628-4ba2-b8dd-ba4517048d27",
       "firstName": "Nova koms",
       "lastName": "ruke",
@@ -3521,5 +3531,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1789942677770
+  "updatedAt": 1790070037619
 }
