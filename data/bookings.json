@@ -3431,6 +3431,16 @@
       "updatedAt": 1789056691835
     },
     {
+      "id": "2b1197aa-38c3-42dc-91c5-b5ff7acc423a",
+      "firstName": "Jana Priboj 2",
+      "lastName": "ruke",
+      "date": "2026-10-13",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1790103878177
+    },
+    {
       "id": "d56d475a-d17f-4154-bf44-3923d882ff13",
       "firstName": "Sanja",
       "lastName": "gl",
@@ -3581,5 +3591,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790099648333
+  "updatedAt": 1790103879063
 }
