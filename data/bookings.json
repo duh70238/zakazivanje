@@ -3052,13 +3052,13 @@
     },
     {
       "id": "2ebacded-2c14-4bad-ab5d-571e608d40d4",
-      "firstName": "Vidi",
-      "lastName": "da odmaras",
+      "firstName": "Narnija",
+      "lastName": "ruke",
       "date": "2026-09-28",
-      "time": "08:00",
-      "timeEnd": "22:00",
+      "time": "10:30",
+      "timeEnd": "12:00",
       "description": "",
-      "updatedAt": 1788377129401
+      "updatedAt": 1790193551678
     },
     {
       "id": "0c1e8e3b-8943-444d-8d94-460e6ad570e4",
@@ -3651,5 +3651,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790193433372
+  "updatedAt": 1790193552192
 }
