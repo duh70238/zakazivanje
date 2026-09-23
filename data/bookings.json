@@ -2911,16 +2911,6 @@
       "updatedAt": 1788896658250
     },
     {
-      "id": "e932f952-b2c5-4109-bd05-05199da1389b",
-      "firstName": "Alex matem",
-      "lastName": "ruke",
-      "date": "2026-09-24",
-      "time": "12:15",
-      "timeEnd": "14:15",
-      "description": "",
-      "updatedAt": 1789907799308
-    },
-    {
       "id": "3b76dd2e-7db9-4cc5-bc8a-01a7d1025cde",
       "firstName": "Anita",
       "lastName": "ruke frnc",
@@ -3651,5 +3641,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790186228308
+  "updatedAt": 1790187776583
 }
