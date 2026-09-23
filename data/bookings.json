@@ -2961,6 +2961,16 @@
       "updatedAt": 1789056754961
     },
     {
+      "id": "3f79f815-6bca-406f-8a66-1da341bec41d",
+      "firstName": "Sestrina drugarica",
+      "lastName": "ruke",
+      "date": "2026-09-24",
+      "time": "20:30",
+      "timeEnd": "21:30",
+      "description": "",
+      "updatedAt": 1790194190493
+    },
+    {
       "id": "3702520d-1510-4ea3-ba97-cc7c712a7425",
       "firstName": "Bojana Masina",
       "lastName": "Sve",
@@ -3641,5 +3651,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790193680395
+  "updatedAt": 1790194191120
 }
