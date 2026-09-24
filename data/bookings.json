@@ -3521,16 +3521,6 @@
       "updatedAt": 1789481860935
     },
     {
-      "id": "614624d4-9283-4185-aaaf-61475dcfdccb",
-      "firstName": "Alex zgrada ispof",
-      "lastName": "pete i sve",
-      "date": "2026-10-15",
-      "time": "16:00",
-      "timeEnd": "17:30",
-      "description": "",
-      "updatedAt": 1788882874842
-    },
-    {
       "id": "f097ec3e-ddb5-4bae-9439-0a609c6a6049",
       "firstName": "Dejena",
       "lastName": "ruke",
@@ -3651,5 +3641,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790254071931
+  "updatedAt": 1790265413751
 }
