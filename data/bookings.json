@@ -3631,6 +3631,16 @@
       "updatedAt": 1788530345893
     },
     {
+      "id": "75694d6d-689e-4ed1-bd0b-c10b718e442f",
+      "firstName": "Teodora",
+      "lastName": "ruke frenc noge",
+      "date": "2026-10-23",
+      "time": "18:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1790356252467
+    },
+    {
       "id": "6b438235-8896-4a20-9a53-f4ff968f9004",
       "firstName": "neda",
       "lastName": "skida noge",
@@ -3639,16 +3649,6 @@
       "timeEnd": "12:15",
       "description": "",
       "updatedAt": 1789207561304
-    },
-    {
-      "id": "75694d6d-689e-4ed1-bd0b-c10b718e442f",
-      "firstName": "Teodora",
-      "lastName": "ruke frenc noge",
-      "date": "2026-10-24",
-      "time": "12:15",
-      "timeEnd": "14:15",
-      "description": "",
-      "updatedAt": 1790356162592
     },
     {
       "id": "3cfafb52-a25d-4529-a70c-085f79342d67",
@@ -3711,5 +3711,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790356163412
+  "updatedAt": 1790356253325
 }
