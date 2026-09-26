@@ -3021,16 +3021,6 @@
       "updatedAt": 1788345180076
     },
     {
-      "id": "15e8778e-51fa-4c0e-80f1-40752493b321",
-      "firstName": "Anjina drugarica",
-      "lastName": "Marija noge",
-      "date": "2026-09-26",
-      "time": "13:30",
-      "timeEnd": "14:00",
-      "description": "",
-      "updatedAt": 1789819512815
-    },
-    {
       "id": "ebc56923-57ca-47b6-91bd-4bc3ca038ffc",
       "firstName": "Janina Sestra Sara",
       "lastName": "sve",
@@ -3751,5 +3741,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790420338305
+  "updatedAt": 1790421959345
 }
