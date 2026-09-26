@@ -3101,16 +3101,6 @@
       "updatedAt": 1790374345976
     },
     {
-      "id": "a566f0db-fa70-4adf-afed-6ec73b3336ab",
-      "firstName": "Trepavice",
-      "lastName": "Ja",
-      "date": "2026-09-29",
-      "time": "12:30",
-      "timeEnd": "14:00",
-      "description": "",
-      "updatedAt": 1788780805447
-    },
-    {
       "id": "9faa7f79-3f28-4ed5-924a-c8117d7fe7b7",
       "firstName": "Lana dalm",
       "lastName": "ruke",
@@ -3751,5 +3741,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790422829675
+  "updatedAt": 1790422839691
 }
