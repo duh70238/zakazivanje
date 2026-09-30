@@ -3151,16 +3151,6 @@
       "updatedAt": 1788807451033
     },
     {
-      "id": "4ed32e14-54f0-40c2-9d86-a8824e71bd41",
-      "firstName": "Datsika",
-      "lastName": "obrve",
-      "date": "2026-10-01",
-      "time": "11:00",
-      "timeEnd": "15:00",
-      "description": "",
-      "updatedAt": 1790074901707
-    },
-    {
       "id": "7a0d8107-e105-4f9c-bf23-a29ca08f2d23",
       "firstName": "Milena malA",
       "lastName": "kcerka",
@@ -3821,5 +3811,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790715257499
+  "updatedAt": 1790787167442
 }
