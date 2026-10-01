@@ -3771,6 +3771,16 @@
       "updatedAt": 1789207561304
     },
     {
+      "id": "84f0fd32-3238-4f82-9a9d-f5236230501a",
+      "firstName": "Ana ministarstvo",
+      "lastName": "Ruke",
+      "date": "2026-10-24",
+      "time": "12:15",
+      "timeEnd": "13:30",
+      "description": "",
+      "updatedAt": 1790873047235
+    },
+    {
       "id": "098d56a0-2b05-4e14-a3d6-f24eb856419a",
       "firstName": "Vanja",
       "lastName": "Rts",
@@ -3841,5 +3851,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790867181537
+  "updatedAt": 1790873048929
 }
