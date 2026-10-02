@@ -3821,6 +3821,16 @@
       "updatedAt": 1790615558161
     },
     {
+      "id": "2cd46d4f-bd04-46e0-8b11-313faeaf148b",
+      "firstName": "Natasa Bileca",
+      "lastName": "ruke",
+      "date": "2026-10-29",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1790961962439
+    },
+    {
       "id": "3cfafb52-a25d-4529-a70c-085f79342d67",
       "firstName": "Ivana Dragana WMA",
       "lastName": "ruke gl",
@@ -3881,5 +3891,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1790957001068
+  "updatedAt": 1790961964770
 }
