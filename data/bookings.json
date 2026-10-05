@@ -3511,6 +3511,16 @@
       "updatedAt": 1791059673917
     },
     {
+      "id": "b17a1c8e-137f-4895-9721-8d08a3219ab0",
+      "firstName": "Snajka Dats",
+      "lastName": "ruke",
+      "date": "2026-10-10",
+      "time": "15:00",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1791209344037
+    },
+    {
       "id": "90dd3b9e-05fc-4d8c-9b76-79b3fc348cb2",
       "firstName": "Masa",
       "lastName": "ruke noge",
@@ -3981,5 +3991,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791209267041
+  "updatedAt": 1791209344597
 }
