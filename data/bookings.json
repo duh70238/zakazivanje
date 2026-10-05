@@ -3381,6 +3381,16 @@
       "updatedAt": 1789215109708
     },
     {
+      "id": "b861c8ad-ae6b-4985-bd8b-381a9b396b7a",
+      "firstName": "Aristotelova",
+      "lastName": "zena",
+      "date": "2026-10-06",
+      "time": "20:30",
+      "timeEnd": "21:30",
+      "description": "",
+      "updatedAt": 1791204088839
+    },
+    {
       "id": "bed761b2-c568-4737-8c2e-143040ef6f7d",
       "firstName": "Milica Sestra mala c banka",
       "lastName": "ruke gl 0637052398",
@@ -3961,5 +3971,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791192710649
+  "updatedAt": 1791204089371
 }
