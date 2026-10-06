@@ -3971,6 +3971,16 @@
       "updatedAt": 1791295587106
     },
     {
+      "id": "80892269-c024-4a4c-9a1e-83061b1f4810",
+      "firstName": "Aristotelova zena",
+      "lastName": "ruke",
+      "date": "2026-11-03",
+      "time": "17:00",
+      "timeEnd": "18:00",
+      "description": "",
+      "updatedAt": 1791316927418
+    },
+    {
       "id": "4b227078-3c3a-4d06-b40d-3fe019192ac7",
       "firstName": "Olja telekom",
       "lastName": "brjbibum",
@@ -4041,5 +4051,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791311064454
+  "updatedAt": 1791316928730
 }
