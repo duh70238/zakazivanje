@@ -3401,16 +3401,6 @@
       "updatedAt": 1789577986153
     },
     {
-      "id": "c2e42169-4620-4f64-98c3-9b5b055d99d7",
-      "firstName": "Bojana adv",
-      "lastName": "ruke",
-      "date": "2026-10-08",
-      "time": "09:00",
-      "timeEnd": "10:00",
-      "description": "",
-      "updatedAt": 1789401054285
-    },
-    {
       "id": "4f8ff2eb-aac8-4d33-89b8-03698ac776b4",
       "firstName": "Marija Gordic",
       "lastName": "ruke",
@@ -4071,5 +4061,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791400992375
+  "updatedAt": 1791405456417
 }
