@@ -4011,6 +4011,16 @@
       "updatedAt": 1791295587106
     },
     {
+      "id": "f109d083-c573-4751-ba43-77dd3e6bc59b",
+      "firstName": "Sestra",
+      "lastName": "ruke nohe",
+      "date": "2026-11-03",
+      "time": "13:30",
+      "timeEnd": "15:00",
+      "description": "",
+      "updatedAt": 1791558119786
+    },
+    {
       "id": "80892269-c024-4a4c-9a1e-83061b1f4810",
       "firstName": "Aristotelova zena",
       "lastName": "ruke",
@@ -4091,5 +4101,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791553801753
+  "updatedAt": 1791558121587
 }
