@@ -4041,6 +4041,16 @@
       "updatedAt": 1791298418384
     },
     {
+      "id": "ea732b7e-8280-4701-8b8d-51a33b571c33",
+      "firstName": "Mala plava",
+      "lastName": "ruke",
+      "date": "2026-11-04",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1791562244898
+    },
+    {
       "id": "3cfafb52-a25d-4529-a70c-085f79342d67",
       "firstName": "Ivana Dragana WMA",
       "lastName": "ruke gl",
@@ -4101,5 +4111,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791558121587
+  "updatedAt": 1791562246843
 }
