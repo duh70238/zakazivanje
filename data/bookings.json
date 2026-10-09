@@ -3871,6 +3871,16 @@
       "updatedAt": 1790883045223
     },
     {
+      "id": "3439a1ec-7fb6-4ff6-a7f4-89e364ebd771",
+      "firstName": "Ivanina",
+      "lastName": "Bojana",
+      "date": "2026-10-23",
+      "time": "12:00",
+      "timeEnd": "13:30",
+      "description": "",
+      "updatedAt": 1791545127223
+    },
+    {
       "id": "d702fdfe-c827-40ad-a533-c49f9f2e12a3",
       "firstName": "Ivana Dragana WMA",
       "lastName": "ruke",
@@ -3899,16 +3909,6 @@
       "timeEnd": "12:15",
       "description": "",
       "updatedAt": 1789207561304
-    },
-    {
-      "id": "3439a1ec-7fb6-4ff6-a7f4-89e364ebd771",
-      "firstName": "Ivanina",
-      "lastName": "Bojana",
-      "date": "2026-10-24",
-      "time": "12:00",
-      "timeEnd": "13:30",
-      "description": "",
-      "updatedAt": 1791545110780
     },
     {
       "id": "84f0fd32-3238-4f82-9a9d-f5236230501a",
@@ -4081,5 +4081,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791545112031
+  "updatedAt": 1791545128013
 }
