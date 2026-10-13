@@ -4141,6 +4141,16 @@
       "updatedAt": 1791316927418
     },
     {
+      "id": "7ebc41c1-f816-4caf-9a7e-5e6d92e7913f",
+      "firstName": "Jana",
+      "lastName": "Priboj 2",
+      "date": "2026-11-03",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1791911363321
+    },
+    {
       "id": "4b227078-3c3a-4d06-b40d-3fe019192ac7",
       "firstName": "Olja telekom",
       "lastName": "brjbibum",
@@ -4271,5 +4281,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791904139119
+  "updatedAt": 1791911364140
 }
