@@ -4001,16 +4001,6 @@
       "updatedAt": 1790356252467
     },
     {
-      "id": "6b438235-8896-4a20-9a53-f4ff968f9004",
-      "firstName": "neda",
-      "lastName": "skida noge",
-      "date": "2026-10-24",
-      "time": "11:00",
-      "timeEnd": "12:15",
-      "description": "",
-      "updatedAt": 1789207561304
-    },
-    {
       "id": "84f0fd32-3238-4f82-9a9d-f5236230501a",
       "firstName": "Ana ministarstvo",
       "lastName": "Ruke",
@@ -4291,5 +4281,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791921337830
+  "updatedAt": 1791921474246
 }
