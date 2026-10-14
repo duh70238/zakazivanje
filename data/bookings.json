@@ -4195,10 +4195,10 @@
       "firstName": "Marija minina",
       "lastName": "ruke",
       "date": "2026-11-05",
-      "time": "17:00",
-      "timeEnd": "18:00",
+      "time": "16:30",
+      "timeEnd": "17:30",
       "description": "",
-      "updatedAt": 1791977614159
+      "updatedAt": 1791977627837
     },
     {
       "id": "3d7fb654-a62b-47fc-ba7b-1e2af1059639",
@@ -4301,5 +4301,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791977615074
+  "updatedAt": 1791977629356
 }
