@@ -4191,6 +4191,16 @@
       "updatedAt": 1791896715333
     },
     {
+      "id": "1c981983-95be-432e-af5b-4731174e6b5e",
+      "firstName": "Marija minina",
+      "lastName": "ruke",
+      "date": "2026-11-05",
+      "time": "17:00",
+      "timeEnd": "18:00",
+      "description": "",
+      "updatedAt": 1791977614159
+    },
+    {
       "id": "3d7fb654-a62b-47fc-ba7b-1e2af1059639",
       "firstName": "Ne radis",
       "lastName": "sj",
@@ -4291,5 +4301,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791977593947
+  "updatedAt": 1791977615074
 }
