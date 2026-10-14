@@ -4275,10 +4275,10 @@
       "firstName": "Masa Teod",
       "lastName": "ruke noge",
       "date": "2026-11-17",
-      "time": "12:00",
+      "time": "12:30",
       "timeEnd": "14:00",
       "description": "",
-      "updatedAt": 1791998854719
+      "updatedAt": 1791998865351
     },
     {
       "id": "429920f0-3c26-46c4-b16a-de9e909a8277",
@@ -4331,5 +4331,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1791998856357
+  "updatedAt": 1791998866308
 }
