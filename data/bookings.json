@@ -4251,6 +4251,16 @@
       "updatedAt": 1791977593132
     },
     {
+      "id": "98ff8357-e1df-4b14-8f98-499db592612a",
+      "firstName": "Kima Ada m",
+      "lastName": "ruke",
+      "date": "2026-11-10",
+      "time": "11:00",
+      "timeEnd": "12:00",
+      "description": "",
+      "updatedAt": 1792058761758
+    },
+    {
       "id": "c0e06334-b56d-4b89-9d31-74f0b60af6ba",
       "firstName": "Snezana Sonjina",
       "lastName": "060-0808265",
@@ -4361,5 +4371,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792004388341
+  "updatedAt": 1792058763626
 }
