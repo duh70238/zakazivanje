@@ -3881,6 +3881,16 @@
       "updatedAt": 1791921337040
     },
     {
+      "id": "19b6f6aa-48c3-44ce-8f5f-7d4edf07e53b",
+      "firstName": "Korekcija",
+      "lastName": "Jana Spanija",
+      "date": "2026-10-20",
+      "time": "14:50",
+      "timeEnd": "15:00",
+      "description": "",
+      "updatedAt": 1792181652019
+    },
+    {
       "id": "559d0557-efbc-4c93-b445-9a9380dd4bf6",
       "firstName": "Isidora",
       "lastName": "medicina",
@@ -4541,5 +4551,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792177177857
+  "updatedAt": 1792181653243
 }
