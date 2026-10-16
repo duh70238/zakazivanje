@@ -4171,6 +4171,16 @@
       "updatedAt": 1791295587106
     },
     {
+      "id": "ce48fbee-20ab-4380-a87b-a041f4aecaf5",
+      "firstName": "Dejana",
+      "lastName": "ruke",
+      "date": "2026-11-02",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1792167045990
+    },
+    {
       "id": "f109d083-c573-4751-ba43-77dd3e6bc59b",
       "firstName": "Sestra",
       "lastName": "ruke nohe",
@@ -4511,5 +4521,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792162299981
+  "updatedAt": 1792167047462
 }
