@@ -4421,6 +4421,16 @@
       "updatedAt": 1792065121950
     },
     {
+      "id": "5e07e0fd-d257-425b-9285-53a1f7e22b63",
+      "firstName": "Nika",
+      "lastName": "ruke",
+      "date": "2026-11-16",
+      "time": "15:00",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1792159624864
+    },
+    {
       "id": "a7fd4418-08e0-4881-9dfe-3bf70968e4c9",
       "firstName": "Masa Teod",
       "lastName": "ruke noge",
@@ -4491,5 +4501,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792159586793
+  "updatedAt": 1792159625797
 }
