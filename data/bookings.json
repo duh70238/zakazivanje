@@ -4351,6 +4351,16 @@
       "updatedAt": 1791977593132
     },
     {
+      "id": "1625b6cd-c219-45f6-9081-5cf9db7abed7",
+      "firstName": "Danka",
+      "lastName": "ruke noge skidamo lak",
+      "date": "2026-11-09",
+      "time": "16:00",
+      "timeEnd": "17:30",
+      "description": "",
+      "updatedAt": 1792259053681
+    },
+    {
       "id": "98ff8357-e1df-4b14-8f98-499db592612a",
       "firstName": "Kima Ada m",
       "lastName": "ruke",
@@ -4581,5 +4591,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792247899316
+  "updatedAt": 1792259054641
 }
