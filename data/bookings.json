@@ -4211,6 +4211,16 @@
       "updatedAt": 1792167045990
     },
     {
+      "id": "ea52a4c0-3ad4-4093-9b5e-c2750174a886",
+      "firstName": "Jana",
+      "lastName": "Pr 2",
+      "date": "2026-11-02",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1792268307098
+    },
+    {
       "id": "f109d083-c573-4751-ba43-77dd3e6bc59b",
       "firstName": "Sestra",
       "lastName": "ruke nohe",
@@ -4611,5 +4621,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792261314549
+  "updatedAt": 1792268307817
 }
