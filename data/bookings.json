@@ -4081,6 +4081,16 @@
       "updatedAt": 1792350380590
     },
     {
+      "id": "68595754-a264-4388-a874-671f48619b05",
+      "firstName": "Maya",
+      "lastName": "ruke",
+      "date": "2026-10-24",
+      "time": "15:15",
+      "timeEnd": "16:15",
+      "description": "",
+      "updatedAt": 1792784015223
+    },
+    {
       "id": "8d29a1c3-d32e-4bba-9c55-342741c0865e",
       "firstName": "Miona",
       "lastName": "kor",
@@ -4761,5 +4771,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792782813822
+  "updatedAt": 1792784015940
 }
