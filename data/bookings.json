@@ -4091,16 +4091,6 @@
       "updatedAt": 1792259466237
     },
     {
-      "id": "098d56a0-2b05-4e14-a3d6-f24eb856419a",
-      "firstName": "Vanja",
-      "lastName": "Rts",
-      "date": "2026-10-28",
-      "time": "17:00",
-      "timeEnd": "18:00",
-      "description": "",
-      "updatedAt": 1790615558161
-    },
-    {
       "id": "201f047d-3866-4361-aee9-fea6dbb0600c",
       "firstName": "Dobrila",
       "lastName": "ruke",
@@ -4781,5 +4771,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792782691783
+  "updatedAt": 1792782726327
 }
