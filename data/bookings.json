@@ -4251,16 +4251,6 @@
       "updatedAt": 1791911363321
     },
     {
-      "id": "0a1c244d-f4ac-415f-b11b-fd740e1f80af",
-      "firstName": "Miona",
-      "lastName": "frec ili tackice",
-      "date": "2026-11-03",
-      "time": "20:00",
-      "timeEnd": "20:15",
-      "description": "",
-      "updatedAt": 1792420623003
-    },
-    {
       "id": "6c0c5149-dda3-4aab-a762-21b016701245",
       "firstName": "Tamara pilates",
       "lastName": "manikir",
@@ -4771,5 +4761,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792782726327
+  "updatedAt": 1792782813822
 }
