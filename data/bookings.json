@@ -4721,6 +4721,16 @@
       "updatedAt": 1792517772563
     },
     {
+      "id": "61fa8cf9-8713-4c8f-b62b-60b3f405e28c",
+      "firstName": "Teodota",
+      "lastName": "sve frenc",
+      "date": "2026-11-27",
+      "time": "18:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1792777896134
+    },
+    {
       "id": "eeaf069c-4071-4a39-91b8-007c038a0f29",
       "firstName": "Ivana Dragana WMA",
       "lastName": "euke",
@@ -4761,5 +4771,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792758927010
+  "updatedAt": 1792777897042
 }
