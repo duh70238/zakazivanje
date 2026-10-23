@@ -4011,16 +4011,6 @@
       "updatedAt": 1790883045223
     },
     {
-      "id": "3439a1ec-7fb6-4ff6-a7f4-89e364ebd771",
-      "firstName": "Ivanina",
-      "lastName": "Bojana",
-      "date": "2026-10-23",
-      "time": "12:00",
-      "timeEnd": "13:30",
-      "description": "",
-      "updatedAt": 1791545127223
-    },
-    {
       "id": "5d47975a-83e7-440c-b0f2-4219ef3d4c16",
       "firstName": "Tanja",
       "lastName": "gl",
@@ -4761,5 +4751,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792758775579
+  "updatedAt": 1792758845545
 }
