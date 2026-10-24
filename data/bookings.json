@@ -4671,6 +4671,16 @@
       "updatedAt": 1792168595928
     },
     {
+      "id": "5a20e755-b88c-4f75-bd69-ffb2422985b8",
+      "firstName": "Maya",
+      "lastName": "ruke",
+      "date": "2026-11-16",
+      "time": "18:30",
+      "timeEnd": "19:30",
+      "description": "",
+      "updatedAt": 1792851117833
+    },
+    {
       "id": "183e84c8-c2e7-418c-8ca4-915795e8f970",
       "firstName": "Mala plava cerka",
       "lastName": "gl",
@@ -4821,5 +4831,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1792848128375
+  "updatedAt": 1792851118803
 }
