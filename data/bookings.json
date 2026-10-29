@@ -4851,6 +4851,16 @@
       "updatedAt": 1792836374273
     },
     {
+      "id": "f6861217-8247-4645-a338-d67706c3fa3d",
+      "firstName": "Sonja",
+      "lastName": "gl",
+      "date": "2026-11-26",
+      "time": "17:00",
+      "timeEnd": "18:00",
+      "description": "",
+      "updatedAt": 1793300971098
+    },
+    {
       "id": "61fa8cf9-8713-4c8f-b62b-60b3f405e28c",
       "firstName": "Teodota",
       "lastName": "sve frenc",
@@ -4901,5 +4911,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1793298050665
+  "updatedAt": 1793300973199
 }
