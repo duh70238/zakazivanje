@@ -4321,6 +4321,16 @@
       "updatedAt": 1791562244898
     },
     {
+      "id": "b98a9491-a5d5-4b73-8ce7-4d6ca6f57e71",
+      "firstName": "Prof visoka",
+      "lastName": "nokt",
+      "date": "2026-11-04",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1793626220775
+    },
+    {
       "id": "725db75a-c4eb-41d4-84b8-e44a5862a0c2",
       "firstName": "Marija Gorbic",
       "lastName": "priboj",
@@ -4961,5 +4971,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1793452587404
+  "updatedAt": 1793626222659
 }
