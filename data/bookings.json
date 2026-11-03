@@ -4991,6 +4991,16 @@
       "updatedAt": 1793377012373
     },
     {
+      "id": "d92d8829-d5be-44f9-b48a-8038577adff5",
+      "firstName": "Sestra",
+      "lastName": "izliva noge",
+      "date": "2026-12-02",
+      "time": "11:00",
+      "timeEnd": "13:30",
+      "description": "",
+      "updatedAt": 1793718343990
+    },
+    {
       "id": "e66b0fda-381c-433f-9b92-3a1cc0b15d8b",
       "firstName": "Dr od",
       "lastName": "kace",
@@ -5041,5 +5051,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1793705562112
+  "updatedAt": 1793718344666
 }
