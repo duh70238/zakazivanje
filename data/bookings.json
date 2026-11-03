@@ -4275,10 +4275,10 @@
       "firstName": "Sanja",
       "lastName": "sk",
       "date": "2026-11-03",
-      "time": "19:45",
-      "timeEnd": "21:00",
+      "time": "18:45",
+      "timeEnd": "19:45",
       "description": "",
-      "updatedAt": 1793626267472
+      "updatedAt": 1793705424517
     },
     {
       "id": "6c0c5149-dda3-4aab-a762-21b016701245",
@@ -5031,5 +5031,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1793702768638
+  "updatedAt": 1793705425311
 }
