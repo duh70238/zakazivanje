@@ -4235,10 +4235,10 @@
       "firstName": "Sestra",
       "lastName": "ruke nohe",
       "date": "2026-11-03",
-      "time": "13:30",
-      "timeEnd": "15:00",
+      "time": "14:15",
+      "timeEnd": "16:00",
       "description": "",
-      "updatedAt": 1791558119786
+      "updatedAt": 1793705480813
     },
     {
       "id": "50395d1d-f0eb-47b1-b0a8-9d1bdaad2c58",
@@ -5041,5 +5041,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1793705440349
+  "updatedAt": 1793705481538
 }
