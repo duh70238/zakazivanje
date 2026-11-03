@@ -4991,6 +4991,16 @@
       "updatedAt": 1792777896134
     },
     {
+      "id": "a2f6e55f-5a76-428f-8475-8e5f4dca7582",
+      "firstName": "Aristotelova z",
+      "lastName": "zena",
+      "date": "2026-11-28",
+      "time": "11:00",
+      "timeEnd": "12:00",
+      "description": "",
+      "updatedAt": 1793726284110
+    },
+    {
       "id": "ce70c4ee-2b19-4c61-9108-93abe8fb1600",
       "firstName": "Vanja",
       "lastName": "RTS",
@@ -5061,5 +5071,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1793722247007
+  "updatedAt": 1793726284932
 }
