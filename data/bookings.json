@@ -5051,6 +5051,16 @@
       "updatedAt": 1793639767898
     },
     {
+      "id": "03cb44c8-d366-4d20-9d02-62352158aa38",
+      "firstName": "Olja",
+      "lastName": "telekom",
+      "date": "2026-12-02",
+      "time": "16:00",
+      "timeEnd": "17:00",
+      "description": "",
+      "updatedAt": 1793807935446
+    },
+    {
       "id": "eeaf069c-4071-4a39-91b8-007c038a0f29",
       "firstName": "Ivana Dragana WMA",
       "lastName": "euke",
@@ -5091,5 +5101,5 @@
       "updatedAt": 1788530511773
     }
   ],
-  "updatedAt": 1793785596972
+  "updatedAt": 1793807937666
 }
