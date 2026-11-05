@@ -5051,6 +5051,16 @@
       "updatedAt": 1793377012373
     },
     {
+      "id": "f03dcd7f-76c0-4a04-86bf-e03d8da0e084",
+      "firstName": "Datsika",
+      "lastName": "nokt",
+      "date": "2026-12-01",
+      "time": "12:00",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1793880284213
+    },
+    {
       "id": "d92d8829-d5be-44f9-b48a-8038577adff5",
       "firstName": "Sestra",
       "lastName": "izliva noge",
@@ -5141,5 +5151,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1793829127574
+  "updatedAt": 1793880285371
 }
