@@ -5181,6 +5181,16 @@
       "updatedAt": 1793811898377
     },
     {
+      "id": "921a36c2-22e3-4734-b481-e3903053143d",
+      "firstName": "Lana",
+      "lastName": "rukee",
+      "date": "2026-12-24",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1793908355554
+    },
+    {
       "id": "278d8b95-fcba-4668-a8a6-d1d9786aeb52",
       "firstName": "Neda",
       "lastName": "ruke",
@@ -5211,5 +5221,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1793899922336
+  "updatedAt": 1793908356358
 }
