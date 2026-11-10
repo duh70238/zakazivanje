@@ -4201,16 +4201,6 @@
       "updatedAt": 1793359720504
     },
     {
-      "id": "74b866e9-a1dd-4646-9be3-3a8f8bf05c97",
-      "firstName": "Angela",
-      "lastName": "M",
-      "date": "2026-11-02",
-      "time": "13:00",
-      "timeEnd": "14:00",
-      "description": "",
-      "updatedAt": 1794318731820
-    },
-    {
       "id": "b526617e-2d5f-4c98-b73d-f75a65d9f18f",
       "firstName": "Kacina",
       "lastName": "dr",
@@ -5301,5 +5291,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1794318734270
+  "updatedAt": 1794318761636
 }
