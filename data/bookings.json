@@ -4751,6 +4751,16 @@
       "updatedAt": 1792235592470
     },
     {
+      "id": "9101b278-b783-46b8-a024-e81ce04dd324",
+      "firstName": "Dikic",
+      "lastName": "ruke",
+      "date": "2026-11-14",
+      "time": "13:00",
+      "timeEnd": "14:00",
+      "description": "",
+      "updatedAt": 1794439059040
+    },
+    {
       "id": "ac7ab9fd-400f-441f-8246-be2780e0f253",
       "firstName": "Janina",
       "lastName": "sestra",
@@ -4759,16 +4769,6 @@
       "timeEnd": "16:30",
       "description": "",
       "updatedAt": 1792247897570
-    },
-    {
-      "id": "9101b278-b783-46b8-a024-e81ce04dd324",
-      "firstName": "Dikic",
-      "lastName": "ruke",
-      "date": "2026-11-14",
-      "time": "16:30",
-      "timeEnd": "17:30",
-      "description": "",
-      "updatedAt": 1792679747805
     },
     {
       "id": "45a4a04d-16e6-41e2-8da4-0ea5fbbfcaab",
@@ -5411,5 +5411,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1794439045846
+  "updatedAt": 1794439059760
 }
