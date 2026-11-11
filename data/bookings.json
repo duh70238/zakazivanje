@@ -4751,16 +4751,6 @@
       "updatedAt": 1792235592470
     },
     {
-      "id": "487caee3-5e80-49f6-8756-1516dcf45579",
-      "firstName": "Anita",
-      "lastName": "sve frenc",
-      "date": "2026-11-14",
-      "time": "13:00",
-      "timeEnd": "15:30",
-      "description": "",
-      "updatedAt": 1792244888039
-    },
-    {
       "id": "ac7ab9fd-400f-441f-8246-be2780e0f253",
       "firstName": "Janina",
       "lastName": "sestra",
@@ -5421,5 +5411,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1794439026832
+  "updatedAt": 1794439045846
 }
