@@ -4591,6 +4591,16 @@
       "updatedAt": 1791904138081
     },
     {
+      "id": "464ef437-4556-4580-b459-09beeaf074c2",
+      "firstName": "Anita",
+      "lastName": "sve",
+      "date": "2026-11-10",
+      "time": "20:00",
+      "timeEnd": "22:00",
+      "description": "",
+      "updatedAt": 1794439025980
+    },
+    {
       "id": "6c4a6c14-2d46-4d92-b070-0a36e807b55d",
       "firstName": "Mala maja",
       "lastName": "noge",
@@ -5411,5 +5421,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1794429497301
+  "updatedAt": 1794439026832
 }
