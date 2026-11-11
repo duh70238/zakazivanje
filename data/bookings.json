@@ -5101,6 +5101,16 @@
       "updatedAt": 1793726284110
     },
     {
+      "id": "efe609a7-f1f9-45f5-a8e9-0ccd9e054fa0",
+      "firstName": "Lara",
+      "lastName": "Majina",
+      "date": "2026-11-28",
+      "time": "12:00",
+      "timeEnd": "13:00",
+      "description": "",
+      "updatedAt": 1794398972815
+    },
+    {
       "id": "e6c3ab3c-262c-4db9-a530-dd0e439ff433",
       "firstName": "Sanja",
       "lastName": "rostilj",
@@ -5361,5 +5371,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1794348499192
+  "updatedAt": 1794398974214
 }
