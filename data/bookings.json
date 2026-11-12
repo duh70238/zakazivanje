@@ -5419,7 +5419,17 @@
       "timeEnd": "19:00",
       "description": "",
       "updatedAt": 1793811819031
+    },
+    {
+      "id": "029d974d-4e77-4069-9811-87314a077559",
+      "firstName": "Helena",
+      "lastName": "ruke",
+      "date": "2026-12-28",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1794509859166
     }
   ],
-  "updatedAt": 1794509841111
+  "updatedAt": 1794509860161
 }
