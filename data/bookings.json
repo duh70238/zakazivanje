@@ -4781,16 +4781,6 @@
       "updatedAt": 1792247897570
     },
     {
-      "id": "45a4a04d-16e6-41e2-8da4-0ea5fbbfcaab",
-      "firstName": "Ivona losi",
-      "lastName": "m",
-      "date": "2026-11-15",
-      "time": "11:00",
-      "timeEnd": "12:30",
-      "description": "",
-      "updatedAt": 1792845552928
-    },
-    {
       "id": "a995f5f2-466d-4c9e-afc6-36e148fae749",
       "firstName": "Ivona losi mokti",
       "lastName": "n",
@@ -5421,5 +5411,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1794439082490
+  "updatedAt": 1794481796823
 }
