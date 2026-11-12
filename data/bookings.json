@@ -4781,16 +4781,6 @@
       "updatedAt": 1792247897570
     },
     {
-      "id": "a995f5f2-466d-4c9e-afc6-36e148fae749",
-      "firstName": "Ivona losi mokti",
-      "lastName": "n",
-      "date": "2026-11-15",
-      "time": "12:30",
-      "timeEnd": "13:30",
-      "description": "",
-      "updatedAt": 1792848127507
-    },
-    {
       "id": "9020105c-566d-4146-9ce0-dd7db60fce5c",
       "firstName": "Mariaj",
       "lastName": "trepavice ja",
@@ -5411,5 +5401,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1794481796823
+  "updatedAt": 1794481798432
 }
