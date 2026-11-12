@@ -5251,6 +5251,16 @@
       "updatedAt": 1794246361235
     },
     {
+      "id": "7a919cf4-19d7-40c4-abb5-5d421daa69b7",
+      "firstName": "Helena",
+      "lastName": "ruke",
+      "date": "2026-12-03",
+      "time": "18:30",
+      "timeEnd": "19:30",
+      "description": "",
+      "updatedAt": 1794509839453
+    },
+    {
       "id": "eeaf069c-4071-4a39-91b8-007c038a0f29",
       "firstName": "Ivana Dragana WMA",
       "lastName": "euke",
@@ -5411,5 +5421,5 @@
       "updatedAt": 1793811819031
     }
   ],
-  "updatedAt": 1794504522193
+  "updatedAt": 1794509841111
 }
