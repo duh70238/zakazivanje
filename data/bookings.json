@@ -5489,7 +5489,17 @@
       "timeEnd": "20:00",
       "description": "",
       "updatedAt": 1794509859166
+    },
+    {
+      "id": "45a3e8b0-ca29-4093-8eed-11862a7fd4f5",
+      "firstName": "Tamara",
+      "lastName": "lakira i ped",
+      "date": "2026-12-29",
+      "time": "14:00",
+      "timeEnd": "16:00",
+      "description": "",
+      "updatedAt": 1794577278195
     }
   ],
-  "updatedAt": 1794577233995
+  "updatedAt": 1794577279089
 }
