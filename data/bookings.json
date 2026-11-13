@@ -5271,6 +5271,16 @@
       "updatedAt": 1794246361235
     },
     {
+      "id": "7466415e-ba4d-4c67-9a3c-c0e44fb3d8b3",
+      "firstName": "Marija",
+      "lastName": "N ruke",
+      "date": "2026-12-03",
+      "time": "17:30",
+      "timeEnd": "18:30",
+      "description": "",
+      "updatedAt": 1794593463606
+    },
+    {
       "id": "7a919cf4-19d7-40c4-abb5-5d421daa69b7",
       "firstName": "Helena",
       "lastName": "ruke",
@@ -5521,5 +5531,5 @@
       "updatedAt": 1794577278195
     }
   ],
-  "updatedAt": 1794593399814
+  "updatedAt": 1794593464736
 }
