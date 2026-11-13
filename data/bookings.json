@@ -4805,10 +4805,10 @@
       "firstName": "Nika",
       "lastName": "frenc ruke",
       "date": "2026-11-16",
-      "time": "15:00",
-      "timeEnd": "16:15",
+      "time": "14:00",
+      "timeEnd": "15:00",
       "description": "",
-      "updatedAt": 1792168595928
+      "updatedAt": 1794585197539
     },
     {
       "id": "5a20e755-b88c-4f75-bd69-ffb2422985b8",
@@ -5501,5 +5501,5 @@
       "updatedAt": 1794577278195
     }
   ],
-  "updatedAt": 1794577382326
+  "updatedAt": 1794585198482
 }
