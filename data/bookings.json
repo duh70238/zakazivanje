@@ -5061,6 +5061,16 @@
       "updatedAt": 1793808002078
     },
     {
+      "id": "48160c0b-914f-4e20-a41c-41ac47a1017b",
+      "firstName": "Tamara",
+      "lastName": "lakira",
+      "date": "2026-11-26",
+      "time": "20:00",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1794577181031
+    },
+    {
       "id": "92ebaac7-b242-4941-9bc9-164a5354d60e",
       "firstName": "Datsika obrve",
       "lastName": "o",
@@ -5471,5 +5481,5 @@
       "updatedAt": 1794509859166
     }
   ],
-  "updatedAt": 1794575192617
+  "updatedAt": 1794577182578
 }
