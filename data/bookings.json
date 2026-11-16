@@ -5301,6 +5301,16 @@
       "updatedAt": 1794246361235
     },
     {
+      "id": "a0dfab51-1c6e-4751-aefb-fb4ad987154b",
+      "firstName": "Nika",
+      "lastName": "ruke",
+      "date": "2026-12-02",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1794838647459
+    },
+    {
       "id": "c76bebb2-a602-4708-9fd9-d2cf17c138a5",
       "firstName": "Ja trep",
       "lastName": "kod M",
@@ -5631,5 +5641,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1794832469777
+  "updatedAt": 1794838648933
 }
