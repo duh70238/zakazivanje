@@ -5031,16 +5031,6 @@
       "updatedAt": 1793648901997
     },
     {
-      "id": "f9fed1e8-af03-402a-8519-ecf9de5aac8b",
-      "firstName": "Ivana",
-      "lastName": "bojanina",
-      "date": "2026-11-26",
-      "time": "10:30",
-      "timeEnd": "12:00",
-      "description": "",
-      "updatedAt": 1792857458727
-    },
-    {
       "id": "7cafcdcc-f306-455c-9852-5483da943fc0",
       "firstName": "Dnajkina",
       "lastName": "kcerka",
@@ -5721,5 +5711,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1794931306709
+  "updatedAt": 1794935984973
 }
