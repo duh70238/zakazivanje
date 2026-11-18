@@ -5431,16 +5431,6 @@
       "updatedAt": 1794840907651
     },
     {
-      "id": "6fd51a92-aadd-4391-ac8a-8d95559df33d",
-      "firstName": "Neda",
-      "lastName": "ruke",
-      "date": "2026-12-05",
-      "time": "11:00",
-      "timeEnd": "12:00",
-      "description": "",
-      "updatedAt": 1789207604125
-    },
-    {
       "id": "0be8fab5-8aec-452c-9961-d9a3a5c8228a",
       "firstName": "Ada",
       "lastName": "mol kuma",
@@ -5791,5 +5781,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795036182760
+  "updatedAt": 1795036186436
 }
