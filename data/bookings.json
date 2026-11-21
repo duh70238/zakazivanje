@@ -5051,16 +5051,6 @@
       "updatedAt": 1793648901997
     },
     {
-      "id": "7cafcdcc-f306-455c-9852-5483da943fc0",
-      "firstName": "Dnajkina",
-      "lastName": "kcerka",
-      "date": "2026-11-26",
-      "time": "12:00",
-      "timeEnd": "13:00",
-      "description": "",
-      "updatedAt": 1792836374273
-    },
-    {
       "id": "0f0e71af-3e2b-4df6-b748-cff742fc15b2",
       "firstName": "Mala maja",
       "lastName": "ruke frenc",
@@ -5791,5 +5781,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795254216217
+  "updatedAt": 1795259638613
 }
