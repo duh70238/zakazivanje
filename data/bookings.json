@@ -5405,10 +5405,10 @@
       "firstName": "Ja trep",
       "lastName": "kod M",
       "date": "2026-12-03",
-      "time": "11:00",
-      "timeEnd": "12:15",
+      "time": "09:30",
+      "timeEnd": "10:30",
       "description": "",
-      "updatedAt": 1794832290939
+      "updatedAt": 1795521224709
     },
     {
       "id": "d3af0ce0-d526-4066-8ec3-1a298ebd7846",
@@ -5841,5 +5841,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795517924173
+  "updatedAt": 1795521226545
 }
