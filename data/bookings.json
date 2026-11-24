@@ -5121,16 +5121,6 @@
       "updatedAt": 1794577381421
     },
     {
-      "id": "92ebaac7-b242-4941-9bc9-164a5354d60e",
-      "firstName": "Datsika obrve",
-      "lastName": "o",
-      "date": "2026-11-27",
-      "time": "12:00",
-      "timeEnd": "14:15",
-      "description": "",
-      "updatedAt": 1793880358806
-    },
-    {
       "id": "9c1f8a4e-4c72-4104-b6a7-34bb24ccb30f",
       "firstName": "Ana Min k",
       "lastName": "ruke noge frenc",
@@ -5871,5 +5861,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795532334434
+  "updatedAt": 1795554300261
 }
