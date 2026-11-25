@@ -5021,16 +5021,6 @@
       "updatedAt": 1793452586648
     },
     {
-      "id": "0bea4083-aadd-4ac2-9671-aff01b953653",
-      "firstName": "Jana",
-      "lastName": "priboja",
-      "date": "2026-11-25",
-      "time": "21:00",
-      "timeEnd": "22:00",
-      "description": "",
-      "updatedAt": 1793648901997
-    },
-    {
       "id": "e78a404d-7b02-4af4-b944-94ac860ae136",
       "firstName": "Narnija",
       "lastName": "r n",
@@ -5871,5 +5861,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795606123283
+  "updatedAt": 1795608683276
 }
