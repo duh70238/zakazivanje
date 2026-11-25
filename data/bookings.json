@@ -5141,6 +5141,16 @@
       "updatedAt": 1792777896134
     },
     {
+      "id": "8af06186-1a28-409b-832f-ab0c9b938245",
+      "firstName": "Dikic",
+      "lastName": "koleg",
+      "date": "2026-11-28",
+      "time": "10:00",
+      "timeEnd": "11:00",
+      "description": "",
+      "updatedAt": 1795606121830
+    },
+    {
       "id": "a2f6e55f-5a76-428f-8475-8e5f4dca7582",
       "firstName": "Aristotelova z",
       "lastName": "zena",
@@ -5861,5 +5871,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795554300261
+  "updatedAt": 1795606123283
 }
