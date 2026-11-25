@@ -5731,6 +5731,16 @@
       "updatedAt": 1794838710847
     },
     {
+      "id": "17e59613-fdd1-4089-b5a8-edf6b57171a4",
+      "firstName": "Vesna",
+      "lastName": "Lanin",
+      "date": "2026-12-22",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1795637669517
+    },
+    {
       "id": "79030006-9bcb-49ea-93f6-c7e5e5546796",
       "firstName": "Marija",
       "lastName": "N ruke",
@@ -5911,5 +5921,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795633185442
+  "updatedAt": 1795637671092
 }
