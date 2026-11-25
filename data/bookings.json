@@ -5065,10 +5065,10 @@
       "firstName": "Marija",
       "lastName": "N noge",
       "date": "2026-11-26",
-      "time": "15:00",
-      "timeEnd": "15:30",
+      "time": "15:30",
+      "timeEnd": "16:00",
       "description": "",
-      "updatedAt": 1795526086641
+      "updatedAt": 1795646354698
     },
     {
       "id": "484fe8be-e7dc-41b0-bb5c-b88604a586f3",
@@ -5951,5 +5951,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795646339039
+  "updatedAt": 1795646355388
 }
