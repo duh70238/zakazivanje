@@ -5911,6 +5911,16 @@
       "updatedAt": 1795631148254
     },
     {
+      "id": "04a8fd72-7565-4c36-b26f-bca1d9337507",
+      "firstName": "Lana Vesnina",
+      "lastName": "gl",
+      "date": "2027-01-15",
+      "time": "19:00",
+      "timeEnd": "20:00",
+      "description": "",
+      "updatedAt": 1795637750608
+    },
+    {
       "id": "d627eebc-4ede-4972-8f98-f6fe080ffe7e",
       "firstName": "Neda",
       "lastName": "r",
@@ -5921,5 +5931,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795637671092
+  "updatedAt": 1795637751477
 }
