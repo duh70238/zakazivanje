@@ -5271,6 +5271,16 @@
       "updatedAt": 1795524309689
     },
     {
+      "id": "d479009c-782c-4357-a846-a1c3998c8c3f",
+      "firstName": "Brybi boom",
+      "lastName": "ruke",
+      "date": "2026-12-01",
+      "time": "08:45",
+      "timeEnd": "10:00",
+      "description": "",
+      "updatedAt": 1795731611864
+    },
+    {
       "id": "3861550f-a5e4-4aaa-8e41-e7108501f176",
       "firstName": "Sanjina kcerka",
       "lastName": "rostilj",
@@ -6011,5 +6021,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795715220675
+  "updatedAt": 1795731612680
 }
