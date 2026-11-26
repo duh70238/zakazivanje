@@ -5691,6 +5691,16 @@
       "updatedAt": 1794931306008
     },
     {
+      "id": "6c523fd7-75c3-42d5-a2a5-fb1f678c1d8e",
+      "firstName": "Tetka",
+      "lastName": "gl",
+      "date": "2026-12-15",
+      "time": "18:00",
+      "timeEnd": "19:00",
+      "description": "",
+      "updatedAt": 1795715219004
+    },
+    {
       "id": "689cc669-3c89-4710-b95c-264690f5ebc7",
       "firstName": "Mala crvena",
       "lastName": "crta",
@@ -6001,5 +6011,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795712309173
+  "updatedAt": 1795715220675
 }
