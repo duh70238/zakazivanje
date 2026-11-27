@@ -5831,6 +5831,16 @@
       "updatedAt": 1795637669517
     },
     {
+      "id": "de6fe6d6-0679-4aae-b81c-676c125186be",
+      "firstName": "Ana min kult",
+      "lastName": "frenc",
+      "date": "2026-12-23",
+      "time": "17:00",
+      "timeEnd": "18:15",
+      "description": "",
+      "updatedAt": 1795799759059
+    },
+    {
       "id": "79030006-9bcb-49ea-93f6-c7e5e5546796",
       "firstName": "Marija",
       "lastName": "N ruke",
@@ -6031,5 +6041,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795784218356
+  "updatedAt": 1795799760656
 }
