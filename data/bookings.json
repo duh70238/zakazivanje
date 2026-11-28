@@ -6021,6 +6021,16 @@
       "updatedAt": 1794936229225
     },
     {
+      "id": "0b140982-64fa-4fec-93e5-3e5b96a1bce8",
+      "firstName": "Dikic",
+      "lastName": "komsini",
+      "date": "2027-01-04",
+      "time": "20:00",
+      "timeEnd": "21:00",
+      "description": "",
+      "updatedAt": 1795860700032
+    },
+    {
       "id": "5da75aef-a0c0-468b-8706-bb26e318e07e",
       "firstName": "Setra od male pl",
       "lastName": "0637052398",
@@ -6061,5 +6071,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795860495035
+  "updatedAt": 1795860700880
 }
