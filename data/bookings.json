@@ -5911,6 +5911,16 @@
       "updatedAt": 1795703772047
     },
     {
+      "id": "60f7e219-40d5-4970-9a59-44d9fbda68a8",
+      "firstName": "Snajka",
+      "lastName": "cerka frenc",
+      "date": "2026-12-25",
+      "time": "15:00",
+      "timeEnd": "16:30",
+      "description": "",
+      "updatedAt": 1795881371472
+    },
+    {
       "id": "0e151e89-dce4-4b8b-8b2a-248f68ad2087",
       "firstName": "Teodora",
       "lastName": "r n crveni",
@@ -6111,5 +6121,5 @@
       "updatedAt": 1794654917502
     }
   ],
-  "updatedAt": 1795876651818
+  "updatedAt": 1795881372188
 }
